@@ -1,0 +1,44 @@
+@import 'reset';
+
+$fontSize:37.5;
+$highlight-color: #F90;
+
+@function px2rem($px) {
+  @return ($px / $fontSize)+rem;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dowebok {
+  .section {
+    text-align: center;
+    color: #fff;
+    font-size: px2rem(18);
+
+    .fp-controlArrow {
+      margin-top: 0;
+    }
+
+    .fp-controlArrow.fp-prev {
+      border-width: px2rem(19) px2rem(17) px2rem(19) 0;
+      transform: translateY(-50%);
+    }
+
+    .fp-controlArrow.fp-next {
+      border-width: px2rem(19) 0 px2rem(19) px2rem(17);
+      transform: translateY(-50%);
+    }
+  }
+
+  .page1 {
+    .selected {
+      border: 1px solid $highlight-color;
+      height: px2rem(90);
+      box-sizing: border-box;
+    }
+  }
+}
