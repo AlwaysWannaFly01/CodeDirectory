@@ -166,6 +166,62 @@
             }
 
         }
+
+        &.part3 {
+            background: url(../images/3.jpg) 50%;
+
+            .fp-tableCell {
+                // padding-left:25%;
+                // padding-top: 22%;
+                // padding-right: 185px;
+                // padding-top: 150px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+            }
+
+            .brand {
+                width: 62%;
+                height: 475px;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-40%, -50%);
+
+                .introduce {
+                    display: flex;
+                    flex-direction: column;
+                    width: 612px;
+                    // box-sizing: border-box;
+                    padding-left: 230px;
+                    h3 {
+                        width: 100%;
+                        font-size: 34px;
+                        font-family: PingFang SC;
+                        font-weight: 500;
+                        color: rgba(51, 51, 51, 1);
+                    }
+
+                    p {
+                        width: 100%;
+                        font-size: 16px;
+                        font-family: PingFang SC;
+                        font-weight: 400;
+                        color: rgba(101, 101, 101, 1);
+                        line-height: 34px;
+                    }
+
+                    div {
+                        height: 12px;
+                        border: 1px solid rgba(199, 45, 33, 1);
+                        border-left: none;
+                        border-right: none;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -229,6 +285,7 @@
 
     .menu-block {
         @include center;
+        cursor: pointer;
 
         .icon-menu {
             font-size: 26px;
@@ -248,12 +305,46 @@
 
 .menuList {
     width: 100%;
-    height: 892px;
+    // height: 600px;
     position: fixed;
     top: 0;
     left: 0;
     box-sizing: border-box;
-	z-index: 100;
-	padding: 0 30px;
-	background-color: salmon;
+    z-index: 100;
+    padding: 0 30px;
+    background-color: #CBCBCB;
+
+    display: none;
+
+    .oper {
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        text-align: right;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 80%;
+        width: 100%;
+        height: 440px;
+        margin-bottom: 80px;
+        justify-content: space-around;
+
+        li {
+            // line-height: 24px;
+
+            a {
+                font-size: 24px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+            }
+        }
+    }
 }

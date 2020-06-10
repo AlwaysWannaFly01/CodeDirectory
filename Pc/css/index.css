@@ -219,6 +219,58 @@ a:active {
   box-shadow: 0 0 0 0;
 }
 
+#dowebok .section.part3 {
+  background: url(../images/3.jpg) 50%;
+}
+
+#dowebok .section.part3 .fp-tableCell {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#dowebok .section.part3 .brand {
+  width: 62%;
+  height: 475px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+#dowebok .section.part3 .brand .introduce {
+  display: flex;
+  flex-direction: column;
+  width: 612px;
+  padding-left: 230px;
+}
+
+#dowebok .section.part3 .brand .introduce h3 {
+  width: 100%;
+  font-size: 34px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+
+#dowebok .section.part3 .brand .introduce p {
+  width: 100%;
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #656565;
+  line-height: 34px;
+}
+
+#dowebok .section.part3 .brand .introduce div {
+  height: 12px;
+  border: 1px solid #c72d21;
+  border-left: none;
+  border-right: none;
+}
+
 #menu {
   margin: 0;
   padding: 0;
@@ -278,6 +330,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .menu-container .menu-block .icon-menu {
@@ -296,12 +349,40 @@ a:active {
 
 .menuList {
   width: 100%;
-  height: 892px;
   position: fixed;
   top: 0;
   left: 0;
   box-sizing: border-box;
   z-index: 100;
   padding: 0 30px;
-  background-color: salmon;
+  background-color: #CBCBCB;
+  display: none;
+}
+
+.menuList .oper {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: right;
+}
+
+.menuList .oper span {
+  cursor: pointer;
+}
+
+.menuList ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80%;
+  width: 100%;
+  height: 440px;
+  margin-bottom: 80px;
+  justify-content: space-around;
+}
+
+.menuList ul li a {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
 }

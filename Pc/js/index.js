@@ -39,6 +39,7 @@ $(function () {
         },
         onLeave: function (index, direction) {
             console.log(index, direction)
+            $('.menuList').hide()
             if (index == '1') {
             }
             if (
@@ -75,6 +76,14 @@ $(function () {
         },
     })
 
+    $('.menuBtn').click(function(){
+        console.log(123);
+        $('.menuList').slideDown(500)
+    })
+
+    $('.menuList .oper span').click(function(){
+        $('.menuList').slideUp(300)
+    })
     setInterval(function () {
         $.fn.fullpage.moveSlideRight()
     }, 3000)
