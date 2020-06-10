@@ -78,6 +78,10 @@ a:active {
   border-width: 0;
 }
 
+#dowebok .section.part6 {
+  background: url(../images/4.jpg) 50%;
+}
+
 #dowebok .section.part6 .fp-tableCell {
   box-sizing: border-box;
   display: flex;
@@ -89,7 +93,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 60px;
+  padding-right: 50px;
   box-sizing: border-box;
 }
 
@@ -145,18 +149,19 @@ a:active {
 
 #dowebok .section.part6 .fp-tableCell .apply-container {
   width: 60%;
-  background: #c82d21;
+  background: #C72D21;
   box-sizing: border-box;
-  padding: 83px 83px 63px 85px;
+  padding: 80px 80px 60px 85px;
 }
 
 #dowebok .section.part6 .fp-tableCell .apply-container .word-tip {
   display: flex;
   align-items: center;
+  margin-bottom: 34px;
 }
 
 #dowebok .section.part6 .fp-tableCell .apply-container .word-tip h4 {
-  font-size: 34px;
+  font-size: 28px;
   font-family: PingFang SC;
   font-weight: 500;
   color: white;
@@ -164,10 +169,54 @@ a:active {
 }
 
 #dowebok .section.part6 .fp-tableCell .apply-container .word-tip span {
-  font-size: 24px;
+  font-size: 20px;
   font-family: PangMenZhengDao;
   font-weight: 400;
   color: white;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form .form-group {
+  margin-bottom: 16px;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form .form-group .form-control {
+  border: none;
+  background: #f7f7f7;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form .form-group input.form-control {
+  height: 50px;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form .form-group textarea.form-control {
+  height: 160px;
+  resize: none;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form .form-group .form-control:focus {
+  box-shadow: 0 0 0 0;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form button.submit {
+  height: 45px;
+  width: 132px;
+  border-radius: 0;
+  background-color: #272723;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #f7f7f7;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container form button.submit:focus {
+  box-shadow: 0 0 0 0;
 }
 
 #menu {

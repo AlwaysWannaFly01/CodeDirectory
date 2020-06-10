@@ -19,7 +19,7 @@
         }
 
         &.part6 {
-
+            background: url(../images/4.jpg) 50%;
             .fp-tableCell {
                 box-sizing: border-box;
                 display: flex;
@@ -27,10 +27,11 @@
 
                 .introduce-container {
                     width: 40%;
+                    // flex: 1;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    padding-right: 60px;
+                    padding-right: 50px;
                     box-sizing: border-box;
 
                     .icon {
@@ -55,8 +56,6 @@
                     .work-time {
                         display: flex;
                     }
-
-
 
                     .QRcode {
                         width: 180px;
@@ -90,15 +89,19 @@
 
                 .apply-container {
                     width: 60%;
-                    background: rgba(200, 45, 33, 1);
+                    // width: 685px;
+                    // height: 566px;
+                    background: #C72D21;
                     box-sizing: border-box;
-                    padding: 83px 83px 63px 85px;
+                    padding: 80px 80px 60px 85px;
 
                     .word-tip {
                         display: flex;
                         align-items: center;
+                        margin-bottom: 34px;
+
                         h4 {
-                            font-size: 34px;
+                            font-size: 28px;
                             font-family: PingFang SC;
                             font-weight: 500;
                             color: rgba(255, 255, 255, 1);
@@ -106,10 +109,56 @@
                         }
 
                         span {
-                            font-size: 24px;
+                            font-size: 20px;
                             font-family: PangMenZhengDao;
                             font-weight: 400;
                             color: rgba(255, 255, 255, 1);
+                        }
+                    }
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+
+                        .form-group {
+                            margin-bottom: 16px;
+
+                            .form-control {
+                                border: none;
+                                background: rgba(247, 247, 247, 1);
+                                border-radius: 0;
+                                font-size: 14px;
+                            }
+
+                            input.form-control {
+                                height: 50px;
+                            }
+
+                            textarea.form-control {
+                                height: 160px;
+                                resize: none;
+                            }
+
+                            .form-control:focus {
+                                // border-color: transparent; 
+                                // outline: 0;  
+                                box-shadow: 0 0 0 0;
+                            }
+                        }
+
+                        button.submit {
+                            height: 45px;
+                            width: 132px;
+                            border-radius: 0;
+                            background-color: #272723;
+                            font-size: 14px;
+                            font-family: PingFang SC;
+                            font-weight: 500;
+                            color: rgba(247, 247, 247, 1);
+
+                            &:focus {
+                                box-shadow: 0 0 0 0;
+                            }
                         }
                     }
                 }
