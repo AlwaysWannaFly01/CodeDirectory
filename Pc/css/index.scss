@@ -18,41 +18,20 @@
             border-width: 0;
         }
 
-        .menu-container {
-            width: 100%;
-            height: 70px;
-            box-sizing: border-box;
-            padding: 0 30px;
-            background-color: seagreen;
-            @include center;
-            justify-content: space-between;
-
-            .menu-block {
-                @include center;
-
-                .icon-menu {
-                    font-size: 26px;
-                    margin-left: 15px;
-                }
-            }
-
-            a {
-                font-size: 20px;
-            }
-        }
-
         &.part6 {
 
             .fp-tableCell {
                 box-sizing: border-box;
                 display: flex;
-                padding: 120px 190px 110px 270px;
+                padding: 160px 190px 70px 270px;
 
                 .introduce-container {
                     width: 40%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    padding-right: 60px;
+                    box-sizing: border-box;
 
                     .icon {
                         font-size: 20px;
@@ -112,6 +91,27 @@
                 .apply-container {
                     width: 60%;
                     background: rgba(200, 45, 33, 1);
+                    box-sizing: border-box;
+                    padding: 83px 83px 63px 85px;
+
+                    .word-tip {
+                        display: flex;
+                        align-items: center;
+                        h4 {
+                            font-size: 34px;
+                            font-family: PingFang SC;
+                            font-weight: 500;
+                            color: rgba(255, 255, 255, 1);
+                            margin-right: 28px;
+                        }
+
+                        span {
+                            font-size: 24px;
+                            font-family: PangMenZhengDao;
+                            font-weight: 400;
+                            color: rgba(255, 255, 255, 1);
+                        }
+                    }
                 }
             }
 
@@ -157,5 +157,32 @@
 
     .active a {
         color: #C82D21;
+    }
+}
+
+.menu-container {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 30px;
+    background-color: seagreen;
+    @include center;
+    justify-content: space-between;
+    z-index: 99;
+
+    .menu-block {
+        @include center;
+
+        .icon-menu {
+            font-size: 26px;
+            margin-left: 15px;
+        }
+    }
+
+    a {
+        font-size: 20px;
     }
 }

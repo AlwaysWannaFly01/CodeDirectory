@@ -78,37 +78,10 @@ a:active {
   border-width: 0;
 }
 
-#dowebok .section .menu-container {
-  width: 100%;
-  height: 70px;
-  box-sizing: border-box;
-  padding: 0 30px;
-  background-color: seagreen;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#dowebok .section .menu-container .menu-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#dowebok .section .menu-container .menu-block .icon-menu {
-  font-size: 26px;
-  margin-left: 15px;
-}
-
-#dowebok .section .menu-container a {
-  font-size: 20px;
-}
-
 #dowebok .section.part6 .fp-tableCell {
   box-sizing: border-box;
   display: flex;
-  padding: 120px 190px 110px 270px;
+  padding: 160px 190px 70px 270px;
 }
 
 #dowebok .section.part6 .fp-tableCell .introduce-container {
@@ -116,6 +89,8 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-right: 60px;
+  box-sizing: border-box;
 }
 
 #dowebok .section.part6 .fp-tableCell .introduce-container .icon {
@@ -171,6 +146,28 @@ a:active {
 #dowebok .section.part6 .fp-tableCell .apply-container {
   width: 60%;
   background: #c82d21;
+  box-sizing: border-box;
+  padding: 83px 83px 63px 85px;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container .word-tip {
+  display: flex;
+  align-items: center;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container .word-tip h4 {
+  font-size: 34px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: white;
+  margin-right: 28px;
+}
+
+#dowebok .section.part6 .fp-tableCell .apply-container .word-tip span {
+  font-size: 24px;
+  font-family: PangMenZhengDao;
+  font-weight: 400;
+  color: white;
 }
 
 #menu {
@@ -211,4 +208,35 @@ a:active {
 
 #menu .active a {
   color: #C82D21;
+}
+
+.menu-container {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0 30px;
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.menu-container .menu-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container .menu-block .icon-menu {
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+.menu-container a {
+  font-size: 20px;
 }
