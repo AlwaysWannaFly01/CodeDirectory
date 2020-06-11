@@ -22,14 +22,15 @@ $red-color: #C82D21;
         &.part2 {
 
             .products_container {
-				// width: 72.5%;
-				// height: 62%;
-				width: 1162px;
+				width: 72.5%;
+				height: 61.25%;
+				// width: 1162px;
                 background-color: #fff;
 				margin: auto;
-				display: flex;
+				// display: flex;
                 .swiper-container {
-                    width: 100%;
+					width: 100%;
+					// height: 100%;
                     padding-bottom: 20px;
 					padding-top: 20px;
                 }
@@ -37,10 +38,10 @@ $red-color: #C82D21;
                 .swiper-slide {
                     background-position: center;
                     background-size: cover;
-                    width: 365px;
+                    // width: 365px;
 					height: 490px;
-					// height: 100%;
-					// width: 365px;
+					// height: 61.25%;
+					width: 24%;
 				}
 				// .product_pagination{
 				// 	width: 48px;

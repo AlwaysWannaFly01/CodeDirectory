@@ -79,10 +79,10 @@ a:active {
 }
 
 #dowebok .section.part2 .products_container {
-  width: 1162px;
+  width: 72.5%;
+  height: 61.25%;
   background-color: #fff;
   margin: auto;
-  display: flex;
 }
 
 #dowebok .section.part2 .products_container .swiper-container {
@@ -94,8 +94,8 @@ a:active {
 #dowebok .section.part2 .products_container .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 365px;
   height: 490px;
+  width: 24%;
 }
 
 #dowebok .section.part3 {
