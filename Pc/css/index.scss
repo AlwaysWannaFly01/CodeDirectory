@@ -23,26 +23,20 @@ $red-color: #C82D21;
             background: url(../images/part3-bg2x.png) 100%;
             background-position: bottom;
 
-            .fp-tableCell {
-
-                // box-sizing: border-box;
-                // display: flex;
-                // justify-content: flex-end;
-                // position: relative;
-            }
-
             .brand {
                 width: 62%;
                 height: 60%;
                 background-color: #fff;
-				padding: 98px 160px 94px 223px;
-				margin-left: 25%;
-				position: relative;
+                padding: 98px 14% 94px 18%;
+                margin-left: 30%;
+                position: relative;
+
                 .introduce {
                     display: flex;
                     flex-direction: column;
                     height: 100%;
                     justify-content: space-around;
+
                     h3 {
                         width: 100%;
                         font-size: 34px;
@@ -68,10 +62,7 @@ $red-color: #C82D21;
                         border-left: none;
                         border-right: none;
 					}
-					img{
-						// width: 68%;
-						// height: 68%;
-					}
+					
                 }
 
                 .logo {
@@ -79,17 +70,18 @@ $red-color: #C82D21;
                     position: absolute;
                     left: 0%;
                     top: 50%;
-                    transform: translate(-60%,-50%);
+                    transform: translate(-60%, -50%);
                     border-radius: 50%;
                     background: -webkit-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
                     -webkit-animation-timing-function: ease-in-out;
                     -webkit-animation-name: breathe;
                     -webkit-animation-duration: 2700ms;
                     -webkit-animation-iteration-count: infinite;
-					-webkit-animation-direction: alternate;
-					img{
-						height: 100%;
-					}
+                    -webkit-animation-direction: alternate;
+
+                    img {
+                        height: 100%;
+                    }
                 }
             }
         }
@@ -218,11 +210,13 @@ $red-color: #C82D21;
                     justify-content: space-around;
                     padding-right: 50px;
                     box-sizing: border-box;
-                    img{
+
+                    img {
                         width: 36px;
                         height: 36px;
                         margin-right: 16px;
                     }
+
                     .address {
                         display: flex;
 
