@@ -79,15 +79,15 @@ a:active {
 }
 
 #dowebok .section.part2 .products_container {
-  width: 1210px;
+  width: 1162px;
   background-color: #fff;
   margin: auto;
   display: flex;
 }
 
 #dowebok .section.part2 .products_container .swiper-container {
-  width: 1162px;
-  padding-bottom: 50px;
+  width: 100%;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
 
@@ -96,18 +96,6 @@ a:active {
   background-size: cover;
   width: 365px;
   height: 490px;
-}
-
-#dowebok .section.part2 .products_container .product_pagination {
-  width: 48px;
-  height: 490px;
-  display: flex;
-  flex-direction: column;
-}
-
-#dowebok .section.part2 .products_container .product_pagination .awy_bullet {
-  font-size: 14px;
-  color: #000;
 }
 
 #dowebok .section.part3 {

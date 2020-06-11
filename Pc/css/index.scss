@@ -22,13 +22,15 @@ $red-color: #C82D21;
         &.part2 {
 
             .products_container {
-                width: 1210px;
+				// width: 72.5%;
+				// height: 62%;
+				width: 1162px;
                 background-color: #fff;
 				margin: auto;
 				display: flex;
                 .swiper-container {
-                    width: 1162px;
-                    padding-bottom: 50px;
+                    width: 100%;
+                    padding-bottom: 20px;
 					padding-top: 20px;
                 }
 
@@ -36,18 +38,20 @@ $red-color: #C82D21;
                     background-position: center;
                     background-size: cover;
                     width: 365px;
-                    height: 490px;
-				}
-				.product_pagination{
-					width: 48px;
 					height: 490px;
-					display: flex;
-					flex-direction: column;
-					.awy_bullet{
-						font-size: 14px;
-						color: #000;
-					}
+					// height: 100%;
+					// width: 365px;
 				}
+				// .product_pagination{
+				// 	width: 48px;
+				// 	height: 490px;
+				// 	display: flex;
+				// 	flex-direction: column;
+				// 	.awy_bullet{
+				// 		font-size: 14px;
+				// 		color: #000;
+				// 	}
+				// }
             }
         }
 
