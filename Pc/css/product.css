@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'PingFangSC-Light', 'PingFang SC', 'STHeitiSC-Light', 'Arial', 'Helvetica-Light', 'sans-serif';
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+#wrapper{
+    width:1600px;
+    margin: 0 auto;
+}
+
+#nav{
+    margin: 0 auto;
+    height: 80px;
+    font-size: 20px;
+}
+
+.nav a{
+    font-size: 20px;
+    color: black;
+}
+
+.nav a:hover{
+    color: black;
+}
+
+#navbar{
+    height: 70px;
+    background: rgb(200, 45, 33);
+}
+
+hr{
+    width: 80%;
+}
+
+.jumbotron img{
+    width: 200px;
+    height: 200px;
+}
+
+#nav_title{
+    color: red;
+    margin: 30px 0 30px 15%;
+}
+
+#jumbotron_row{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.food{
+    width: 19%;
+}
+
+.food-left{
+    margin-right: 4%;
+}
+
+.food-mid{
+    margin: 0 4%;
+}
+
+.food-right{
+    margin-left: 4%;
+}
+
+.col-firsst{
+    color: red;
+}
+
+.table{
+    text-align:center;
+}
+
+.detail{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer{
+    width: 1600px;
+    height: 315px;
+    background: black url(../images/foot-bg2x.png) 100%;
+}
+
+.footer th{
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+    color: white;
+    font-size: 20px;
+}
+
+.footer td{
+    border-top: 0px !important;
+    color: white;
+    font-size: 15px;
+    opacity: .7;
+}
+
+.fb{
+    border-right: white 2px solid;
+    font-size: 16px;
+    color: white;
+}
+
+.fb h4{
+    font-size: 16px;
+    color: white;
+}
+
+.fb p{
+    font-size: 16px;
+    color: white;
+    opacity: .7;
+}
+
