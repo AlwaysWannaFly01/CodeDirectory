@@ -83,29 +83,20 @@ a:active {
   background-position: bottom;
 }
 
-#dowebok .section.part3 .fp-tableCell {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-}
-
 #dowebok .section.part3 .brand {
   width: 62%;
-  height: 475px;
+  height: 60%;
   background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -50%);
   padding: 98px 160px 94px 223px;
+  margin-left: 25%;
+  position: relative;
 }
 
 #dowebok .section.part3 .brand .introduce {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #dowebok .section.part3 .brand .introduce h3 {
@@ -135,12 +126,11 @@ a:active {
 }
 
 #dowebok .section.part3 .brand .logo {
-  width: 323px;
-  height: 323px;
+  height: 68%;
   position: absolute;
-  left: -18%;
+  left: 0%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-60%, -50%);
   border-radius: 50%;
   background: -webkit-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
   -webkit-animation-timing-function: ease-in-out;
@@ -148,6 +138,10 @@ a:active {
   -webkit-animation-duration: 2700ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
+}
+
+#dowebok .section.part3 .brand .logo img {
+  height: 100%;
 }
 
 #dowebok .section.part4 .process_container {
@@ -531,6 +525,6 @@ a:active {
   }
   100% {
     opacity: 1;
-    box-shadow: 0px 36px 46px 0px rgba(200, 45, 33, 0.16);
+    box-shadow: 10px 36px 46px 10px rgba(200, 45, 33, 0.16);
   }
 }
