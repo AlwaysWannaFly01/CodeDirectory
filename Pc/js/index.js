@@ -81,7 +81,7 @@ $(function () {
         $('.menuList').slideDown(500)
     })
 
-    $('.menuList .oper span').click(function () {
+    $('.menuList .oper img').click(function () {
         $('.menuList').slideUp(300)
     })
     setInterval(function () {

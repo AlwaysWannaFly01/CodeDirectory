@@ -78,6 +78,42 @@ a:active {
   border-width: 0;
 }
 
+#dowebok .section.part1 {
+  background: url(../images/banner-bg2x.png) 100%;
+  position: relative;
+  z-index: -2;
+}
+
+#dowebok .section.part1 img.circle {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+#dowebok .section.part1 .slide_item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#dowebok .section.part1 .slide_item .block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 15%;
+}
+
+#dowebok .section.part1 .slide_item .block img.word1 {
+  margin-top: 115px;
+  margin-right: -51px;
+}
+
+#dowebok .section.part1 .slide_item .block img.word2 {
+  margin-top: 35px;
+  margin-right: 71px;
+}
+
 #dowebok .section.part2 .products_container {
   width: 72.5%;
   height: 61.25%;
@@ -94,8 +130,8 @@ a:active {
 #dowebok .section.part2 .products_container .swiper-slide {
   background-position: center;
   background-size: cover;
+  width: 365px;
   height: 490px;
-  width: 24%;
 }
 
 #dowebok .section.part3 {
@@ -517,7 +553,8 @@ a:active {
   text-align: right;
 }
 
-.menuList .oper span {
+.menuList .oper img {
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -536,6 +573,12 @@ a:active {
   font-family: PingFang SC;
   font-weight: 400;
   color: #333333;
+}
+
+.menuList img.bg {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
 }
 
 @-webkit-keyframes breathe {
