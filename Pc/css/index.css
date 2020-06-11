@@ -271,18 +271,14 @@ a:active {
   box-sizing: border-box;
 }
 
-#dowebok .section.part6 .fp-tableCell .introduce-container .icon {
-  font-size: 20px;
-  margin-right: 20px;
-  padding-top: 8px;
+#dowebok .section.part6 .fp-tableCell .introduce-container img {
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
 }
 
 #dowebok .section.part6 .fp-tableCell .introduce-container .address {
   display: flex;
-}
-
-#dowebok .section.part6 .fp-tableCell .introduce-container .address .icon-location2 {
-  font-size: 24px;
 }
 
 #dowebok .section.part6 .fp-tableCell .introduce-container .tel {
@@ -297,6 +293,11 @@ a:active {
   width: 180px;
   height: 180px;
   background-color: #fff;
+}
+
+#dowebok .section.part6 .fp-tableCell .introduce-container .QRcode img {
+  width: 100%;
+  height: 100%;
 }
 
 #dowebok .section.part6 .fp-tableCell .introduce-container .item {
@@ -445,6 +446,15 @@ a:active {
   z-index: 99;
 }
 
+.menu-container .logo_block {
+  display: flex;
+  align-items: center;
+}
+
+.menu-container .logo_block .logo {
+  margin-right: 12px;
+}
+
 .menu-container .menu-block {
   display: flex;
   justify-content: center;
@@ -459,7 +469,15 @@ a:active {
 }
 
 .menu-container a {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: white;
+  margin-right: 25px;
+}
+
+.menu-container a:hover {
+  color: #fff;
 }
 
 .menuAnchor {
