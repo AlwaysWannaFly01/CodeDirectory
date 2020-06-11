@@ -22,6 +22,7 @@ $red-color: #C82D21;
         &.part3 {
             background: url(../images/part3-bg2x.png) 100%;
             background-position: bottom;
+
             .fp-tableCell {
                 // padding-left:25%;
                 // padding-top: 22%;
@@ -34,7 +35,7 @@ $red-color: #C82D21;
             }
 
             .brand {
-                width: 1003px;
+                width: 62%;
                 height: 475px;
                 background-color: #fff;
                 position: absolute;
@@ -181,20 +182,28 @@ $red-color: #C82D21;
         }
 
         &.part5 {
+			.fp-tableCell{
+				padding-top: 6%;
+			}
             .outlet_container {
-                height: 672px;
+                height: 84%;
                 display: flex;
                 justify-content: flex-end;
 
                 img {
                     height: 100%;
-                    margin-right: 10px;
+					margin-right: 10px;
+					&.half{
+						margin-right: 0;
+					}
                 }
             }
         }
+
         &.part6 {
             background: url(../images/foot-bg2x.png) 100%;
             background-position: bottom;
+
             .fp-tableCell {
                 box-sizing: border-box;
                 display: flex;
@@ -480,6 +489,6 @@ $red-color: #C82D21;
 
     100% {
         opacity: 1;
-        box-shadow:0px 36px 46px 0px rgba(200, 45, 33, 0.16)
+        box-shadow: 0px 36px 46px 0px rgba(200, 45, 33, 0.16)
     }
 }

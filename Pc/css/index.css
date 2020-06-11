@@ -91,7 +91,7 @@ a:active {
 }
 
 #dowebok .section.part3 .brand {
-  width: 1003px;
+  width: 62%;
   height: 475px;
   background-color: #fff;
   position: absolute;
@@ -229,8 +229,12 @@ a:active {
   margin: 0 30px;
 }
 
+#dowebok .section.part5 .fp-tableCell {
+  padding-top: 6%;
+}
+
 #dowebok .section.part5 .outlet_container {
-  height: 672px;
+  height: 84%;
   display: flex;
   justify-content: flex-end;
 }
@@ -238,6 +242,10 @@ a:active {
 #dowebok .section.part5 .outlet_container img {
   height: 100%;
   margin-right: 10px;
+}
+
+#dowebok .section.part5 .outlet_container img.half {
+  margin-right: 0;
 }
 
 #dowebok .section.part6 {
