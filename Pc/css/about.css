@@ -1,0 +1,39 @@
+article {
+  padding: 0 210px;
+}
+
+article .block {
+  display: flex;
+  margin-top: 67px;
+  margin-bottom: 80px;
+}
+
+article .block img {
+  width: 436px;
+  height: 230px;
+}
+
+article .block p {
+  background-color: #fff;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #656565;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  width: 743px;
+  height: 230px;
+  padding: 0 74px 0 52px;
+  box-sizing: border-box;
+}
+
+section.store p {
+  text-align: center;
+  width: 570px;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #656565;
+  line-height: 31px;
+}

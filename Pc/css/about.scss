@@ -1,0 +1,43 @@
+article {
+    padding: 0 210px;
+
+    .block {
+        display: flex;
+        margin-top: 67px;
+        margin-bottom: 80px;
+
+        img {
+            width: 436px;
+            height: 230px;
+        }
+
+        p {
+            background-color: #fff;
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: rgba(101, 101, 101, 1);
+            line-height: 34px;
+            display: flex;
+            align-items: center;
+            width: 743px;
+            height: 230px;
+            padding: 0 74px 0 52px;
+            box-sizing: border-box;
+        }
+    }
+
+
+}
+
+section.store {
+    p {
+        text-align: center;
+        width: 570px;
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: rgba(101, 101, 101, 1);
+        line-height: 31px;
+    }
+}

@@ -23,6 +23,7 @@ $red-color: #C82D21;
             background: url(../images/banner-bg2x.png) 100%;
             position: relative;
             z-index: -2;
+
             img.circle {
                 position: absolute;
                 right: 50px;
@@ -42,10 +43,12 @@ $red-color: #C82D21;
                     align-items: flex-start;
                     justify-content: center;
                     padding-left: 15%;
+
                     img.word1 {
                         margin-top: 115px;
                         margin-right: -51px;
                     }
+
                     img.word2 {
                         margin-top: 35px;
                         margin-right: 71px;
@@ -266,24 +269,21 @@ $red-color: #C82D21;
 
         &.part6 {
             background: url(../images/foot-bg2x.png) 100%;
+            background-color: #272824;
             background-position: bottom;
 
-            .fp-tableCell {
-                box-sizing: border-box;
+            .main {
+                height: 70%;
+                max-height: 566px;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                padding-left: 5%;
-
                 .introduce-container {
-                    width: 430px;
-                    height: 566px;
-                    // flex: 1;
+                    width: 28%;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    padding-right: 50px;
-                    box-sizing: border-box;
+                    padding-right: 4%;
 
                     img {
                         width: 36px;
@@ -341,17 +341,16 @@ $red-color: #C82D21;
                 }
 
                 .apply-container {
-                    // width: 60%;
-                    width: 685px;
-                    height: 566px;
+                    width: 42.8%;
+                    height: 100%;
                     background: #C72D21;
                     box-sizing: border-box;
-                    padding: 80px 80px 60px 85px;
-
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 84px;
                     .word-tip {
                         display: flex;
                         align-items: center;
-                        margin-bottom: 34px;
 
                         h4 {
                             font-size: 28px;
@@ -372,31 +371,34 @@ $red-color: #C82D21;
                     form {
                         display: flex;
                         flex-direction: column;
-
+                        justify-content: space-between;
+                        height: 62.5%;
                         .form-group {
-                            margin-bottom: 16px;
-
+                            flex: 1;
+                            margin-bottom: 15px;
                             .form-control {
                                 border: none;
                                 background: rgba(247, 247, 247, 1);
                                 border-radius: 0;
                                 font-size: 14px;
-                            }
-
-                            input.form-control {
                                 height: 50px;
                             }
 
+                            input.form-control {
+                                // height: 50px;
+                            }
+
                             textarea.form-control {
-                                height: 160px;
+                                // height: 160px;
                                 resize: none;
                             }
 
                             .form-control:focus {
-                                // border-color: transparent; 
-                                // outline: 0;  
                                 box-shadow: 0 0 0 0;
                             }
+                        }
+                        .form-textarea{
+                            flex: 2;
                         }
 
                         button.submit {
@@ -462,109 +464,8 @@ $red-color: #C82D21;
     }
 }
 
-.menu-container {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 0 30px;
-    @include center;
-    justify-content: space-between;
-    z-index: 99;
-
-    .logo_block {
-        display: flex;
-        align-items: center;
-
-        .logo {
-            margin-right: 12px;
-        }
-    }
-
-    .menu-block {
-        @include center;
-        cursor: pointer;
-
-        .icon-menu {
-            font-size: 26px;
-            margin-left: 15px;
-            color: #fff;
-        }
-    }
-
-    a {
-        font-size: 18px;
-        font-family: PingFang SC;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-        margin-right: 25px;
-
-        &:hover {
-            color: #fff;
-        }
-    }
-}
-
-
-
 .menuAnchor {
     background: transparent;
-}
-
-.menuList {
-    width: 100%;
-    // height: 600px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    z-index: 100;
-    padding: 0 30px;
-    background-color: #CBCBCB;
-    display: none;
-
-    .oper {
-        width: 100%;
-        height: 70px;
-        line-height: 70px;
-        text-align: right;
-
-        img {
-            vertical-align: middle;
-            cursor: pointer;
-        }
-
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        padding-left: 80%;
-        width: 100%;
-        height: 440px;
-        margin-bottom: 80px;
-        justify-content: space-around;
-
-        li {
-            // line-height: 24px;
-
-            a {
-                font-size: 24px;
-                font-family: PingFang SC;
-                font-weight: 400;
-                color: rgba(51, 51, 51, 1);
-            }
-        }
-    }
-
-    img.bg {
-        position: absolute;
-        // width: 38%;
-        left: 0;
-        bottom: 25px;
-    }
 }
 
 @-webkit-keyframes breathe {
