@@ -76,15 +76,62 @@ $(function () {
         },
     })
 
-    $('.menuBtn').click(function(){
-        console.log(123);
+    $('.menuBtn').click(function () {
+        console.log(123)
         $('.menuList').slideDown(500)
     })
 
-    $('.menuList .oper span').click(function(){
+    $('.menuList .oper span').click(function () {
         $('.menuList').slideUp(300)
     })
     setInterval(function () {
         $.fn.fullpage.moveSlideRight()
     }, 3000)
+
+    /* swiper配置 */
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        // grabCursor: true,//设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+			el: '.product_pagination',
+			bulletClass : 'awy_bullet',
+            clickable: true,
+            renderBullet: function (index, className) {
+                switch (index) {
+                    case 0:
+                        text = '沙拉'
+                        break
+                    case 1:
+                        text = '三明治'
+                        break
+                    case 2:
+                        text = '谷物饭'
+                        break
+                    case 3:
+                        text = '意面'
+                        break
+                    case 4:
+                        text = '帕尼尼'
+                        break
+                    case 5:
+                        text = '小食'
+                        break
+                    case 6:
+                        text = '饮品'
+                        break
+                }
+                return '<span class="' + className + '">' + text + '</span>'
+            },
+        },
+        loop: true,
+    })
 })
