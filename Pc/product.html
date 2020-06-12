@@ -44,86 +44,296 @@
 
         </div>
 
-        <ul id="nav" class="nav justify-content-center">
+        <ul id="nav" class="nav justify-content-center nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="#">沙拉</a>
+                <a class="nav-link" href="#salad" data-toggle="tab">沙拉</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">三明治</a>
+                <a class="nav-link" href="#sandwich" data-toggle="tab">三明治</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">帕尼尼</a>
+                <a class="nav-link" href="#panini" data-toggle="tab">帕尼尼</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">谷物饭</a>
+                <a class="nav-link" href="#grain" data-toggle="tab">谷物饭</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">意面</a>
+                <a class="nav-link" href="#spaghetti" data-toggle="tab">意面</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">小食</a>
+                <a class="nav-link" href="#snack" data-toggle="tab">小食</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">饮品</a>
+                <a class="nav-link" href="#drink" data-toggle="tab">饮品</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">酱汁</a>
+                <a class="nav-link" href="#sauce" data-toggle="tab">酱汁</a>
             </li>
         </ul>
 
-        <hr/>
+        <div class="tab-content">
 
-        <h3 id="nav_title">沙拉</h3>
+            <div class="tab-pane active product" id="salad">
+                <h3 class="nav_title">沙拉</h3>
 
-        <div class="jumbotron">
+                <hr/>
 
-            <div class="row" id="jumbotron_row">
+                <div class="jumbotron_row row">
 
-                <div class="card food food-left">
-                    <a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <img src="./images/aaa.png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h6 class="card-title">秘制黑椒牛肉增肌餐</h6>
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
                     </div>
-                </div>
 
-                <div class="card food food-mid">
-                    <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <img src="./images/aaa.png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h6 class="card-title">奥尔良鸡扒健康餐</h6>
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
                     </div>
-                </div>
 
-                <div class="card food food-mid">
-                    <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <img src="./images/aaa.png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h6 class="card-title">奥尔良鸡扒健康餐</h6>
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
                     </div>
-                </div>
 
-                <div class="card food food-right">
-                    <a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <img src="./images/aaa.png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h6 class="card-title">奥尔良鸡扒健康餐</h6>
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
                     </div>
-                </div>
 
-                <div class="detail collapse" id="collapseExample1">
-                    <h4 style="margin-top: 40px;margin-bottom: 40px;color: red;">秘制黑椒牛肉增肌餐</h4>
+            </div>
+
+                <div class="detail_row">
+                    <div class="detail collapse" id="collapseExample1">
+                    <h4>秘制黑椒牛肉增肌餐</h4>
 
                     <table class="table table-bordered table-striped">
 
                         <thead>
 
+                        <tr>
+                            <th class="th" style="background-color: white;" scope="col">食材详细</th>
+                            <th scope="col">克数</th>
+                            <th scope="col">类别号</th>
+                            <th scope="col">数据库类别</th>
+                            <th scope="col">蛋白质</th>
+                            <th scope="col">谷薯</th>
+                            <th scope="col">蔬菜</th>
+                            <th scope="col">水果</th>
+                            <th scope="col">热量(大卡)</th>
+                            <th scope="col">碳水化合物(克)</th>
+                            <th scope="col">脂肪(克)</th>
+                            <th scope="col">蛋白质(克)</th>
+                        </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td class="line_f"></td>
+                            <td class="line_f list_w">310</td>
+                            <td class="line_f">0</td>
+                            <td class="line_f list_w">0</td>
+                            <td class="line_f">2</td>
+                            <td class="line_f list_w">2</td>
+                            <td class="line_f">3</td>
+                            <td class="line_f list_w">1</td>
+                            <td class="line_f">195.10</td>
+                            <td class="line_f list_w">23.61</td>
+                            <td class="line_f">4.52</td>
+                            <td class="line_f list_w">14.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>生菜基底</td>
+                            <td class="list_f">90</td>
+                            <td>V</td>
+                            <td class="list_f">蔬菜</td>
+                            <td></td>
+                            <td class="list_f"></td>
+                            <td>1</td>
+                            <td class="list_f"></td>
+                            <td>14.40</td>
+                            <td class="list_f">1.35</td>
+                            <td>0.36</td>
+                            <td class="list_f">1.26</td>
+                        </tr>
+
+                        <tr>
+                            <td>玉米粒</td>
+                            <td class="list_w">25</td>
+                            <td>G</td>
+                            <td class="list_w">谷薯</td>
+                            <td></td>
+                            <td class="list_w">1</td>
+                            <td></td>
+                            <td class="list_w"></td>
+                            <td>28.00</td>
+                            <td class="list_w">4.98</td>
+                            <td>0.30</td>
+                            <td class="list_w">1.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>圣女果</td>
+                            <td class="list_f">30</td>
+                            <td>V</td>
+                            <td class="list_f">蔬菜</td>
+                            <td></td>
+                            <td class="list_f"></td>
+                            <td>1</td>
+                            <td class="list_f"></td>
+                            <td>6.60</td>
+                            <td class="list_f">1.20</td>
+                            <td>0.06</td>
+                            <td class="list_f">0.30</td>
+                        </tr>
+
+                        <tr>
+                            <td>鸡蛋</td>
+                            <td class="list_w">30</td>
+                            <td>P</td>
+                            <td class="list_w">蛋白质</td>
+                            <td>1</td>
+                            <td class="list_w"></td>
+                            <td></td>
+                            <td class="list_w"></td>
+                            <td>43.20</td>
+                            <td class="list_w">0.84</td>
+                            <td>2.64</td>
+                            <td class="list_w">3.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>西兰花</td>
+                            <td class="list_f">25</td>
+                            <td>V</td>
+                            <td class="list_f">蔬菜</td>
+                            <td></td>
+                            <td class="list_f"></td>
+                            <td>1</td>
+                            <td class="list_f"></td>
+                            <td>9.00</td>
+                            <td class="list_f">0.58</td>
+                            <td>0.15</td>
+                            <td class="list_f">1.03</td>
+                        </tr>
+
+                        <tr>
+                            <td>甜橙</td>
+                            <td class="list_w">40</td>
+                            <td>F</td>
+                            <td class="list_w">水果</td>
+                            <td></td>
+                            <td class="list_w"></td>
+                            <td></td>
+                            <td class="list_w">1</td>
+                            <td>19.20</td>
+                            <td class="list_w">4.20</td>
+                            <td>0.08</td>
+                            <td class="list_w">0.32</td>
+                        </tr>
+
+                        <tr>
+                            <td>红薯</td>
+                            <td class="list_f">40</td>
+                            <td>G</td>
+                            <td class="list_f">谷薯</td>
+                            <td></td>
+                            <td class="list_f">1</td>
+                            <td></td>
+                            <td class="list_f"></td>
+                            <td>40.80</td>
+                            <td class="list_f">9.24</td>
+                            <td>0.08</td>
+                            <td class="list_f">1.44</td>
+                        </tr>
+
+                        <tr>
+                            <td>牛肉</td>
+                            <td class="list_w">30</td>
+                            <td>P</td>
+                            <td class="list_w">蛋白质</td>
+                            <td>1</td>
+                            <td class="list_w"></td>
+                            <td></td>
+                            <td class="list_w"></td>
+                            <td>33.90</td>
+                            <td class="list_w">1.13</td>
+                            <td>0.85</td>
+                            <td class="list_w">5.66</td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                </div>
+            </div>
+
+            <div class="tab-pane product" id="sandwich">
+                <h3 class="nav_title">三明治</h3>
+
+                <hr/>
+
+                <div class="jumbotron_row row">
+
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="./images/aaa.png" alt="...">
+                        </a>
+
+                        <p class="text-center">秘制黑椒牛肉增肌餐</p>
+                    </div>
+
+                </div>
+
+                <div class="detail_row">
+                    <div class="detail collapse" id="collapseExample5">
+                        <h4>秘制黑椒牛肉增肌餐</h4>
+
+                        <table class="table table-bordered table-striped">
+
+                            <thead>
+
                             <tr>
-                                <th scope="col">食材详细</th>
+                                <th class="th" style="background-color: white;" scope="col">食材详细</th>
                                 <th scope="col">克数</th>
                                 <th scope="col">类别号</th>
                                 <th scope="col">数据库类别</th>
@@ -137,157 +347,158 @@
                                 <th scope="col">蛋白质(克)</th>
                             </tr>
 
-                        </thead>
+                            </thead>
 
-                        <tbody>
+                            <tbody>
 
                             <tr>
-                                <th scope="row"></th>
-                                <td class="col-firsst">310</td>
-                                <td class="col-firsst">0</td>
-                                <td class="col-firsst">0</td>
-                                <td class="col-firsst">2</td>
-                                <td class="col-firsst">2</td>
-                                <td class="col-firsst">3</td>
-                                <td class="col-firsst">1</td>
-                                <td class="col-firsst">195.10</td>
-                                <td class="col-firsst">23.61</td>
-                                <td class="col-firsst">4.52</td>
-                                <td class="col-firsst">14.00</td>
+                                <td class="line_f"></td>
+                                <td class="line_f list_w">310</td>
+                                <td class="line_f">0</td>
+                                <td class="line_f list_w">0</td>
+                                <td class="line_f">2</td>
+                                <td class="line_f list_w">2</td>
+                                <td class="line_f">3</td>
+                                <td class="line_f list_w">1</td>
+                                <td class="line_f">195.10</td>
+                                <td class="line_f list_w">23.61</td>
+                                <td class="line_f">4.52</td>
+                                <td class="line_f list_w">14.00</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">生菜基底</th>
-                                <td>90</td>
+                                <td>生菜基底</td>
+                                <td class="list_f">90</td>
                                 <td>V</td>
-                                <td>蔬菜</td>
+                                <td class="list_f">蔬菜</td>
                                 <td></td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>1</td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>14.40</td>
-                                <td>1.35</td>
+                                <td class="list_f">1.35</td>
                                 <td>0.36</td>
-                                <td>1.26</td>
+                                <td class="list_f">1.26</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">玉米粒</th>
-                                <td>25</td>
+                                <td>玉米粒</td>
+                                <td class="list_w">25</td>
                                 <td>G</td>
-                                <td>谷薯</td>
+                                <td class="list_w">谷薯</td>
                                 <td></td>
-                                <td>1</td>
+                                <td class="list_w">1</td>
                                 <td></td>
-                                <td></td>
+                                <td class="list_w"></td>
                                 <td>28.00</td>
-                                <td>4.98</td>
+                                <td class="list_w">4.98</td>
                                 <td>0.30</td>
-                                <td>1.00</td>
+                                <td class="list_w">1.00</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">圣女果</th>
-                                <td>30</td>
+                                <td>圣女果</td>
+                                <td class="list_f">30</td>
                                 <td>V</td>
-                                <td>蔬菜</td>
+                                <td class="list_f">蔬菜</td>
                                 <td></td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>1</td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>6.60</td>
-                                <td>1.20</td>
+                                <td class="list_f">1.20</td>
                                 <td>0.06</td>
-                                <td>0.30</td>
+                                <td class="list_f">0.30</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">鸡蛋</th>
-                                <td>30</td>
+                                <td>鸡蛋</td>
+                                <td class="list_w">30</td>
                                 <td>P</td>
-                                <td>蛋白质</td>
+                                <td class="list_w">蛋白质</td>
                                 <td>1</td>
+                                <td class="list_w"></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="list_w"></td>
                                 <td>43.20</td>
-                                <td>0.84</td>
+                                <td class="list_w">0.84</td>
                                 <td>2.64</td>
-                                <td>3.99</td>
+                                <td class="list_w">3.99</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">西兰花</th>
-                                <td>25</td>
+                                <td>西兰花</td>
+                                <td class="list_f">25</td>
                                 <td>V</td>
-                                <td>蔬菜</td>
+                                <td class="list_f">蔬菜</td>
                                 <td></td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>1</td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>9.00</td>
-                                <td>0.58</td>
+                                <td class="list_f">0.58</td>
                                 <td>0.15</td>
-                                <td>1.03</td>
+                                <td class="list_f">1.03</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">甜橙</th>
-                                <td>40</td>
+                                <td>甜橙</td>
+                                <td class="list_w">40</td>
                                 <td>F</td>
-                                <td>水果</td>
+                                <td class="list_w">水果</td>
                                 <td></td>
+                                <td class="list_w"></td>
                                 <td></td>
-                                <td></td>
-                                <td>1</td>
+                                <td class="list_w">1</td>
                                 <td>19.20</td>
-                                <td>4.20</td>
+                                <td class="list_w">4.20</td>
                                 <td>0.08</td>
-                                <td>0.32</td>
+                                <td class="list_w">0.32</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">红薯</th>
-                                <td>40</td>
+                                <td>红薯</td>
+                                <td class="list_f">40</td>
                                 <td>G</td>
-                                <td>谷薯</td>
+                                <td class="list_f">谷薯</td>
                                 <td></td>
-                                <td>1</td>
+                                <td class="list_f">1</td>
                                 <td></td>
-                                <td></td>
+                                <td class="list_f"></td>
                                 <td>40.80</td>
-                                <td>9.24</td>
+                                <td class="list_f">9.24</td>
                                 <td>0.08</td>
-                                <td>1.44</td>
+                                <td class="list_f">1.44</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">牛肉</th>
-                                <td>30</td>
+                                <td>牛肉</td>
+                                <td class="list_w">30</td>
                                 <td>P</td>
-                                <td>蛋白质</td>
+                                <td class="list_w">蛋白质</td>
                                 <td>1</td>
+                                <td class="list_w"></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="list_w"></td>
                                 <td>33.90</td>
-                                <td>1.13</td>
+                                <td class="list_w">1.13</td>
                                 <td>0.85</td>
-                                <td>5.66</td>
+                                <td class="list_w">5.66</td>
                             </tr>
 
-                        </tbody>
+                            </tbody>
 
-                    </table>
-
+                        </table>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="footer media row">
 
-            <div class="fb col-md-5 align-self-center">
+        <div class="footer row">
+
+            <div class="fb col-md-6 align-self-center">
 
                     <table class="table">
 
@@ -347,21 +558,21 @@
 
             <div class="fb col-md-4 align-self-center">
                 <div class="address">
-                    <span class="icon-location2 icon"></span>
+                    <img src="./images/address-icon.png">
                     <div class="item">
                         <h4>公司地址</h4>
                         <p>湖北省武汉市洪山区雄楚大街高架桥与雄楚大道 交叉口东南150米光谷万科中心11层1105室</p>
                     </div>
                 </div>
-                <div class="tel">
-                    <span class="icon-phone icon"></span>
+                <div class="address">
+                    <img src="./images/tel-icon.png">
                     <div class="item">
                         <h4>联系电话</h4>
                         <p>400-1818-093</p>
                     </div>
                 </div>
-                <div class="work-time">
-                    <span class="icon-clock icon"></span>
+                <div class="address">
+                    <img src="./images/time-icon.png">
                     <div class="item">
                         <h4>工作时间</h4>
                         <p>周一-周日 9：00AM--9：00PM </p>
@@ -369,8 +580,8 @@
                 </div>
             </div>
 
-            <div class="col-md-3 align-self-center">
-                <img class="text-center" src="./images/QRcode.png" alt="">
+            <div class="col-md-2 align-self-center text-center">
+                <img src="./images/QRcode.png" alt="">
             </div>
 
         </div>
