@@ -170,9 +170,6 @@ header {
   line-height: 340px;
   background-color: salmon;
   text-align: center;
-}
-
-header h2 {
   font-size: 42px;
   font-family: PingFang SC;
   font-weight: 500;
@@ -193,6 +190,7 @@ article h2 {
   font-weight: 500;
   color: #333333;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 article h3 {
@@ -200,6 +198,7 @@ article h3 {
   font-family: PingFang SC;
   font-weight: 500;
   color: #333333;
+  text-align: center;
 }
 
 section {
@@ -225,7 +224,97 @@ section h3 {
 }
 
 footer {
+  box-sizing: border-box;
   height: 315px;
+  min-width: 1180px;
+  padding-top: 45px;
+  padding-bottom: 35px;
   background: url(../images/foot-bg.png) 100%;
   background-color: #272824;
+  display: flex;
+}
+
+footer .contact_container {
+  width: 48%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 5%;
+  justify-content: center;
+}
+
+footer .contact_container ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .contact_container ul li {
+  color: #fff;
+}
+
+footer .contact_container ul li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .contact_container ul li:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+footer .company_container {
+  width: 32%;
+  height: 100%;
+  border: 1px solid #646464;
+  border-top: none;
+  border-bottom: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+footer .company_container .address {
+  display: flex;
+}
+
+footer .company_container .tel {
+  display: flex;
+}
+
+footer .company_container .work-time {
+  display: flex;
+}
+
+footer .company_container img {
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+}
+
+footer .company_container h4 {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: white;
+  line-height: 34px;
+}
+
+footer .company_container p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 400;
+}
+
+footer .code {
+  width: 20%;
+  text-align: center;
+}
+
+footer .code img {
+  width: 180px;
+  height: 180px;
 }

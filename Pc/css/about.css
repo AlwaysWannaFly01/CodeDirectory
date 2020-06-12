@@ -1,11 +1,8 @@
-article {
-  padding: 0 210px;
-}
-
 article .block {
   display: flex;
   margin-top: 67px;
   margin-bottom: 80px;
+  min-width: 1180px;
 }
 
 article .block img {
@@ -26,6 +23,7 @@ article .block p {
   height: 230px;
   padding: 0 74px 0 52px;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 section.store p {
