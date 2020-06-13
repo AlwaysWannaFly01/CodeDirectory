@@ -8,6 +8,24 @@ $red-color: #C82D21;
 }
 
 // @include center
+body {
+    display: none;
+}
+
+/* .bg {
+    background: url(./loading-bg.jpg) no-repeat center;
+    background-size: cover;
+} */
+
+img.loading_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
 #dowebok {
     .section {
         text-align: center;
@@ -277,6 +295,7 @@ $red-color: #C82D21;
                 max-height: 566px;
                 display: flex;
                 justify-content: center;
+
                 .introduce-container {
                     width: 28%;
                     height: 100%;
@@ -348,6 +367,7 @@ $red-color: #C82D21;
                     display: flex;
                     flex-direction: column;
                     padding: 0 84px;
+
                     .word-tip {
                         display: flex;
                         align-items: center;
@@ -373,9 +393,11 @@ $red-color: #C82D21;
                         flex-direction: column;
                         justify-content: space-between;
                         height: 62.5%;
+
                         .form-group {
                             flex: 1;
                             margin-bottom: 15px;
+
                             .form-control {
                                 border: none;
                                 background: rgba(247, 247, 247, 1);
@@ -397,7 +419,8 @@ $red-color: #C82D21;
                                 box-shadow: 0 0 0 0;
                             }
                         }
-                        .form-textarea{
+
+                        .form-textarea {
                             flex: 2;
                         }
 

@@ -1,35 +1,101 @@
-article {
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin float-left() {
+    float: left;
+}
+
+@mixin float-right() {
+    float: right;
+}
+
+.article_container {
+    box-sizing: border-box;
+    padding-top: 136px;
+    padding-bottom: 80px;
+
     .block {
         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        width: 1180px;
+        margin: 0 auto;
         margin-top: 67px;
-        margin-bottom: 80px;
-		min-width: 1180px;
+
         img {
             width: 436px;
             height: 230px;
         }
 
-        p {
-            background-color: #fff;
-            font-size: 14px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(101, 101, 101, 1);
-            line-height: 34px;
-            display: flex;
-            align-items: center;
+        table {
             width: 743px;
             height: 230px;
-            padding: 0 74px 0 52px;
-			box-sizing: border-box;
-			margin-bottom: 0;
+            box-sizing: border-box;
+
+            td.align-middle {
+                padding: 0 74px 0 52px;
+                font-size: 14px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: rgba(101, 101, 101, 1);
+                line-height: 34px;
+            }
         }
     }
 
+}
+
+.company_course {
+    box-sizing: border-box;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
 
 }
 
-section.store {
+.honor_display {
+    box-sizing: border-box;
+    padding-top: 98px;
+}
+
+.store_display {
+    padding-top: 50px;
+    padding-bottom: 48px;
+    .block {
+        width: 984px;
+        margin: 0 auto;
+        @include clearfix;
+
+        img {
+            width: 483px;
+            height: 362px;
+        }
+
+        & :nth-child(2n-1) {
+            @include float-left
+        }
+
+        & :nth-child(2n) {
+            @include float-right
+        }
+
+        img {
+            width: 483px;
+            height: 362px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+
+.store_place {
+    padding: 55px 0;
     p {
         text-align: center;
         width: 570px;
@@ -38,5 +104,6 @@ section.store {
         font-weight: 400;
         color: rgba(101, 101, 101, 1);
         line-height: 31px;
+        margin: 0 auto;
     }
 }

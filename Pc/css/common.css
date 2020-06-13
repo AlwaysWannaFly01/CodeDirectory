@@ -99,13 +99,7 @@ a:active {
   cursor: pointer;
 }
 
-.menu-container .menu-block .icon-menu {
-  font-size: 26px;
-  margin-left: 15px;
-  color: #fff;
-}
-
-.menu-container a {
+.menu-container .menu-block a {
   font-size: 18px;
   font-family: PingFang SC;
   font-weight: 400;
@@ -113,7 +107,7 @@ a:active {
   margin-right: 25px;
 }
 
-.menu-container a:hover {
+.menu-container .menu-block a:hover {
   color: #fff;
 }
 
@@ -164,7 +158,7 @@ a:active {
   bottom: 25px;
 }
 
-header {
+div.header_container {
   margin-top: 70px;
   height: 340px;
   line-height: 340px;
@@ -176,15 +170,7 @@ header {
   color: white;
 }
 
-article {
-  height: 575px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-article h2 {
+.shared h2 {
   font-size: 28px;
   font-family: PingFang SC;
   font-weight: 500;
@@ -193,7 +179,7 @@ article h2 {
   text-align: center;
 }
 
-article h3 {
+.shared h3 {
   font-size: 24px;
   font-family: PingFang SC;
   font-weight: 500;
@@ -201,29 +187,7 @@ article h3 {
   text-align: center;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section h2 {
-  font-size: 28px;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #333333;
-  margin-bottom: 16px;
-}
-
-section h3 {
-  font-size: 24px;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #333333;
-}
-
-footer {
+div.footer {
   box-sizing: border-box;
   height: 315px;
   min-width: 1180px;
@@ -234,7 +198,7 @@ footer {
   display: flex;
 }
 
-footer .contact_container {
+div.footer .contact_container {
   width: 48%;
   height: 100%;
   box-sizing: border-box;
@@ -243,7 +207,7 @@ footer .contact_container {
   justify-content: center;
 }
 
-footer .contact_container ul {
+div.footer .contact_container ul {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -251,50 +215,55 @@ footer .contact_container ul {
   align-items: center;
 }
 
-footer .contact_container ul li {
+div.footer .contact_container ul li {
   color: #fff;
 }
 
-footer .contact_container ul li a {
+div.footer .contact_container ul li a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-footer .contact_container ul li:nth-child(1) {
+div.footer .contact_container ul li:nth-child(1) {
   margin-bottom: 10px;
 }
 
-footer .company_container {
+div.footer .company_container {
   width: 32%;
   height: 100%;
   border: 1px solid #646464;
   border-top: none;
   border-bottom: none;
   box-sizing: border-box;
+}
+
+div.footer .company_container .piece {
+  margin: 0 auto;
+  max-width: 360px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 20px;
 }
 
-footer .company_container .address {
+div.footer .company_container .piece .address {
   display: flex;
 }
 
-footer .company_container .tel {
+div.footer .company_container .piece .tel {
   display: flex;
 }
 
-footer .company_container .work-time {
+div.footer .company_container .piece .work-time {
   display: flex;
 }
 
-footer .company_container img {
+div.footer .company_container .piece img {
   width: 36px;
   height: 36px;
   margin-right: 16px;
 }
 
-footer .company_container h4 {
+div.footer .company_container .piece h4 {
   font-size: 16px;
   font-family: PingFang SC;
   font-weight: 600;
@@ -302,19 +271,23 @@ footer .company_container h4 {
   line-height: 34px;
 }
 
-footer .company_container p {
+div.footer .company_container .piece p {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 14px;
   font-family: PingFang SC;
   font-weight: 400;
+  margin-bottom: 0;
+  max-width: 290px;
 }
 
-footer .code {
+div.footer .code {
   width: 20%;
   text-align: center;
+  padding-top: 25px;
 }
 
-footer .code img {
+div.footer .code img {
   width: 180px;
   height: 180px;
+  display: inline-block;
 }

@@ -67,6 +67,23 @@ a:active {
   color: #fff;
 }
 
+body {
+  display: none;
+}
+
+/* .bg {
+    background: url(./loading-bg.jpg) no-repeat center;
+    background-size: cover;
+} */
+img.loading_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
 #dowebok .section {
   text-align: center;
   font: 50px "Microsoft Yahei";
