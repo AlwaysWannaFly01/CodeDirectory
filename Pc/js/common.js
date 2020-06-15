@@ -12,7 +12,7 @@ $(function () {
 
     var list = {
 
-        salad= {
+        salad: {
             'id': 'nav-salad',
             'href': '#nav-salad',
             'data': {
