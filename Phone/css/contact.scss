@@ -1,0 +1,73 @@
+@import 'main';
+$fontSize:37.5;
+$highlight-color: #F90;
+
+@function px2rem($px) {
+    @return ($px / $fontSize)+rem;
+}
+
+.content_container {
+    padding: px2rem(37.5) px2rem(32.5) px2rem(28) px2rem(30);
+
+    h2 {
+        font-size: px2rem(16);
+        border-left: px2rem(2.5) solid #C82D21;
+        padding-left: px2rem(5.5);
+        font-weight: 500;
+        color: #272824;
+        margin-bottom: px2rem(29.5);
+    }
+
+    .item {
+        h3 {
+            font-size: px2rem(16);
+            margin-bottom: px2rem(12.5);
+            color: #373737;
+            padding-left: px2rem(5);
+        }
+
+        form {
+            width: 100%;
+            .form-group{
+                height: px2rem(25);
+                margin-bottom: px2rem(8.5);
+                .form-control{
+                    border-radius: 0;
+                    font-size: 14px;
+                    padding:px2rem(7) px2rem(10);
+                    height: px2rem(25);
+                    border: none;
+                    background: rgba(247, 247, 247, 1);
+                }
+                .form-control:focus {
+                    box-shadow: 0 0 0 0;
+                }
+                textarea.form-control {
+                    // height: 160px;
+                    resize: none;
+                }
+            }
+            .form-textarea {
+                height: px2rem(80);
+                .form-control {
+                    height: px2rem(80);
+                }
+
+            }
+            button.submit {
+                height: px2rem(35);
+                width: px2rem(100);
+                border-radius: 0;
+                background-color: #C82D21;
+                font-size: 14px;
+                font-family: PingFang SC;
+                font-weight: 500;
+                color: rgba(247, 247, 247, 1);
+                padding: 0;
+                &:focus {
+                    box-shadow: 0 0 0 0;
+                }
+            }
+        }
+    }
+}
