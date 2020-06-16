@@ -17,4 +17,19 @@ $(function () {
         })
     });
     $('#footer').load('./footer.html');
+
+    $('.menuBtn').click(function () {
+        $('.mask').show()
+        $('.menuList').toggleClass('side')
+    });
+
+    $('.mask').click(function () {
+        $('.mask').hide()
+        $('.menuList').toggleClass('side')
+    })
+
+    $('.menuList .oper img').click(function () {
+        $('.mask').hide()
+        $('.menuList').toggleClass('side')
+    })
 });
