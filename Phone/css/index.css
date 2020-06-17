@@ -94,6 +94,8 @@
   height: 7.32rem;
   padding-top: 1.10667rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .process-container h2 {
@@ -106,6 +108,39 @@
 .process-container h3 {
   font-size: 14px;
   color: #828282;
+}
+
+.process-container .process-slideshow {
+  width: 100%;
+  flex: 1;
+  padding-top: 0.8rem;
+}
+
+.process-container .process-slideshow .process-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.32rem;
+}
+
+.process-container .process-slideshow .process-item img {
+  width: 1.22667rem;
+  height: 1.22667rem;
+}
+
+.process-container .process-slideshow .process-item h4 {
+  font-weight: 500;
+  font-family: PingFang SC;
+  font-size: 12px;
+  color: #333;
+  margin: 0.32rem 0;
+}
+
+.process-container .process-slideshow .process-item span {
+  font-size: 10px;
+  color: #333;
+  line-height: 1.2;
 }
 
 .store-container {
@@ -233,8 +268,13 @@
 }
 
 .foot-container .item img {
-  width: 0.56rem;
-  height: 0.56rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+}
+
+.foot-container .item img.addr {
+  width: 0.50667rem;
+  height: 0.48rem;
 }
 
 .foot-container .item div {

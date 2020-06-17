@@ -5,4 +5,15 @@ $(document).ready(function () {
     //     autoScrolling: true,
     //     scrollHorizontally: true
     // });
-});
+
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+    })
+})

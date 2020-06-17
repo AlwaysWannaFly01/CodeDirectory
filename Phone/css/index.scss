@@ -104,6 +104,8 @@ $highlight-color: #F90;
     height: px2rem(274.5);
     padding-top: px2rem(41.5);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         font-size: 16px;
@@ -116,6 +118,39 @@ $highlight-color: #F90;
         font-size: 14px;
         color: #828282;
     }
+
+    .process-slideshow {
+        width: 100%;
+        flex: 1;
+        padding-top: px2rem(30);
+        // padding-bottom: px2rem(67);
+
+        .process-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+			align-items: center;
+			padding: 0 px2rem(12);
+            img {
+                width: px2rem(46);
+                height: px2rem(46);
+            }
+
+            h4 {
+                font-weight: 500;
+				font-family: PingFang SC;
+				font-size: 12px;
+				color: #333;
+				margin: px2rem(12) 0;
+            }
+
+            span {
+				font-size: 10px;
+				color: #333;
+				line-height: 1.2;
+			}
+        }
+    }
 }
 
 .store-container {
@@ -127,8 +162,8 @@ $highlight-color: #F90;
 
     h2 {
         font-size: 16px;
-		margin-bottom: px2rem(8);
-		font-weight: 500;
+        margin-bottom: px2rem(8);
+        font-weight: 500;
         font-family: PingFang SC;
     }
 
@@ -228,9 +263,9 @@ $highlight-color: #F90;
 
 .foot-container {
     height: px2rem(385.5);
-	background: url('../images/foot-bg.png');
-	background-color: #272723;
-	background-size: auto px2rem(375.5);
+    background: url('../images/foot-bg.png');
+    background-color: #272723;
+    background-size: auto px2rem(375.5);
     box-sizing: border-box;
     margin-top: px2rem(-70);
     position: relative;
@@ -245,8 +280,13 @@ $highlight-color: #F90;
         margin-bottom: px2rem(18);
 
         img {
-            width: px2rem(21);
-            height: px2rem(21);
+            width: px2rem(20);
+            height: px2rem(20);
+
+            &.addr {
+                width: px2rem(19);
+                height: px2rem(18);
+            }
         }
 
         div {
@@ -272,11 +312,12 @@ $highlight-color: #F90;
             width: px2rem(93.8);
             text-align: center;
             margin-bottom: 0;
-			margin-left: px2rem(5);
+            margin-left: px2rem(5);
+
             img {
                 width: px2rem(93.8);
                 height: px2rem(93.8);
-				margin-bottom: px2rem(5);
+                margin-bottom: px2rem(5);
             }
 
             span {
