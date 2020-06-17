@@ -50,7 +50,8 @@ $highlight-color: #F90;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 0 px2rem(30);
+  padding-left: px2rem(15.5);
+  padding-right: px2rem(18.5);
   @include center;
   justify-content: space-between;
   z-index: 99;
@@ -59,22 +60,25 @@ $highlight-color: #F90;
   .logo_block {
     display: flex;
     align-items: center;
-
+	img{
+		height: px2rem(18);
+	}
     .logo {
-      margin-right: 12px;
+      margin-right: px2rem(12);
     }
   }
 
   .menu-block {
     @include center;
     cursor: pointer;
-
+	height: px2rem(18);
+	align-items: center;
     a {
-      font-size: 18px;
+      font-size: 14px;
       font-family: PingFang SC;
       font-weight: 400;
       color: rgba(255, 255, 255, 1);
-      margin-right: 25px;
+      margin-right: px2rem(6);
 
       &:hover {
         color: #fff;
@@ -82,8 +86,10 @@ $highlight-color: #F90;
     }
 
     .menuBtn {
+		height: px2rem(16);
       img {
-        height: px2rem(18);
+		height: px2rem(16);
+		
       }
     }
   }
@@ -112,10 +118,11 @@ $highlight-color: #F90;
     height: px2rem(50);
     line-height: px2rem(50);
     text-align: right;
-
+	padding-right: px2rem(18.5);
     img {
       vertical-align: middle;
-      cursor: pointer;
+	  cursor: pointer;
+	  height: px2rem(16);
     }
 
   }
@@ -135,9 +142,12 @@ $highlight-color: #F90;
       a {
         font-size: 12px;
         font-family: PingFang SC;
-        font-weight: 400;
+        font-weight: 500;
         color: rgba(51, 51, 51, 1);
-        text-decoration: none;
+		text-decoration: none;
+		&:hover{
+			color: #C82D21;
+		}
       }
     }
   }

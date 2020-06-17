@@ -91,7 +91,8 @@ html, body {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 0 0.8rem;
+  padding-left: 0.41333rem;
+  padding-right: 0.49333rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,8 +106,12 @@ html, body {
   align-items: center;
 }
 
+.menu-container .logo_block img {
+  height: 0.48rem;
+}
+
 .menu-container .logo_block .logo {
-  margin-right: 12px;
+  margin-right: 0.32rem;
 }
 
 .menu-container .menu-block {
@@ -114,22 +119,28 @@ html, body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  height: 0.48rem;
+  align-items: center;
 }
 
 .menu-container .menu-block a {
-  font-size: 18px;
+  font-size: 14px;
   font-family: PingFang SC;
   font-weight: 400;
   color: white;
-  margin-right: 25px;
+  margin-right: 0.16rem;
 }
 
 .menu-container .menu-block a:hover {
   color: #fff;
 }
 
+.menu-container .menu-block .menuBtn {
+  height: 0.42667rem;
+}
+
 .menu-container .menu-block .menuBtn img {
-  height: 0.48rem;
+  height: 0.42667rem;
 }
 
 .menuList {
@@ -154,11 +165,13 @@ html, body {
   height: 1.33333rem;
   line-height: 1.33333rem;
   text-align: right;
+  padding-right: 0.49333rem;
 }
 
 .menuList .oper img {
   vertical-align: middle;
   cursor: pointer;
+  height: 0.42667rem;
 }
 
 .menuList ul {
@@ -178,9 +191,13 @@ html, body {
 .menuList ul li a {
   font-size: 12px;
   font-family: PingFang SC;
-  font-weight: 400;
+  font-weight: 500;
   color: #333333;
   text-decoration: none;
+}
+
+.menuList ul li a:hover {
+  color: #C82D21;
 }
 
 .menuList img.bg {
