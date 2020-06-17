@@ -99,6 +99,7 @@ html, body {
   justify-content: space-between;
   z-index: 99;
   background-color: #c82d21;
+  box-shadow: 0 1px 0 0 #c82d21;
 }
 
 .menu-container .logo_block {

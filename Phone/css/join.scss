@@ -1,0 +1,134 @@
+$fontSize:37.5;
+$highlight-color: #F90;
+
+@function px2rem($px) {
+    @return ($px / $fontSize)+rem;
+}
+
+.join-notice {
+    box-sizing: border-box;
+    padding: px2rem(20);
+    padding-top: px2rem(35);
+
+    h2,
+    h3 {
+        text-align: center;
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        margin-top: px2rem(18);
+        font-size: 14px;
+    }
+
+    section {
+        margin-top: px2rem(28);
+        width: px2rem(335.3);
+        box-sizing: border-box;
+        padding: px2rem(14) px2rem(14) px2rem(33) px2rem(12);
+        font-size: 12px;
+        font-family: PingFang SC;
+        color: rgba(101, 101, 101, 1);
+        line-height: 16px;
+        border: px2rem(1) solid rgba(49, 49, 49, .26);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.join-process {
+    height: px2rem(352);
+    padding: px2rem(35.5) 0 px2rem(0);
+    box-sizing: border-box;
+
+    h2 {
+        font-size: 16px;
+        text-align: center;
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: px2rem(28.5);
+
+        li {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            padding: 0 px2rem(3);
+            margin-bottom: px2rem(48);
+            // height: px2rem(86);
+
+            h4 {
+                font-size: 14px;
+                font-family: PingFang SC;
+                font-weight: 500;
+                color: rgba(51, 51, 51, 1);
+                margin-top:px2rem(6);
+                margin-bottom: px2rem(12);
+
+                &.tel {
+                    margin-top: px2rem(-6);
+                    margin-bottom: px2rem(5);
+                }
+
+                &.talk {
+                    // margin-top: px2rem(18);
+                    // margin-bottom: px2rem(5);
+                }
+
+                &.address {
+                    // margin-top: px2rem(12);
+                }
+
+                &.paper {}
+
+                &.service {}
+
+                &.sell {}
+            }
+
+            span {
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            img {
+                width: px2rem(52);
+                &.tel {
+                    width: px2rem(58);
+                    margin-top: px2rem(-10);
+                }
+
+                &.talk {
+                }
+
+                &.address {
+                }
+
+                &.paper {
+                }
+
+                &.service {
+                }
+
+                &.sell {
+
+                }
+            }
+        }
+    }
+}
