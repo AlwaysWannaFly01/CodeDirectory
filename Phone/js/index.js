@@ -6,14 +6,27 @@ $(document).ready(function () {
     //     scrollHorizontally: true
     // });
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.process-swiper-container', {
         autoplay: {
-            delay: 3000,
+            delay: 2000,
             stopOnLastSlide: false,
             disableOnInteraction: false,
         },
         slidesPerView: 3,
         centeredSlides: true,
         centeredSlidesBounds: true,
+	})
+	
+	var swiper = new Swiper('.store-swiper-container', {
+        autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+		},
+		loop: true,
+		slidesPerView: 'auto',
+        centeredSlides: true,
+		// centeredSlidesBounds: true,
+		spaceBetween: 30,
     })
 })

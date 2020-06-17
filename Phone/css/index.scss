@@ -10,7 +10,7 @@ $highlight-color: #F90;
     width: 100%;
     height: px2rem(562);
     margin-top: px2rem(50);
-    background: url(../images/p-banner-bg.png);
+    background: url(../images/p-banner-bg.png) no-repeat;
     background-size: px2rem(375) px2rem(561.5);
 }
 
@@ -129,8 +129,9 @@ $highlight-color: #F90;
             display: flex;
             flex-direction: column;
             justify-content: center;
-			align-items: center;
-			padding: 0 px2rem(12);
+            align-items: center;
+            padding: 0 px2rem(12);
+
             img {
                 width: px2rem(46);
                 height: px2rem(46);
@@ -138,17 +139,17 @@ $highlight-color: #F90;
 
             h4 {
                 font-weight: 500;
-				font-family: PingFang SC;
-				font-size: 12px;
-				color: #333;
-				margin: px2rem(12) 0;
+                font-family: PingFang SC;
+                font-size: 12px;
+                color: #333;
+                margin: px2rem(12) 0;
             }
 
             span {
-				font-size: 10px;
-				color: #333;
-				line-height: 1.2;
-			}
+                font-size: 10px;
+                color: #333;
+                line-height: 1.2;
+            }
         }
     }
 }
@@ -172,9 +173,15 @@ $highlight-color: #F90;
         color: #828282;
     }
 
-    .block {
+    .store-slideshow {
         height: px2rem(232);
         margin-top: px2rem(36);
+
+        .store-item {
+            img {
+                height: px2rem(232);
+            }
+        }
     }
 }
 

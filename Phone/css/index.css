@@ -2,7 +2,7 @@
   width: 100%;
   height: 14.98667rem;
   margin-top: 1.33333rem;
-  background: url(../images/p-banner-bg.png);
+  background: url(../images/p-banner-bg.png) no-repeat;
   background-size: 10rem 14.97333rem;
 }
 
@@ -163,9 +163,13 @@
   color: #828282;
 }
 
-.store-container .block {
+.store-container .store-slideshow {
   height: 6.18667rem;
   margin-top: 0.96rem;
+}
+
+.store-container .store-slideshow .store-item img {
+  height: 6.18667rem;
 }
 
 .apply-container {
