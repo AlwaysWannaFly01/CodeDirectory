@@ -1,0 +1,124 @@
+$fontSize:37.5;
+$highlight-color: #F90;
+
+@function px2rem($px) {
+    @return ($px / $fontSize)+rem;
+}
+
+.main-block {
+    padding: px2rem(37.5) px2rem(28.5);
+    position: relative;
+    overflow: hidden;
+    // background: url('../images/p-brand-article.png') no-repeat bottom;
+    // background-size: px2rem(143.5) auto ;
+
+    .item {
+        &.job {
+            ul {
+                height: px2rem(50);
+                margin-top: px2rem(25);
+
+                li {
+                    flex: 1;
+                }
+            }
+
+        }
+
+        h2 {
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(51, 51, 51, 1);
+            border-left: px2rem(3) solid #C82D21;
+            padding-left: px2rem(7);
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    &.job1 {
+                        width: px2rem(15);
+                        height: px2rem(30);
+                    }
+
+                    &.job2 {
+                        width: px2rem(23);
+                        height: px2rem(23);
+                        margin-top: px2rem(5);
+                    }
+
+                    &.job3 {
+                        width: px2rem(22);
+                        margin-top: px2rem(6);
+                    }
+
+                    &.job4 {
+                        width: px2rem(25.5);
+                        margin-top: px2rem(4);
+                    }
+                }
+
+                span {
+                    font-size: 11px;
+                    font-family: PingFang SC;
+                    color: rgba(101, 101, 101, 1);
+                }
+            }
+        }
+
+        &.welfare {
+            margin-top: px2rem(46);
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: px2rem(20);
+
+                li {
+                    width: 25%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    height: px2rem(106);
+                    padding-top: px2rem(30);
+                    padding-bottom: px2rem(27.5);
+                    border-right: px2rem(1) solid rgba(229, 229, 229, 1);
+                    border-bottom: px2rem(1) solid rgba(229, 229, 229, 1);
+
+                    &:nth-child(4n) {
+                        border-right: none;
+                    }
+
+                    &:nth-last-child(1),
+                    &:nth-last-child(2),
+                    &:nth-last-child(3),
+                    &:nth-last-child(4) {
+                        border-bottom: none;
+                    }
+
+                    img {
+                        width: px2rem(23);
+                        height: px2rem(27);
+                    }
+                }
+            }
+        }
+    }
+
+    img.bg {
+        position: absolute;
+        right: 0;
+        top: px2rem(183.5);
+        width: px2rem(143.5);
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,105 @@
+.main-block {
+  padding: 1rem 0.76rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-block .item.job ul {
+  height: 1.33333rem;
+  margin-top: 0.66667rem;
+}
+
+.main-block .item.job ul li {
+  flex: 1;
+}
+
+.main-block .item h2 {
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  border-left: 0.08rem solid #C82D21;
+  padding-left: 0.18667rem;
+}
+
+.main-block .item ul {
+  display: flex;
+}
+
+.main-block .item ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-block .item ul li img.job1 {
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.main-block .item ul li img.job2 {
+  width: 0.61333rem;
+  height: 0.61333rem;
+  margin-top: 0.13333rem;
+}
+
+.main-block .item ul li img.job3 {
+  width: 0.58667rem;
+  margin-top: 0.16rem;
+}
+
+.main-block .item ul li img.job4 {
+  width: 0.68rem;
+  margin-top: 0.10667rem;
+}
+
+.main-block .item ul li span {
+  font-size: 11px;
+  font-family: PingFang SC;
+  color: #656565;
+}
+
+.main-block .item.welfare {
+  margin-top: 1.22667rem;
+}
+
+.main-block .item.welfare ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.53333rem;
+}
+
+.main-block .item.welfare ul li {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 2.82667rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.73333rem;
+  border-right: 0.02667rem solid #e5e5e5;
+  border-bottom: 0.02667rem solid #e5e5e5;
+}
+
+.main-block .item.welfare ul li:nth-child(4n) {
+  border-right: none;
+}
+
+.main-block .item.welfare ul li:nth-last-child(1), .main-block .item.welfare ul li:nth-last-child(2), .main-block .item.welfare ul li:nth-last-child(3), .main-block .item.welfare ul li:nth-last-child(4) {
+  border-bottom: none;
+}
+
+.main-block .item.welfare ul li img {
+  width: 0.61333rem;
+  height: 0.72rem;
+}
+
+.main-block img.bg {
+  position: absolute;
+  right: 0;
+  top: 4.89333rem;
+  width: 3.82667rem;
+  opacity: 0.6;
+}

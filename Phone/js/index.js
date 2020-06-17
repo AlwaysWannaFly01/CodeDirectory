@@ -5,8 +5,18 @@ $(document).ready(function () {
     //     autoScrolling: true,
     //     scrollHorizontally: true
     // });
+    var bannerSwiper = new Swiper('.banner-swiper-container', {
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        loop: true,
+    })
 
-    var swiper = new Swiper('.process-swiper-container', {
+    var processSwiper = new Swiper('.process-swiper-container', {
         autoplay: {
             delay: 2000,
             stopOnLastSlide: false,
@@ -15,18 +25,18 @@ $(document).ready(function () {
         slidesPerView: 3,
         centeredSlides: true,
         centeredSlidesBounds: true,
-	})
-	
-	var swiper = new Swiper('.store-swiper-container', {
+    })
+
+    var storeSwiper = new Swiper('.store-swiper-container', {
         autoplay: {
             delay: 5000,
             stopOnLastSlide: false,
             disableOnInteraction: false,
-		},
-		loop: true,
-		slidesPerView: 'auto',
+        },
+        loop: true,
+        slidesPerView: 'auto',
         centeredSlides: true,
-		// centeredSlidesBounds: true,
-		spaceBetween: 30,
+        // centeredSlidesBounds: true,
+        spaceBetween: 30,
     })
 })

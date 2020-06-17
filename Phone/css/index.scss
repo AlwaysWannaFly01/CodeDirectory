@@ -7,11 +7,36 @@ $highlight-color: #F90;
 
 
 .banner-container {
-    width: 100%;
+    // width: 100%;
     height: px2rem(562);
     margin-top: px2rem(50);
     background: url(../images/p-banner-bg.png) no-repeat;
     background-size: px2rem(375) px2rem(561.5);
+
+    .banner-slideshow {
+
+        .banner-swiper-container {
+            .banner-item {
+                text-align: center;
+                img {
+
+                    &.w {
+                        width: px2rem(227);
+                        height: px2rem(182);
+                        margin-top: px2rem(40);
+                    }
+
+                    &.p {
+                        width: px2rem(310);
+                        &.banner2-p{
+                            margin-top: px2rem(80);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 .product-introduce {
@@ -82,7 +107,7 @@ $highlight-color: #F90;
         }
 
         div.line {
-            height: px2rem(6);
+            height: px2rem(10);
             border: 1px solid #C82D21;
             border-left: 0;
             border-right: 0;

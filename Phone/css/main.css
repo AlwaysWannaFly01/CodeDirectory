@@ -203,7 +203,8 @@ html, body {
 .menuList img.bg {
   position: absolute;
   left: 0;
-  bottom: 25px;
+  bottom: 0;
+  width: 5.62667rem;
 }
 
 div.mask {
@@ -220,12 +221,18 @@ div.mask {
 div.footer {
   width: 10rem;
   height: 5.70667rem;
-  background-color: salmon;
+  background: url("../images/foot-bg.png");
+  background-color: #272723;
+  background-size: auto 10.01333rem;
 }
 
 div.header_container {
   margin-top: 1.33333rem;
   height: 4.53333rem;
-  background-color: seagreen;
   text-align: center;
+}
+
+div.header_container img {
+  height: 4.53333rem;
+  width: 100%;
 }

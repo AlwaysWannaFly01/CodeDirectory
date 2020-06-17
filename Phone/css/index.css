@@ -1,9 +1,26 @@
 .banner-container {
-  width: 100%;
   height: 14.98667rem;
   margin-top: 1.33333rem;
   background: url(../images/p-banner-bg.png) no-repeat;
   background-size: 10rem 14.97333rem;
+}
+
+.banner-container .banner-slideshow .banner-swiper-container .banner-item {
+  text-align: center;
+}
+
+.banner-container .banner-slideshow .banner-swiper-container .banner-item img.w {
+  width: 6.05333rem;
+  height: 4.85333rem;
+  margin-top: 1.06667rem;
+}
+
+.banner-container .banner-slideshow .banner-swiper-container .banner-item img.p {
+  width: 8.26667rem;
+}
+
+.banner-container .banner-slideshow .banner-swiper-container .banner-item img.p.banner2-p {
+  margin-top: 2.13333rem;
 }
 
 .product-introduce {
@@ -75,7 +92,7 @@
 }
 
 .brand-introduce .article div.line {
-  height: 0.16rem;
+  height: 0.26667rem;
   border: 1px solid #C82D21;
   border-left: 0;
   border-right: 0;
