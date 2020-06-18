@@ -225,6 +225,54 @@ div.footer {
   background: url("../images/foot-bg.png");
   background-color: #272723;
   background-size: auto 10.01333rem;
+  padding: 0.68rem 0.52rem 0.6rem 0.70667rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.footer h3 {
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 600;
+  margin-bottom: 0.24rem;
+  color: #fff;
+}
+
+div.footer h4 {
+  font-size: 12px;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+div.footer .info-block {
+  margin-top: 1.04rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.footer .info-block .slogan {
+  display: flex;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 0.24rem;
+}
+
+div.footer .info-block .slogan .qr,
+div.footer .info-block .slogan .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.footer .info-block .slogan img {
+  width: 1.92933rem;
+  height: 1.92933rem;
+  margin-bottom: 0.25333rem;
+}
+
+div.footer .info-block .slogan .qr {
+  margin-right: 0.61333rem;
 }
 
 div.header_container {

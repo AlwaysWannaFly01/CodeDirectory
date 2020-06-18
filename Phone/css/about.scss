@@ -1,0 +1,38 @@
+$fontSize:37.5;
+$highlight-color: #F90;
+
+@function px2rem($px) {
+    @return ($px / $fontSize)+rem;
+}
+
+.main-container {
+    margin-top: px2rem(50);
+    padding-top: px2rem(170);
+
+    .brand-container {
+        padding: px2rem(33) 0 px2rem(25) 0;
+        text-align: center;
+
+        h2,
+        h3 {
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(51, 51, 51, 1);
+        }
+
+        h2 {
+            font-size: 14px;
+
+        }
+
+        h3 {
+            font-size: 12px;
+		}
+		.slogan{
+			margin: 0 auto;
+			width: px2rem(219);
+			height: px2rem(115);
+			background-color: #C82D21;
+		}
+    }
+}

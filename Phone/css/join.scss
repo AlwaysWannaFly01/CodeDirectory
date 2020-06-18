@@ -44,7 +44,6 @@ $highlight-color: #F90;
 }
 
 .join-process {
-    height: px2rem(352);
     padding: px2rem(35.5) 0 px2rem(0);
     box-sizing: border-box;
 
@@ -68,16 +67,16 @@ $highlight-color: #F90;
             align-items: center;
             text-align: center;
             justify-content: space-around;
-            padding: 0 px2rem(3);
+            padding: 0 px2rem(4);
             margin-bottom: px2rem(48);
             // height: px2rem(86);
 
             h4 {
-                font-size: 14px;
+                font-size: 12px;
                 font-family: PingFang SC;
                 font-weight: 500;
                 color: rgba(51, 51, 51, 1);
-                margin-top:px2rem(6);
+                margin-top: px2rem(6);
                 margin-bottom: px2rem(12);
 
                 &.tel {
@@ -102,33 +101,66 @@ $highlight-color: #F90;
             }
 
             span {
-                font-size: 10px;
+                font-size: 10px !important;
                 line-height: 12px;
             }
 
             img {
                 width: px2rem(52);
+
                 &.tel {
                     width: px2rem(58);
                     margin-top: px2rem(-10);
                 }
 
-                &.talk {
-                }
+                &.talk {}
 
-                &.address {
-                }
+                &.address {}
 
-                &.paper {
-                }
+                &.paper {}
 
-                &.service {
-                }
+                &.service {}
 
-                &.sell {
-
-                }
+                &.sell {}
             }
+        }
+    }
+}
+
+.support-container {
+    padding-top: px2rem(42);
+
+    h2 {
+        font-size: 16px;
+        text-align: center;
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: px2rem(38.5);
+
+        li {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 px2rem(2);
+			margin-bottom: px2rem(48);
+			div{
+				width: px2rem(86);
+				height: px2rem(75);
+				background-color: salmon;
+				margin-bottom: px2rem(21.5);
+			}
+			p{
+				font-size: 10px;
+				padding: 0 px2rem(10);
+			}
         }
     }
 }
