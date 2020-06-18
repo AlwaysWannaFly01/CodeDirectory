@@ -48,14 +48,14 @@
                     'img': './images/salad/01.jpg',
                     'data': [
                         ['秘制黑椒牛肉增肌餐', 310, 0, 0, 2, 2, 3, 1, 195.10, 23.61, 4.52, 14.00],
-                        ['生菜基底', 90, 'V', '蔬菜', 0, 0, 1, 0, 14.40, 1.35, 0.36, 1.26],
-                        ['玉米粒', 25, 'G', '谷薯', 0, 1, 0, 0, 28.00, 4.98, 0.30, 1.00],
-                        ['圣女果', 30, 'V', '蔬菜', 0, 0, 1, 0, 6.60, 1.20, 0.06, 0.30],
-                        ['鸡蛋', 30, 'P', '蛋白质', 1, 0, 0, 0, 43.20, 0.84, 2.64, 3.99],
-                        ['西兰花', 25, 'V', '蔬菜', 0, 0, 1, 0, 9.00, 0.68, 0.15, 1.03],
-                        ['甜橙', 40, 'F', '水果', 0, 0, 0, 1, 19.20, 4.20, 0.08, 0.32],
-                        ['红薯', 40, 'G', '谷薯', 0, 1, 0, 0, 40.80, 9.24, 0.08, 0.44],
-                        ['牛肉', 30, 'P', '蛋白质', 1, 0, 0, 0, 33.90, 1.13, 0.85, 5.66]
+                        ['生菜基底', 90, 'V', '蔬菜', null, null, 1, null, 14.40, 1.35, 0.36, 1.26],
+                        ['玉米粒', 25, 'G', '谷薯', null, 1, null, null, 28.00, 4.98, 0.30, 1.00],
+                        ['圣女果', 30, 'V', '蔬菜', null, null, 1, null, 6.60, 1.20, 0.06, 0.30],
+                        ['鸡蛋', 30, 'P', '蛋白质', 1, null, null, null, 43.20, 0.84, 2.64, 3.99],
+                        ['西兰花', 25, 'V', '蔬菜', null, null, 1, null, 9.00, 0.68, 0.15, 1.03],
+                        ['甜橙', 40, 'F', '水果', null, null, null, 1, 19.20, 4.20, 0.08, 0.32],
+                        ['红薯', 40, 'G', '谷薯', null, 1, null, null, 40.80, 9.24, 0.08, 0.44],
+                        ['牛肉', 30, 'P', '蛋白质', 1, null, null, null, 33.90, 1.13, 0.85, 5.66]
                     ]
                 },
                 1 : {
@@ -971,6 +971,7 @@
 
         $.each( v.data, function ( i, j ){
 
+            //图片列表
             var pill_li = '<li class="nav-item">' +
                                 '<a class="nav-link food_item" data-toggle="pill" href="'+ j.href +'" aria-selected="false">' +
                                     '<div class="piece_item">' +
@@ -979,10 +980,52 @@
                                 '</a>' +
                             '</li>';
 
-            var pill_div = '<div class="table_item tab-pane fade" id="'+ j.id +'">' +
+            //热量列表
+            var pill_div = '';
+
+            if( j.data.length ){
+
+                //thead
+                var table_th = '<th>食材详细</th><th>克数</th><th>类别号</th><th>数据库类别</th><th>蛋白质</th><th>谷薯</th><th>蔬菜</th><th>水果</th><th>热量(大卡)</th><th>碳水化合物(克)</th><th>脂肪(克)</th><th>蛋白质(克)</th>';
+
+                //tbody
+                var table_td = '';
+
+                for( var l = 0; l < j.data.length; l++ ){
+
+                    table_td += '<tr>';
+
+                    for( var n = 0; n < j.data[l].length; n++ ){
+
+                        if( ( l != 0  || n != 0 ) && j.data[l][n] != null ){
+
+                            table_td += '<td';
+
+                            table_td += l == 0 ? ' style="color:red;"' : '';
+
+                            table_td += '>';
+
+                            table_td += n > 7 ? j.data[l][n].toFixed(2) : j.data[l][n];
+
+                            table_td += '</td>';
+
+                        }else{
+                            table_td += '<td></td>';
+                        }
+                    }
+
+                    table_td += '</tr>';
+
+                }
+
+                var pill_tab = '<table class="table table-striped"><thead><tr style="background-color: white;">' + table_th + '</tr></thead><tbody>' + table_td + '</tbody></table>';
+
+                pill_div = '<div class="table_item tab-pane fade" id="'+ j.id +'">' +
                                 '<h4>'+ j.name +'</h4>' +
-                                '<section>11111</section>' +
+                                '<section>' + pill_tab + '</section>' +
                             '</div>';
+            }
+
 
             if( i % 4 == 0 ){
 
