@@ -7,32 +7,201 @@ $highlight-color: #F90;
 
 .main-container {
     margin-top: px2rem(50);
-    padding-top: px2rem(170);
+
+    // padding-top: px2rem(170);
+    .top-banner {
+        height: px2rem(170);
+
+        img {
+            height: px2rem(170);
+            width: 100%;
+        }
+    }
 
     .brand-container {
         padding: px2rem(33) 0 px2rem(25) 0;
         text-align: center;
+        background: url('../images/p-about-banner2.png') no-repeat;
+        background-size: auto px2rem(368);
 
         h2,
         h3 {
             font-family: PingFang SC;
             font-weight: 500;
             color: rgba(51, 51, 51, 1);
+            text-align: center;
         }
 
         h2 {
             font-size: 14px;
-
         }
 
         h3 {
             font-size: 12px;
-		}
-		.slogan{
-			margin: 0 auto;
-			width: px2rem(219);
-			height: px2rem(115);
-			background-color: #C82D21;
-		}
+            margin-top: px2rem(9);
+            margin-bottom: px2rem(23);
+        }
+
+        .slogan {
+            margin: 0 auto;
+            width: px2rem(219);
+            height: px2rem(115);
+            background-color: #C82D21;
+
+            img {
+                margin-top: px2rem(26);
+                width: px2rem(97.5);
+                height: px2rem(63.5);
+            }
+        }
+
+        .detail {
+            margin: 0 auto;
+            width: px2rem(219);
+            padding: px2rem(15) px2rem(8);
+            font-size: 12px;
+            line-height: 14px;
+            font-family: PingFang SC;
+            color: #656565;
+            text-align: left;
+            background-color: #fff;
+        }
+    }
+}
+
+.company-container {
+    padding-top: px2rem(34.5);
+    padding-left: px2rem(46.5);
+    padding-right: px2rem(68);
+
+    h2,
+    h3 {
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-top: px2rem(11);
+        margin-bottom: px2rem(58.5);
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.honor-container {
+    padding: px2rem(35.5) px2rem(13.5) px2rem(42);
+    background-color: rgba(247, 247, 247, 1);
+
+    h2,
+    h3 {
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-top: px2rem(11);
+        margin-bottom: px2rem(28);
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.store-container {
+    padding: px2rem(30.5) px2rem(14) px2rem(40);
+
+    h2,
+    h3 {
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-top: px2rem(9);
+        margin-bottom: px2rem(32);
+    }
+
+    .store-block {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            width: px2rem(170.5);
+            height: px2rem(128);
+            margin-bottom: px2rem(6);
+
+            &.r6 {
+                margin-right: px2rem(6);
+            }
+        }
+    }
+}
+
+.store-location {
+    padding-top: px2rem(37.5);
+    // background-color: rgba(247, 247, 247, 1);
+    // background: url('../images/map/bg.png') no-repeat center;
+    // background-size: cover;
+    // background-position-y: px2rem(30);
+
+    h2,
+    h3 {
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-top: px2rem(9);
+        margin-bottom: px2rem(32);
+    }
+
+    .store-slideshow {
+        height: px2rem(214);
+        background: url('../images/map/bg.png') no-repeat center;
+        background-size: cover;
+        background-position-y: px2rem(30);
+        width: 100%;
+
+        .store-swiper-container {
+            .store-item {
+
+                // width: px2rem(154);
+                img {
+                    width: px2rem(154);
+                    // height: px2rem(94.5);
+                }
+            }
+        }
     }
 }
