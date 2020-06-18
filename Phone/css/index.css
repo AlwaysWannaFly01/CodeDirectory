@@ -1,7 +1,7 @@
 .banner-container {
   height: 14.98667rem;
   margin-top: 1.33333rem;
-  background: url(../images/p-banner-bg.png) no-repeat;
+  background: url(../images/p-banner-bg.png) no-repeat center;
   background-size: 10rem 14.97333rem;
 }
 
