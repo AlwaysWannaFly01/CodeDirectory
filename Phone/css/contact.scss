@@ -65,7 +65,7 @@ $highlight-color: #F90;
                 width: px2rem(100);
                 border-radius: 0;
                 background-color: #C82D21;
-                font-size: 14px;
+                font-size: 12px;
                 font-family: PingFang SC;
                 font-weight: 500;
                 color: rgba(247, 247, 247, 1);
@@ -80,7 +80,6 @@ $highlight-color: #F90;
 
     .address {
         display: flex;
-        margin-top: px2rem(38);
         justify-content: space-between;
 
         .info {
@@ -149,6 +148,40 @@ $highlight-color: #F90;
             img {
                 width: px2rem(57.5);
                 height: px2rem(57.5);
+            }
+        }
+
+    }
+
+    .change.item {
+        display: flex;
+        margin-top: px2rem(38);
+        margin-bottom: px2rem(32.5);
+        img {
+            width: px2rem(15);
+            height: px2rem(15);
+
+            &.addr {
+                width: px2rem(13.5);
+                height: px2rem(15.5);
+            }
+        }
+
+        div {
+            margin-left: px2rem(11);
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 14px;
+                color: #2E2E2E;
+                margin-bottom: px2rem(5);
+                font-weight: 500;
+            }
+
+            span {
+                font-size: 12px;
+                color: #2E2E2E;
             }
         }
 

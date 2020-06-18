@@ -12,10 +12,12 @@
 }
 
 .main-container .brand-container {
-  padding: 0.88rem 0 0.66667rem 0;
+  padding-top: 0.88rem;
+  padding-bottom: 0.66667rem;
   text-align: center;
   background: url("../images/p-about-banner2.png") no-repeat;
-  background-size: auto 9.81333rem;
+  background-size: auto 10.34667rem;
+  background-position-x: -0.13333rem;
 }
 
 .main-container .brand-container h2,
@@ -65,6 +67,9 @@
   padding-top: 0.92rem;
   padding-left: 1.24rem;
   padding-right: 1.81333rem;
+  padding-bottom: 1.81333rem;
+  background: url("../images/p-history-bg.png") no-repeat;
+  background-position: bottom;
 }
 
 .company-container h2,
@@ -155,6 +160,9 @@
 
 .store-location {
   padding-top: 1rem;
+  background: url("../images/map/p-map-bg.png") no-repeat center;
+  background-size: 100%;
+  background-position-y: 0.26667rem;
 }
 
 .store-location h2,
@@ -177,12 +185,9 @@
 
 .store-location .store-slideshow {
   height: 5.70667rem;
-  background: url("../images/map/bg.png") no-repeat center;
-  background-size: cover;
-  background-position-y: 0.8rem;
   width: 100%;
 }
 
 .store-location .store-slideshow .store-swiper-container .store-item img {
-  width: 4.10667rem;
+  width: 4.53333rem;
 }

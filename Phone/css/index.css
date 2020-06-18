@@ -1,3 +1,22 @@
+img.loading_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+img.loading_transparent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 4.28rem;
+  height: 2.54667rem;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
 .banner-container {
   height: 14.98667rem;
   margin-top: 1.33333rem;
@@ -42,6 +61,20 @@
   font-size: 14px;
   color: #828282;
   font-family: PingFang SC;
+  margin-bottom: 0.98667rem;
+}
+
+.product-introduce .product-slideshow {
+  padding: 0 0.33333rem;
+}
+
+.product-introduce .product-slideshow .product-swiper-container {
+  width: 100%;
+}
+
+.product-introduce .product-slideshow .product-swiper-container .swiper-slide {
+  width: 4.86667rem;
+  height: 6.53333rem;
 }
 
 .brand-introduce {
@@ -166,6 +199,7 @@
   padding-top: 1.09333rem;
   text-align: center;
   background-color: #F7F7F7;
+  overflow: hidden;
 }
 
 .store-container h2 {
@@ -183,10 +217,17 @@
 .store-container .store-slideshow {
   height: 6.18667rem;
   margin-top: 0.96rem;
+  margin-left: 0.9rem;
 }
 
-.store-container .store-slideshow .store-item img {
+.store-container .store-slideshow .store-swiper-container {
   height: 6.18667rem;
+  width: 8.16rem;
+}
+
+.store-container .store-slideshow .store-swiper-container .store-item img {
+  height: 6.18667rem;
+  width: 8.16rem;
 }
 
 .apply-container {

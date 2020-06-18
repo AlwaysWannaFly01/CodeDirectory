@@ -178,11 +178,12 @@ html, body {
 .menuList ul {
   display: flex;
   flex-direction: column;
-  width: 1.70667rem;
   height: 7.41333rem;
+  padding-left: 1.97333rem;
   margin: 0 auto;
   justify-content: space-around;
   text-align: left;
+  margin-top: 0.53333rem;
 }
 
 .menuList ul li {
@@ -190,7 +191,7 @@ html, body {
 }
 
 .menuList ul li a {
-  font-size: 12px;
+  font-size: 14px;
   font-family: PingFang SC;
   font-weight: 500;
   color: #333333;

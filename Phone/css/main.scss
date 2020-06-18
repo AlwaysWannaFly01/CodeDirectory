@@ -136,17 +136,17 @@ $highlight-color: #F90;
     ul {
         display: flex;
         flex-direction: column;
-        width: px2rem(64);
         height: px2rem(278);
+        padding-left: px2rem(74);
         margin: 0 auto;
         justify-content: space-around;
         text-align: left;
-
+        margin-top: px2rem(20);
         li {
             list-style: none;
 
             a {
-                font-size: 12px;
+                font-size: 14px;
                 font-family: PingFang SC;
                 font-weight: 500;
                 color: rgba(51, 51, 51, 1);

@@ -41,17 +41,17 @@
 .main-block .item ul li img.job2 {
   width: 0.61333rem;
   height: 0.61333rem;
-  margin-top: 0.13333rem;
+  margin-top: 0.08rem;
 }
 
 .main-block .item ul li img.job3 {
   width: 0.58667rem;
-  margin-top: 0.16rem;
+  margin-top: 0.10667rem;
 }
 
 .main-block .item ul li img.job4 {
   width: 0.68rem;
-  margin-top: 0.10667rem;
+  margin-top: 0.05333rem;
 }
 
 .main-block .item ul li span {
@@ -94,6 +94,11 @@
 .main-block .item.welfare ul li img {
   width: 0.61333rem;
   height: 0.72rem;
+}
+
+.main-block .item.welfare ul li img.welfare6 {
+  width: 0.69333rem;
+  height: 0.74667rem;
 }
 
 .main-block img.bg {

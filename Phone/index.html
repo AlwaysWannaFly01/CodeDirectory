@@ -5,20 +5,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-	<title>Document</title>
-	<!-- <link rel="stylesheet" href="./css/jquery.fullPage.css"> -->
+	<title>首页</title>
 	<link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./css/swiper/swiper.css">
+	<link rel="stylesheet" href="./css/nprogress/style.css">
+	<link rel="stylesheet" href="./css/nprogress/nprogress.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<script src="./lib/jquery-3.1.1.min.js"></script>
 	<script src="./lib/swiper.js"></script>
-	<!-- <script src="./lib/jquery.fullPage.min.js"></script> -->
+	<script src="./lib/nprogress.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/index.js"></script>
 </head>
 
 <body>
+	<img src="./images/loading-bg-2.png" class="loading_bg">
+    <img src="./images/logo-transparent.png" class="loading_transparent">
 	<div class="menu-container menuAnchor">
 		<div class="logo_block">
 			<img src="./images/logo.png" class="logo">
@@ -63,6 +66,19 @@
 	<div class="product-introduce">
 		<h2>产品介绍</h2>
 		<h3>PRODUCT INTRODUCTION</h3>
+		<div class="product-slideshow">
+			<div class="swiper-container product-swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-1.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-2.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-3.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-4.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-5.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-6.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(./images/swiper/nature-7.jpg)"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="brand-introduce">
 		<div class="logo">
@@ -127,7 +143,7 @@
 		<h2>门店展示</h2>
 		<h3>STORE DISPLAY</h3>
 		<div class="store-slideshow">
-			<div class="swiper-container store-swiper-container">
+			<div class="store-swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide store-item">
 						<img src="./images/store1.png" alt="">

@@ -52,17 +52,17 @@ $highlight-color: #F90;
                     &.job2 {
                         width: px2rem(23);
                         height: px2rem(23);
-                        margin-top: px2rem(5);
+                        margin-top: px2rem(3);
                     }
 
                     &.job3 {
                         width: px2rem(22);
-                        margin-top: px2rem(6);
+                        margin-top: px2rem(4);
                     }
 
                     &.job4 {
                         width: px2rem(25.5);
-                        margin-top: px2rem(4);
+                        margin-top: px2rem(2);
                     }
                 }
 
@@ -108,6 +108,10 @@ $highlight-color: #F90;
                     img {
                         width: px2rem(23);
                         height: px2rem(27);
+                        &.welfare6{
+                            width: px2rem(26);
+                            height: px2rem(28);
+                        }
                     }
                 }
             }

@@ -9,8 +9,6 @@ NProgress.configure({
 });
 
 $(function () {
-
-
     // $('html').addClass('height100')
     $('body').show();
     // $('body').addClass('height100 bg')
@@ -23,7 +21,6 @@ $(function () {
     // })
     // $('body').addClass('height100 bg fade out brief big')
 
-
     NProgress.start();
     setTimeout(function () {
         NProgress.done();
@@ -33,6 +30,8 @@ $(function () {
 
         // }
         $('.loading_bg').hide()
+        $('.loading_transparent').hide()
+
         // $('.aaa').animate({
         //     'opacity': '0'
         // })
@@ -139,5 +138,6 @@ $(function () {
                 slideShadows: true, //是否开启slide阴影
             },
         })
+
     }, 2400);
 })
