@@ -21,12 +21,12 @@ nav.product_container .nav-tabs .nav-item {
   font-size: 24px;
   font-family: PingFang SC;
   font-weight: 500;
-  color: #313131;
+  color: #323232;
 }
 
 nav.product_container .nav-tabs .nav-link.active {
-  background-color: #f7f7f7;
-  color: #C82D21;
+  background-color: #C82E22;
+  color: #FFFFFF;
 }
 
 div.tab_product_container {
@@ -92,9 +92,8 @@ div.tab_product_container .tab-pane .picture_piece .nav-item .nav-link.active di
 }
 
 div.tab_product_container .tab-pane .table_container {
-  padding-top: 44px;
   padding-left: 120px;
-  padding-bottom: 27px;
+  background: #EFEFEF;
 }
 
 div.tab_product_container .tab-pane .table_container .tab-pane h4 {
@@ -107,5 +106,10 @@ div.tab_product_container .tab-pane .table_container .tab-pane h4 {
 
 div.tab_product_container .tab-pane .table_container .tab-pane section {
   width: 985px;
-  height: 385px;
+  /*height: 385px;*/
+}
+
+div.tab_product_container .active {
+  padding-top: 44px;
+  padding-bottom: 27px;
 }
