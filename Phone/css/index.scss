@@ -77,19 +77,53 @@ img.loading_transparent {
         font-size: 14px;
         color: #828282;
         font-family: PingFang SC;
-        margin-bottom: px2rem(37);
     }
 
     .product-slideshow {
         padding: 0 px2rem(12.5);
 
-        // height: px2rem(240);
         .product-swiper-container {
             width: 100%;
+            padding-bottom: px2rem(48);
+            padding-top: px2rem(37);
 
             .swiper-slide {
                 width: px2rem(182.5);
                 height: px2rem(245);
+                padding-top: px2rem(12);
+                box-shadow: 0px px2rem(1) px2rem(1)rgba(0, 0, 0, 0.06);
+
+                img {
+                    width: px2rem(152.5);
+                }
+
+                h2,
+                p {
+
+                    font-family: PingFang SC;
+                    text-align: left;
+                    padding-left: px2rem(12);
+                    padding-right: px2rem(10);
+                }
+
+                h2 {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: rgba(51, 51, 51, 1);
+                    margin-bottom: px2rem(10);
+                    margin-top: px2rem(12);
+                }
+
+                p {
+                    font-size: 10px;
+                    color: rgba(101, 101, 101, 1);
+                    line-height: 14px;
+                }
+
+                &.product-slide-active {
+                    box-shadow: 0px px2rem(15) px2rem(63) px2rem(13) rgba(0, 0, 0, 0.08);
+                }
+
             }
         }
     }
@@ -221,6 +255,7 @@ img.loading_transparent {
     text-align: center;
     background-color: #F7F7F7;
     overflow: hidden;
+
     h2 {
         font-size: 16px;
         margin-bottom: px2rem(8);
