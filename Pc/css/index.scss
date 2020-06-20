@@ -36,6 +36,10 @@ img.loading_transparent {
     z-index: 1000;
 }
 
+.menu-container {
+    box-shadow: 0 0 0 0;
+}
+
 #dowebok {
     .section {
         text-align: center;
@@ -382,10 +386,12 @@ img.loading_transparent {
                     flex-direction: column;
                     padding: 0 84px;
                     padding-top: 83px;
+
                     .word-tip {
                         display: flex;
                         align-items: center;
                         margin-bottom: 34px;
+
                         h4 {
                             font-size: 28px;
                             font-family: PingFang SC;

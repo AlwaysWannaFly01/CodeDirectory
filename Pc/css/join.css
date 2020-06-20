@@ -117,7 +117,121 @@
 }
 
 .support_container {
-  height: 575px;
+  height: 690px;
   box-sizing: border-box;
-  padding-top: 38px;
+  padding-top: 84px;
+}
+
+.support_container .block {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 112px;
+  height: 466px;
+}
+
+.support_container .block .line1::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.support_container .block .line2 {
+  transform: translateX(162px) translateY(-80px);
+}
+
+.support_container .block .line2::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.support_container .block .line3 {
+  transform: translateX(325px) translateY(-162px);
+}
+
+.support_container .block .line3::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.support_container .block div.piece {
+  float: left;
+  width: 205px;
+  height: 178px;
+  margin-right: 120px;
+}
+
+.support_container .block div.piece .hexagon {
+  width: 205px;
+  height: 178px;
+  overflow: hidden;
+  transform: rotate(120deg);
+}
+
+.support_container .block div.piece .hexagon_child {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(-60deg);
+}
+
+.support_container .block div.piece .hexagon_child_child {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(-60deg);
+  background-color: #F7B6B2;
+  position: relative;
+  cursor: pointer;
+}
+
+.support_container .block div.piece .hexagon_child_child h4 {
+  font-size: 34px;
+  font-family: PangMenZhengDao;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.support_container .block div.piece .hexagon_child_child p {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.support_container .block div.piece .hexagon_child_child .change {
+  height: 90px;
+  width: 150px;
+  margin-bottom: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-family: PingFang SC;
+  color: white;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.support_container .block div.piece.no-margin-right {
+  margin-right: 0;
+}
+
+.support_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.support_container ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }

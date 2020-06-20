@@ -94,6 +94,10 @@ img.loading_transparent {
   z-index: 1000;
 }
 
+.menu-container {
+  box-shadow: 0 0 0 0;
+}
+
 #dowebok .section {
   text-align: center;
   font: 50px "Microsoft Yahei";

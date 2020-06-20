@@ -81,6 +81,7 @@ a:active {
   justify-content: space-between;
   z-index: 99;
   background-color: #c82d21;
+  box-shadow: 0 1px 0 0 #c82d21;
 }
 
 .menu-container .logo_block {
@@ -161,12 +162,6 @@ a:active {
 div.header_container {
   margin-top: 70px;
   height: 340px;
-  line-height: 340px;
-  text-align: center;
-  font-size: 42px;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: white;
 }
 
 .shared h2 {
@@ -197,19 +192,22 @@ div.header_container {
   margin-bottom: 0;
 }
 
+div#footer {
+  background: url(../images/foot-bg.png) 100%;
+  background-color: #272824;
+}
+
 div.footer {
   box-sizing: border-box;
   height: 315px;
-  min-width: 1180px;
+  width: 1600px;
+  margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 35px;
-  background: url(../images/foot-bg.png) 100%;
-  background-color: #272824;
   display: flex;
 }
 
 div.footer .contact_container {
-  width: 48%;
   height: 100%;
   box-sizing: border-box;
   display: flex;
@@ -221,7 +219,6 @@ div.footer .contact_container ul {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -238,7 +235,6 @@ div.footer .contact_container ul li:nth-child(1) {
 }
 
 div.footer .company_container {
-  width: 32%;
   height: 100%;
   border: 1px solid #646464;
   border-top: none;
@@ -274,30 +270,46 @@ div.footer .company_container .piece img {
 }
 
 div.footer .company_container .piece h4 {
-  font-size: 16px;
+  font-size: 22px;
   font-family: PingFang SC;
   font-weight: 600;
   color: white;
-  line-height: 34px;
+  margin-bottom: 18px;
 }
 
 div.footer .company_container .piece p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 20px;
   font-family: PingFang SC;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
-  max-width: 290px;
 }
 
-div.footer .code {
-  width: 20%;
+div.footer .code h4 {
+  font-size: 22px;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: white;
+}
+
+div.footer .code .block::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+div.footer .code .block p {
+  font-size: 22px;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: white;
+}
+
+div.footer .code .block div {
+  float: left;
   text-align: center;
-  padding-top: 25px;
 }
 
-div.footer .code img {
-  width: 180px;
-  height: 180px;
-  display: inline-block;
+div.footer .code .block .qr img {
+  width: 145px;
 }
