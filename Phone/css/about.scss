@@ -165,10 +165,9 @@ $highlight-color: #F90;
 
 .store-location {
     padding-top: px2rem(37.5);
-    // background-color: rgba(247, 247, 247, 1);
     background: url('../images/map/p-map-bg.png') no-repeat center;
-    background-size: 100%;
-    background-position-y: px2rem(10);
+    background-size: 115%;
+    background-position:bottom;
 
     h2,
     h3 {

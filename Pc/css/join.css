@@ -1,10 +1,26 @@
+.header_container {
+  background: url("../images/4banner.png") center no-repeat;
+  background-size: 100% 340px;
+}
+
 .notice_container {
   padding: 78px 0 68px 0;
+}
+
+.notice_container h3 {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
 }
 
 .notice_container h4 {
   margin-top: 18px;
   margin-bottom: 36px;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
 }
 
 .notice_container .piece {
@@ -31,15 +47,17 @@
 
 .process_container {
   box-sizing: border-box;
-  padding-top: 56px;
-  padding-bottom: 76px;
+  padding-top: 74px;
+  padding-bottom: 97px;
+  background-color: #f7f7f7;
+  position: relative;
 }
 
 .process_container .join_container {
   display: flex;
   flex-wrap: wrap;
   padding: 0 14% 0 17%;
-  margin-top: 50px;
+  margin-top: 76px;
 }
 
 .process_container .join_container .block {
@@ -48,7 +66,7 @@
 }
 
 .process_container .join_container .block.line1 {
-  margin-bottom: 120px;
+  margin-bottom: 105px;
 }
 
 .process_container .join_container .block.line2 {
@@ -89,6 +107,13 @@
   display: flex;
   align-items: center;
   margin: 0 30px;
+}
+
+.process_container img.bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 465px;
 }
 
 .support_container {

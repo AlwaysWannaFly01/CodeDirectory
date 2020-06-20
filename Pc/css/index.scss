@@ -125,8 +125,9 @@ img.loading_transparent {
         }
 
         &.part3 {
-            background: url(../images/part3-bg2x.png) 100%;
-            background-position: bottom;
+            background: url(../images/part3-bg-2.png) center no-repeat;
+            // background-position: bottom;
+            background-size: cover;
 
             .brand {
                 width: 62%;
@@ -277,19 +278,22 @@ img.loading_transparent {
         &.part5 {
             .fp-tableCell {
                 padding-top: 6%;
+                overflow: hidden;
             }
 
-            .outlet_container {
-                height: 84%;
-                display: flex;
-                justify-content: flex-end;
+            .store-slideshow {
+                height: 82%;
+                margin-top: 72px;
+                margin-left: 221px;
 
-                img {
-                    height: 100%;
-                    margin-right: 10px;
+                .store-swiper-container {
+                    // height: px2rem(232);
+                    width: 890px;
 
-                    &.half {
-                        margin-right: 0;
+                    .store-item {
+                        img {
+                            height: 670px;
+                        }
                     }
                 }
             }
@@ -370,18 +374,18 @@ img.loading_transparent {
                 }
 
                 .apply-container {
-                    width: 42.8%;
-                    height: 100%;
+                    width: 685px;
+                    height: 566px;
                     background: #C72D21;
                     box-sizing: border-box;
                     display: flex;
                     flex-direction: column;
                     padding: 0 84px;
-
+                    padding-top: 83px;
                     .word-tip {
                         display: flex;
                         align-items: center;
-
+                        margin-bottom: 34px;
                         h4 {
                             font-size: 28px;
                             font-family: PingFang SC;

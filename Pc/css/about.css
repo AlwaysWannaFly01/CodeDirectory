@@ -1,7 +1,16 @@
+.header_container {
+  background: url("../images/2banner.png") center no-repeat;
+  background-size: 100% 340px;
+}
+
 .article_container {
   box-sizing: border-box;
   padding-top: 136px;
   padding-bottom: 80px;
+  background: url("../images/brand-introduce.png") center no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  background-position-y: -124px;
 }
 
 .article_container .block {
@@ -14,15 +23,24 @@
   margin-top: 67px;
 }
 
-.article_container .block img {
-  width: 436px;
+.article_container .block .img-part {
+  width: 438px;
   height: 230px;
+  background-color: #c82d21;
+  text-align: center;
+  padding: 51px 0;
+}
+
+.article_container .block img {
+  width: 195px;
+  height: 127px;
 }
 
 .article_container .block table {
   width: 743px;
   height: 230px;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .article_container .block table td.align-middle {
@@ -43,12 +61,23 @@
 
 .honor_display {
   box-sizing: border-box;
-  padding-top: 98px;
+  padding-top: 91px;
+  padding-bottom: 61px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.honor_display h3 {
+  margin: 15px 0 80px;
 }
 
 .store_display {
-  padding-top: 50px;
-  padding-bottom: 48px;
+  padding-top: 100px;
+  padding-bottom: 42px;
+}
+
+.store_display h3 {
+  margin: 24px 0 44px;
 }
 
 .store_display .block {
@@ -82,7 +111,16 @@
 }
 
 .store_place {
-  padding: 55px 0;
+  height: 765px;
+  box-sizing: border-box;
+  padding-top: 104px;
+  background: url("../images/brand-bg.png") center no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.store_place h2 {
+  margin-bottom: 24px;
 }
 
 .store_place p {

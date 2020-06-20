@@ -14,10 +14,19 @@
     float: right;
 }
 
+.header_container {
+    background: url('../images/2banner.png') center no-repeat;
+    background-size: 100% 340px;
+}
+
 .article_container {
     box-sizing: border-box;
     padding-top: 136px;
     padding-bottom: 80px;
+    background: url('../images/brand-introduce.png') center no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    background-position-y: -124px;
 
     .block {
         display: flex;
@@ -28,16 +37,24 @@
         margin: 0 auto;
         margin-top: 67px;
 
-        img {
-            width: 436px;
+        .img-part {
+            width: 438px;
             height: 230px;
+            background-color: rgba(200,45,33,1);
+            text-align: center;
+            padding:  51px 0;
+        }
+
+        img {
+            width: 195px;
+            height: 127px;
         }
 
         table {
             width: 743px;
             height: 230px;
             box-sizing: border-box;
-
+            background-color: #fff;
             td.align-middle {
                 padding: 0 74px 0 52px;
                 font-size: 14px;
@@ -61,12 +78,21 @@
 
 .honor_display {
     box-sizing: border-box;
-    padding-top: 98px;
+    padding-top: 91px;
+    padding-bottom: 61px;
+    text-align: center;
+    background-color: #f7f7f7;
+    h3{
+        margin: 15px 0 80px;
+    }
 }
 
 .store_display {
-    padding-top: 50px;
-    padding-bottom: 48px;
+    padding-top: 100px;
+    padding-bottom: 42px;
+    h3{
+        margin: 24px 0 44px;
+    }
     .block {
         width: 984px;
         margin: 0 auto;
@@ -78,11 +104,11 @@
         }
 
         & :nth-child(2n-1) {
-            @include float-left
+            @include float-left;
         }
 
         & :nth-child(2n) {
-            @include float-right
+            @include float-right;
         }
 
         img {
@@ -95,7 +121,15 @@
 
 
 .store_place {
-    padding: 55px 0;
+    height: 765px;
+    box-sizing: border-box;
+    padding-top: 104px;
+    background: url('../images/brand-bg.png') center no-repeat;
+    background-position: top;
+    background-size: cover;
+    h2{
+        margin-bottom: 24px;
+    }
     p {
         text-align: center;
         width: 570px;

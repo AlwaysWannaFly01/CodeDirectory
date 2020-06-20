@@ -1,0 +1,139 @@
+.header_container {
+  background: url("../images/5banner.png") center no-repeat;
+  background-size: 100% 340px;
+}
+
+.main-block {
+  padding-top: 65px;
+  width: 708px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+}
+
+.main-block .item h2 {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  border-left: 5px solid #c82d21;
+  padding-left: 10px;
+}
+
+.main-block .item p {
+  font-size: 14px;
+  font-family: PingFang SC;
+  color: #656565;
+}
+
+.main-block .item ul {
+  width: 708px;
+}
+
+.main-block .item ul::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.main-block .item ul li {
+  float: left;
+  width: 177px;
+  text-align: center;
+}
+
+.main-block .item.job ul li {
+  height: 188px;
+  box-sizing: border-box;
+  padding-top: 36px;
+}
+
+.main-block .item.job ul li img.job1 {
+  margin-bottom: 13px;
+}
+
+.main-block .item.job ul li img.job2 {
+  margin-top: 7px;
+  margin-bottom: 21px;
+}
+
+.main-block .item.job ul li img.job3 {
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
+.main-block .item.job ul li img.job4 {
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.main-block .item.welfare h2 {
+  margin-bottom: 46px;
+}
+
+.main-block .item.welfare ul li {
+  box-sizing: border-box;
+  height: 212px;
+  padding-top: 64px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.main-block .item.welfare ul li:nth-child(4n) {
+  border-right: none;
+}
+
+.main-block .item.welfare ul li:nth-last-child(1), .main-block .item.welfare ul li:nth-last-child(2), .main-block .item.welfare ul li:nth-last-child(3), .main-block .item.welfare ul li:nth-last-child(4) {
+  border-bottom: none;
+}
+
+.main-block .item.welfare ul li img.welfare5 {
+  margin-bottom: 34px;
+}
+
+.main-block .item.welfare ul li img.welfare6 {
+  margin-bottom: 27px;
+}
+
+.main-block .item.welfare ul li img.welfare7 {
+  margin-top: 5px;
+  margin-bottom: 34px;
+}
+
+.main-block .item.welfare ul li img.welfare8 {
+  margin-top: 2px;
+  margin-bottom: 30px;
+}
+
+.main-block .item.welfare ul li img.welfare9 {
+  margin-bottom: 34px;
+}
+
+.main-block .item.welfare ul li img.welfare10 {
+  margin-bottom: 30px;
+}
+
+.main-block .item.welfare ul li img.welfare11 {
+  margin-bottom: 22px;
+}
+
+.main-block .item.welfare ul li img.welfare12 {
+  margin-top: 4px;
+  margin-bottom: 28px;
+}
+
+.main-block .item.welfare ul li img.welfare13 {
+  margin-bottom: 34px;
+}
+
+.main-block .item.welfare ul li img.welfare14 {
+  margin-bottom: 33px;
+}
+
+.main-block .item.welfare ul li img.welfare15 {
+  margin-bottom: 27px;
+}
+
+.main-block .item.welfare ul li img.welfare16 {
+  margin-top: 3px;
+  margin-bottom: 36px;
+}

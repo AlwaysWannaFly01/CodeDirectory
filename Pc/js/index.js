@@ -1,12 +1,12 @@
-NProgress.configure({
-    showSpinner: false, // 不显示转动的小圆圈
-    // mininum: 0.1,
-    // easing: 'ease',
-    // speed: 500,
-    // trickle: false,
-    // trickleSpeed: 200,
-    parent: 'body'
-});
+// NProgress.configure({
+//     showSpinner: false, // 不显示转动的小圆圈
+//     // mininum: 0.1,
+//     // easing: 'ease',
+//     // speed: 500,
+//     // trickle: false,
+//     // trickleSpeed: 200,
+//     parent: 'body'
+// });
 
 $(function () {
     // $('html').addClass('height100')
@@ -21,8 +21,8 @@ $(function () {
     // })
     // $('body').addClass('height100 bg fade out brief big')
 
-    NProgress.start();
-    setTimeout(function () {
+    // NProgress.start();
+    // setTimeout(function () {
         NProgress.done();
         // if ($('html').hasClass('height100')) {
         // 	$('html').removeClass('height100')
@@ -139,5 +139,18 @@ $(function () {
             },
         })
 
-    }, 2400);
+        var storeSwiper = new Swiper('.store-swiper-container', {
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            centeredSlides: true,
+            centeredSlidesBounds: false,
+            spaceBetween: 15,
+            loop:true
+        })
+
+    // }, 2400);
 })

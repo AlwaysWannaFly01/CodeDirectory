@@ -161,8 +161,8 @@
 .store-location {
   padding-top: 1rem;
   background: url("../images/map/p-map-bg.png") no-repeat center;
-  background-size: 100%;
-  background-position-y: 0.26667rem;
+  background-size: 115%;
+  background-position: bottom;
 }
 
 .store-location h2,

@@ -8,8 +8,10 @@
 	<title>关于無谷</title>
 	<link rel=" stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./css/swiper/swiper.css">
 	<link rel="stylesheet" href="./css/about.css">
 	<script src="./lib/jquery-3.1.1.min.js"></script>
+	<script src="./lib/swiper.js"></script>
 	<script src="./js/common.js"></script>
 
 </head>
@@ -18,13 +20,15 @@
 
 	<div id="header"></div>
 	<div class="header_container">
-		关于無谷
 	</div>
 	<div class="shared article_container">
-		<h2>BRAND INTRODUCTION</h2>
-		<h3>品牌介绍</h3>
+		<h2>品牌介绍</h2>
+		<h3>BRAND INTRODUCTION</h3>
 		<div class="block">
-			<img src="">
+			<div class="img-part">
+				<img src="./images/logo-transparent.png">
+
+			</div>
 			<table>
 				<tbody>
 					<tr>
@@ -37,29 +41,79 @@
 		</div>
 	</div>
 	<div class="shared company_course">
-		<h2>COMPANY HISTORY</h2>
-		<h3>公司历程</h3>
+		<h2>公司历程</h2>
+		<h3>COMPANY HISTORY</h3>
 	</div>
 	<div class="shared honor_display">
-		<h2>HONOR DISPLAY</h2>
-		<h3>荣誉展示</h3>
+		<h2>荣誉展示</h2>
+		<h3>HONOR DISPLAY</h3>
+		<img src="./images/honor.png">
 	</div>
 	<div class="shared store_display">
 		<h2>STORE DISPLAY</h2>
 		<h3>门店展示</h3>
 		<div class="block">
-			<img src="">
-			<img src="">
-			<img src="">
-			<img src="">
+			<img src="./images/store1.png">
+			<img src="./images/store2.png">
+			<img src="./images/store3.png">
+			<img src="./images/store4.png">
 		</div>
 	</div>
 	<div class="shared store_place">
-        <h2>STORE DISPLAY</h2>
-        <h3>门店分布</h3>
-        <p>無谷轻食旗下门店已遍布湖北武汉、湖北宜昌、湖南长沙、河南郑州、广东深圳、广东广州 广东珠海、广西南宁、云南楚雄、甘肃陇南、等地筹建了152家门店。</p>
-    </div>
+		<h2>门店分布</h2>
+		<h3>STORE LOCATIONS</h3>
+		<div class="store-slideshow">
+			<div class="swiper-container store-swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide store-item">
+						<img src="./images/map/hubei.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/guangdong.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/henan.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/hunan.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/shanxi.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/zhejiang.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/ganshu.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/guangxi.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/guizhou.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/hainan.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/jiangshu.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/neimenggu.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/sichuan.png">
+					</div>
+					<div class="swiper-slide store-item">
+						<img src="./images/map/yunan.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>無谷轻食旗下门店已遍布湖北武汉、湖北宜昌、湖南长沙、河南郑州、广东深圳、广东广州 广东珠海、广西南宁、云南楚雄、甘肃陇南、等地筹建了152家门店。</p>
+	</div>
 	<div id="footer"></div>
 </body>
 <script src="./js/about.js"></script>
+
 </html>

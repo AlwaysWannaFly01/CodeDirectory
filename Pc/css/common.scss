@@ -41,7 +41,7 @@
     justify-content: space-between;
     z-index: 99;
     background-color: rgb(200, 45, 33);
-
+    // box-shadow: 0 2px 0 0 rgb(200, 45, 33);
     .logo_block {
         display: flex;
         align-items: center;
@@ -127,7 +127,6 @@ div.header_container {
     margin-top: 70px;
     height: 340px;
     line-height: 340px;
-    background-color: salmon;
     text-align: center;
     font-size: 42px;
     font-family: PingFang SC;
