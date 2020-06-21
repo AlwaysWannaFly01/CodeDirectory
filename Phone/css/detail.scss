@@ -16,8 +16,10 @@ $fontSize:37.5;
     .swiper-slide {
         letter-spacing: 2px;
         text-align: center;
+        width: px2rem(60);
 
-        span {
+
+        a {
             transition: all .3s ease;
             display: block;
             font-size: 14px;
@@ -26,13 +28,195 @@ $fontSize:37.5;
             color: rgba(49, 49, 49, 1);
             height: px2rem(30);
             line-height: px2rem(30);
-            padding: 0 px2rem(30);
+
+            &.nav-link {
+                padding: 0;
+            }
         }
 
         &.active {
-            span {
+            a {
                 color: #fff;
                 background-color: #C82D21;
+            }
+        }
+    }
+}
+
+nav.product_container {
+    width: px2rem(480);
+    margin-top: px2rem(50);
+
+    .nav-tabs {
+        border-bottom: none;
+
+        .nav-link {
+            border: none;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .nav-item {
+            width: px2rem(60);
+            height: px2rem(30);
+            line-height: px2rem(30);
+            text-align: center;
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(49, 49, 49, 1);
+        }
+
+        .nav-link.active {
+            background-color: #C82D21;
+            color: #fff;
+        }
+    }
+}
+
+div.tab_product_container {
+    background-color: rgb(247, 247, 247);
+    box-sizing: border-box;
+
+    .tab-pane {
+        .picture_piece {
+            width: 100%;
+            padding: px2rem(10);
+            margin-bottom: 0;
+            display: flex;
+
+            .nav-item {
+                margin-right: px2rem(20);
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+
+                    a {
+                        .piece_item {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                a {
+                    &.nav-link {
+                        padding: 0;
+                        text-align: center;
+                        background-color: transparent;
+                    }
+
+                    .piece_item {
+                        width: 100%;
+
+                        div.border_item {
+                            width: px2rem(104);
+                            height: px2rem(104);
+                            border: px2rem(4) solid transparent;
+
+                            img {
+                                width: px2rem(96);
+                                height: px2rem(96);
+                            }
+
+                        }
+
+                        span {
+                            width: px2rem(104);
+                            height: px2rem(24);
+                            display: block;
+                            font-size: 10px;
+                            font-family: PingFang SC;
+                            color: rgba(50, 50, 50, 1);
+                            margin-top: px2rem(6);
+                        }
+                    }
+                }
+
+                .nav-link.active {
+                    div.border_item {
+                        border: px2rem(4) solid rgba(200, 45, 33, 1);
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-width: 0 0 px2rem(15) px2rem(15);
+                            border-style: solid;
+                            border-color: transparent transparent transparent rgba(200, 45, 33, 1);
+                            position: absolute;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .table_container {
+            width: 100%;
+            background-color: #efefef;
+
+            .tab-pane {
+                width: 100%;
+                margin: 0 auto;
+                padding-top: px2rem(22);
+                padding-bottom: px2rem(23);
+                box-sizing: border-box;
+
+                h4 {
+                    font-size: 14px;
+                    font-family: PingFang SC;
+                    color: rgba(200, 45, 33, 1);
+                    margin-bottom: px2rem(16);
+                }
+
+                section {
+                    table.table {
+                        margin-bottom: 0;
+                        width: 100%;
+
+                        thead {
+                            tr {
+                                font-size: 12px;
+                                font-family: PingFang SC;
+                                font-weight: 500;
+                                color: rgba(79, 79, 79, 1);
+
+                                th {
+                                    padding: 0;
+                                    padding-top: px2rem(6);
+                                    padding-bottom: px2rem(8);
+                                    border-top: none;
+                                    border-bottom: none;
+
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    border-bottom: none;
+                                    border-top: none;
+                                    font-size: 10px;
+                                    font-family: PingFang SC;
+                                    font-weight: 500;
+                                    color: rgba(79, 79, 79, 1);
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    table.table-striped {
+                        tbody {
+                            tr:nth-of-type(odd) {
+                                background-color: rgba(0, 0, 0, 0.02);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
