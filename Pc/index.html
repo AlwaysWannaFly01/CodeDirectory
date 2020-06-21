@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/swiper/swiper.css">
     <link rel="stylesheet" href="./css/nprogress/style.css">
-	<link rel="stylesheet" href="./css/nprogress/nprogress.css">
+    <link rel="stylesheet" href="./css/nprogress/nprogress.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/jquery.fullPage.min.js"></script>
     <script src="./lib/swiper.min.js"></script>
-	<script src="./lib/nprogress.js"></script>
+    <script src="./lib/nprogress.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/index.js"></script>
 </head>
@@ -25,7 +25,7 @@
     <!-- <img src="./images/loading-bg-2.png" class="loading_bg"> -->
     <!-- <img src="./images/logo-transparent.png" class="loading_transparent"> -->
     <div id="header"></div>
-    
+
     <ul id="menu">
         <li data-menuanchor="page1" class="active"><a href="#page1"> <strong>01</strong><span>轮播图</span></a></li>
         <li data-menuanchor="page2"><a href="#page2"><strong>02</strong><span>产品介绍</span></a></li>
@@ -36,7 +36,24 @@
     </ul>
     <div id="dowebok">
         <div class="section part1">
-            <div class="slide slide_item">
+            <div class="banner-slideshow">
+                <div class="banner-swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide banner-item">
+                            <img src="./images/slide-1-w.png" class="w1">
+                            <img src="./images/slide-1-p.png" class="p1">
+                        </div>
+                        <div class="swiper-slide banner-item">
+                            <div>
+                                <img src="./images/slide-2-w.png" class="w2">
+                                <img src="./images/slide-2-p.png" class="p2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="slide slide_item">
                 <div class="block">
                     <img src="./images/slide-1-w.png" class="word1">
                     <img src="./images/slide-1-p.png" class="picture1">
@@ -48,7 +65,7 @@
                     <img src="./images/slide-2-p.png" class="picture2">
                 </div>
             </div>
-            <img src="./images/circle-bg2x.png" class="circle" alt="">
+            <img src="./images/circle-bg2x.png" class="circle" alt=""> -->
         </div>
         <div class="section part2">
             <div class="products_container">
@@ -97,7 +114,7 @@
             <div class="brand">
                 <div class="introduce">
                     <h3>品牌介绍</h3>
-                    <p>無谷轻食品牌创建于2017年9月，成立以来凭借其产品的独特风味饱受消费者所青睐，沙拉、谷物饭、意面等产品已成为年轻群体中的日常饮食。同时，無谷轻食为顾客打造一种理想的生活状态——健康、时尚且高质，無谷轻食通过对品牌不断的升华，在行业中担任着引领潮流的重要角色。
+                    <p>無谷轻食品牌创立于2017年，成立以来品牌一直崇尚健康、时尚、品质的产品理念，倍受消费者青睐，沙拉、谷物饭、帕尼尼等明星产品已成为白领一族、健身人群生活饮食必备。無谷轻食通过对品牌的不断升华，在行业中担任着引领潮流的重要角色。
                     </p>
                     <div></div>
                 </div>
@@ -194,7 +211,7 @@
                         <img src="./images/address-icon.png" alt="">
                         <div class="item">
                             <h4>公司地址</h4>
-                            <p>湖北省武汉市洪山区雄楚大街高架桥与雄楚大道 交叉口东南150米光谷万科中心11层1105室</p>
+                            <p>湖北省武汉市洪山区光谷万科中心1105</p>
                         </div>
                     </div>
                     <div class="tel">
@@ -208,11 +225,12 @@
                         <img src="./images/time-icon.png" alt="">
                         <div class="item">
                             <h4>工作时间</h4>
-                            <p>周一-周日 9：00AM--9：00PM </p>
+                            <p>周一-周六  9：00am--6：00pm</p>
                         </div>
                     </div>
                     <div class="QRcode">
                         <img src="./images/QRcode.png" alt="">
+                        <p>微信公众号</p>
                     </div>
                 </div>
                 <div class="apply-container">

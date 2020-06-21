@@ -52,41 +52,60 @@ img.loading_transparent {
         }
 
         &.part1 {
-            background: url(../images/banner-bg2x.png) 100%;
+            background: url(../images/banner-bg-2.png) center no-repeat;
+            background-size: cover;
             position: relative;
-            z-index: -2;
 
-            img.circle {
-                position: absolute;
-                right: 50px;
-                top: 0;
-                height: 100%;
-                z-index: -1;
-            }
-
-            .slide_item {
-                width: 100%;
-                // padding-top: 175px;
-                // padding-bottom: 106px;
-                box-sizing: border-box;
-
-                .block {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    padding-left: 15%;
-
-                    img.word1 {
-                        margin-top: 115px;
-                        margin-right: -51px;
+            // z-index: -2;
+            .banner-slideshow {
+                .banner-item {
+                    .w1 {
+                        transform: translate(71px, -140px);
                     }
 
-                    img.word2 {
-                        margin-top: 35px;
-                        margin-right: 71px;
+                    .w2 {
+                        transform: translate(0, 140px);
+                    }
+
+                    .p2 {
+                        transform: translate(0, 140px);
+                    }
+
+                    div {
+                        height: 634px;
                     }
                 }
             }
+
+            // img.circle {
+            //     position: absolute;
+            //     right: 50px;
+            //     top: 0;
+            //     height: 100%;
+            //     z-index: -1;
+            // }
+
+            // .slide_item {
+            //     width: 100%;
+            //     box-sizing: border-box;
+
+            //     .block {
+            //         display: flex;
+            //         align-items: flex-start;
+            //         justify-content: center;
+            //         padding-left: 15%;
+
+            //         img.word1 {
+            //             margin-top: 115px;
+            //             margin-right: -51px;
+            //         }
+
+            //         img.word2 {
+            //             margin-top: 35px;
+            //             margin-right: 71px;
+            //         }
+            //     }
+            // }
         }
 
         &.part2 {
@@ -110,6 +129,7 @@ img.loading_transparent {
                     height: 490px;
                     padding-top: 15px;
                     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.06);
+
                     h2,
                     p {
 
@@ -150,6 +170,8 @@ img.loading_transparent {
                 width: 1004px;
                 // height: 60%;
                 height: 475px;
+                background: url('../images/circie-bg.png') no-repeat;
+                background-position-y: 30px;
                 background-color: #fff;
                 padding: 98px 162px 94px 230px;
                 margin-left: 30%;
@@ -178,6 +200,7 @@ img.loading_transparent {
                         color: rgba(101, 101, 101, 1);
                         line-height: 34px;
                         text-align: left;
+                        padding-right: 10px;
                     }
 
                     div {
@@ -295,7 +318,6 @@ img.loading_transparent {
 
         &.part5 {
             .fp-tableCell {
-                padding-top: 6%;
                 overflow: hidden;
             }
 
@@ -323,18 +345,18 @@ img.loading_transparent {
             background-position: bottom;
 
             .main {
-                height: 70%;
-                max-height: 566px;
+                // height: 70%;
+                height: 566px;
                 display: flex;
                 justify-content: center;
 
                 .introduce-container {
-                    width: 28%;
+                    // width: 28%;
+                    width: 450px;
                     height: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    padding-right: 4%;
 
                     img {
                         width: 36px;
@@ -364,6 +386,13 @@ img.loading_transparent {
                         img {
                             width: 100%;
                             height: 100%;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-family: PingFang SC;
+                            color: rgba(255, 255, 255, 1);
+                            line-height: 34px;
                         }
 
                     }
@@ -407,7 +436,7 @@ img.loading_transparent {
                         margin-bottom: 34px;
 
                         h4 {
-                            font-size: 28px;
+                            font-size: 34px;
                             font-family: PingFang SC;
                             font-weight: 500;
                             color: rgba(255, 255, 255, 1);
@@ -419,6 +448,9 @@ img.loading_transparent {
                             font-family: PangMenZhengDao;
                             font-weight: 400;
                             color: rgba(255, 255, 255, 1);
+                        }
+                        img{
+                            margin-top: 8px;
                         }
                     }
 
@@ -499,7 +531,7 @@ img.loading_transparent {
         // &.white a {
         //     color: #fff;
         // }
-        &.albedo a{
+        &.albedo a {
             color: #fff;
         }
     }

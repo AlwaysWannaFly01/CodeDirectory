@@ -50,8 +50,9 @@ $(function () {
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
         menu: '#menu',
         // navigation: true,
-        loopHorizontal:true,
-        paddingTop:'70px',
+        // loopHorizontal: true,
+        // continuousVertical: true,
+        paddingTop: '70px',
         afterLoad: function (anchorLink, index) {
             if (index == 1) {
                 console.log('滚动到第1屏')
@@ -120,10 +121,19 @@ $(function () {
         },
     })
 
-    setInterval(function () {
-        $.fn.fullpage.moveSlideRight()
-    }, 3000)
-
+    // setInterval(function () {
+    //     $.fn.fullpage.moveSlideRight()
+    // }, 3000)
+    var bannerSwiper = new Swiper('.banner-swiper-container', {
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        loop: true,
+    })
     /* swiper配置 */
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow', // slide的切换效果，默认为"slide","fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）
