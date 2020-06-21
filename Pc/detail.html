@@ -961,7 +961,7 @@
         nav_tabs += '<a class="nav-item nav-link li_item '+ v.nav_active +'" data-toggle="tab" href="'+ v.href +'" aria-selected="true">'+ v.name +'</a>';
 
         tab_content += '<div class="tab-pane fade '+ v.product_active +'" id="'+ v.id +'">';
-        tab_content += '<h3>'+ v.name +'</h3>';
+        // tab_content += '<h3>'+ v.name +'</h3>';
 
         var ul_pills = '';
         var table_pills = '';
@@ -1001,7 +1001,7 @@
 
                             table_td += '<td';
 
-                            table_td += l == 0 ? ' style="color:red;"' : '';
+                            table_td += l == 0 ? ' style="color:#C82D21;"' : '';
 
                             table_td += '>';
 
@@ -1090,8 +1090,8 @@
     //初始化
     function init() {
         $('.food_item').removeClass('active');
-        $('.table_item').removeClass('show');
-        $('.table_item').removeClass('active');
+        $('.table_item').removeClass('show active');
+        // $('.table_item').removeClass('active');
     }
 
 </script>

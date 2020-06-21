@@ -1,23 +1,31 @@
-#topNav {
+.topNav {
   width: 100%;
+  height: 1.33333rem;
+  padding: 0 0.53333rem;
+  padding-top: 0.53333rem;
+  box-sizing: border-box;
   overflow: hidden;
-  font: 16px/32px hiragino sans gb, microsoft yahei, simsun;
-  border-bottom: 1px solid #f8f8f8;
+  margin-top: 1.33333rem;
 }
 
-#topNav .swiper-slide {
-  padding: 0 5px;
+.topNav .swiper-slide {
   letter-spacing: 2px;
-  width: 3rem;
   text-align: center;
 }
 
-#topNav .swiper-slide span {
+.topNav .swiper-slide span {
   transition: all .3s ease;
   display: block;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #313131;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding: 0 0.8rem;
 }
 
-#topNav .active span {
-  transform: scale(1.1);
-  color: #FF2D2D;
+.topNav .swiper-slide.active span {
+  color: #fff;
+  background-color: #C82D21;
 }
