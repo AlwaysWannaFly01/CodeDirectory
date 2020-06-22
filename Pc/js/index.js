@@ -123,7 +123,7 @@ $(function () {
 
     var storeSwiper = new Swiper('.store-swiper-container', {
         autoplay: {
-            delay: 2000,
+            delay: 3000,
             stopOnLastSlide: false,
             disableOnInteraction: false,
         },

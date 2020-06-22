@@ -238,8 +238,9 @@ img.loading_transparent {
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
-				width: 1090px;
-				margin: 0 auto;
+                width: 1090px;
+                margin: 0 auto;
+
                 h3 {
                     font-size: 34px;
                     font-family: PingFang SC;
@@ -321,17 +322,15 @@ img.loading_transparent {
             }
 
             .store-slideshow {
-                height: 82%;
-                margin-top: 72px;
-                margin-left: 221px;
-
+                margin-left: 80px;
+				overflow: hidden;
                 .store-swiper-container {
-                    // height: px2rem(232);
-                    width: 890px;
 
+                    width: 890px;
                     .store-item {
                         img {
                             height: 670px;
+                            vertical-align: middle;
                         }
                     }
                 }
@@ -448,7 +447,8 @@ img.loading_transparent {
                             font-weight: 400;
                             color: rgba(255, 255, 255, 1);
                         }
-                        img{
+
+                        img {
                             margin-top: 8px;
                         }
                     }

@@ -331,9 +331,8 @@ img.loading_transparent {
 }
 
 #dowebok .section.part5 .store-slideshow {
-  height: 82%;
-  margin-top: 72px;
-  margin-left: 221px;
+  margin-left: 80px;
+  overflow: hidden;
 }
 
 #dowebok .section.part5 .store-slideshow .store-swiper-container {
@@ -342,6 +341,7 @@ img.loading_transparent {
 
 #dowebok .section.part5 .store-slideshow .store-swiper-container .store-item img {
   height: 670px;
+  vertical-align: middle;
 }
 
 #dowebok .section.part6 {
