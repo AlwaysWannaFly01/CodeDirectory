@@ -1,16 +1,18 @@
 .header_container {
   background: url("../images/2banner.png") center no-repeat;
-  background-size: 100% 340px;
+  background-size: cover;
 }
 
 .article_container {
   box-sizing: border-box;
-  padding-top: 136px;
-  padding-bottom: 80px;
+  height: 483px;
+  padding-top: 78px;
   background: url("../images/brand-introduce.png") center no-repeat;
-  background-size: 100% auto;
-  background-position: top;
-  background-position-y: -124px;
+  background-size: cover;
+}
+
+.article_container h2 {
+  margin-bottom: 24px;
 }
 
 .article_container .block {
@@ -20,7 +22,7 @@
   display: -webkit-flex;
   width: 1180px;
   margin: 0 auto;
-  margin-top: 67px;
+  margin-top: 56px;
 }
 
 .article_container .block .img-part {
@@ -59,6 +61,10 @@
   flex-direction: column;
 }
 
+.company_course h2 {
+  margin-bottom: 24px;
+}
+
 .honor_display {
   box-sizing: border-box;
   padding-top: 91px;
@@ -68,7 +74,7 @@
 }
 
 .honor_display h3 {
-  margin: 15px 0 80px;
+  margin: 24px 0 80px;
 }
 
 .store_display {
@@ -111,12 +117,12 @@
 }
 
 .store_place {
-  height: 765px;
+  height: 584px;
   box-sizing: border-box;
   padding-top: 104px;
   background: url("../images/brand-bg.png") center no-repeat;
+  background-color: #f7f7f7;
   background-position: top;
-  background-size: cover;
 }
 
 .store_place h2 {
