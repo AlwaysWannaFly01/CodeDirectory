@@ -14,23 +14,16 @@
     float: right;
 }
 
-.header_container {
-    background: url('../images/2banner.png') center no-repeat;
-    // background-size: 100% 340px;
-    background-size: cover;
-}
-
 .article_container {
+    margin-top: 70px;
     box-sizing: border-box;
-    height: 483px;
-    padding-top: 78px;
-    background: url('../images/brand-introduce.png') center no-repeat;
-    // background-size: 100% auto;
-    // background-position: top;
-    // background-position-y: -124px;
-    background-size: cover;
+    height: 840px;
+    padding-top: 340px;
+    background: url('../images/2banner-bg.png') center no-repeat;
+    background-size: 100% 840px;
 
     h2 {
+        margin-top: 82px;
         margin-bottom: 24px;
     }
 

@@ -25,10 +25,10 @@ $(document).ready(function () {
             slidesPerView: 'auto',
             loop: true,
             /* 自动播放 */
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
             fadeEffect: true, //true。开启淡出。过渡时，原slide透明度从1->0（淡出），过渡中的slide透明度从0->1（淡入），其他slide透明度0。当你的slide中图片大小不同时可以用到。
             coverflowEffect: {
                 rotate: 25, //slide做3d旋转时Y轴的旋转角度

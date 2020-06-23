@@ -1,23 +1,15 @@
 .main-container {
   margin-top: 1.33333rem;
-}
-
-.main-container .top-banner {
-  height: 4.53333rem;
-}
-
-.main-container .top-banner img {
-  height: 4.53333rem;
-  width: 100%;
+  background: url("../images/p-about-banner.png") no-repeat;
+  background-size: 100% auto;
+  background-color: rgba(247, 247, 237, 0.7);
+  padding-top: 4.53333rem;
+  padding-bottom: 0.66667rem;
 }
 
 .main-container .brand-container {
   padding-top: 0.88rem;
-  padding-bottom: 0.66667rem;
   text-align: center;
-  background: url("../images/p-about-banner2.png") no-repeat;
-  background-size: auto 10.34667rem;
-  background-position-x: -0.13333rem;
 }
 
 .main-container .brand-container h2,
@@ -78,6 +70,7 @@
   font-weight: 500;
   color: #333333;
   text-align: center;
+  margin-left: 0.53333rem;
 }
 
 .company-container h2 {
