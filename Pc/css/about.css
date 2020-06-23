@@ -57,12 +57,20 @@
 .company_course {
   box-sizing: border-box;
   padding-top: 80px;
+  padding-bottom: 92px;
   display: flex;
   flex-direction: column;
+  background: url(../images/p-history-bg.png);
+  background-position: bottom;
 }
 
 .company_course h2 {
   margin-bottom: 24px;
+}
+
+.company_course img {
+  margin: 0 auto;
+  margin-top: 84px;
 }
 
 .honor_display {
