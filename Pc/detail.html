@@ -950,15 +950,30 @@
 
     //------数据填充start------//
 
+
     //nav填充
     var nav_tabs = '';
 
     $.each( list, function( k, v ){
 
+        //锚点
+        var hash = window.location.hash;
+
+        if( hash ){
+            //清除选中
+            v.nav_active = '';
+            v.product_active = '';
+
+            if( hash.substring( 1 ) == k ){
+                v.nav_active = 'active';
+                v.product_active = 'show active';
+            }
+        }
+
         //tab填充
         var tab_content = '';
 
-        nav_tabs += '<a class="nav-item nav-link li_item '+ v.nav_active +'" data-toggle="tab" href="'+ v.href +'" aria-selected="true">'+ v.name +'</a>';
+        nav_tabs += '<a name="'+ k +'" class="nav-item nav-link li_item '+ v.nav_active +'" data-toggle="tab" href="'+ v.href +'" aria-selected="true">'+ v.name +'</a>';
 
         tab_content += '<div class="tab-pane fade '+ v.product_active +'" id="'+ v.id +'">';
         // tab_content += '<h3>'+ v.name +'</h3>';
@@ -1085,13 +1100,15 @@
 
     $('.li_item').on('click', function () {
         init();
+        //清除锚点
+        window.location.hash = '';
+
     });
 
     //初始化
     function init() {
         $('.food_item').removeClass('active');
         $('.table_item').removeClass('show active');
-        // $('.table_item').removeClass('active');
     }
 
 </script>
