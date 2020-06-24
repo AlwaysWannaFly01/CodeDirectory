@@ -2,19 +2,27 @@
   width: 100%;
   height: 1.33333rem;
   padding-left: 0.78667rem;
-  padding-top: 0.53333rem;
-  box-sizing: border-box;
   overflow: hidden;
-  margin-top: 1.33333rem;
+  position: fixed;
+  top: 1.33333rem;
+  left: 0;
+  background-color: #fff;
+  z-index: 99;
+  box-sizing: border-box;
 }
 
-.topNav .swiper-slide {
+.topNav .swiper-wrapper {
+  margin-top: 0.53333rem;
+  height: 0.8rem;
+}
+
+.topNav .swiper-wrapper .swiper-slide {
   letter-spacing: 2px;
   text-align: center;
   width: 2.13333rem;
 }
 
-.topNav .swiper-slide a {
+.topNav .swiper-wrapper .swiper-slide a {
   transition: all .3s ease;
   display: block;
   font-size: 14px;
@@ -25,49 +33,30 @@
   line-height: 0.8rem;
 }
 
-.topNav .swiper-slide a.nav-link {
+.topNav .swiper-wrapper .swiper-slide a.nav-link {
   padding: 0;
 }
 
-.topNav .swiper-slide.active a {
+.topNav .swiper-wrapper .swiper-slide.active a {
   color: #fff;
   background-color: #C82D21;
 }
 
-nav.product_container {
-  width: 12.8rem;
-  margin-top: 1.33333rem;
-}
-
-nav.product_container .nav-tabs {
-  border-bottom: none;
-}
-
-nav.product_container .nav-tabs .nav-link {
-  border: none;
-  padding: 0;
-  border-radius: 0;
-}
-
-nav.product_container .nav-tabs .nav-item {
-  width: 1.6rem;
-  height: 0.8rem;
-  line-height: 0.8rem;
-  text-align: center;
-  font-size: 14px;
-  font-family: PingFang SC;
-  font-weight: 500;
-  color: #313131;
-}
-
-nav.product_container .nav-tabs .nav-link.active {
-  background-color: #C82D21;
-  color: #fff;
+#aaa {
+  position: fixed;
+  top: 2.66667rem;
+  left: 0;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  z-index: 98;
 }
 
 div.tab_product_container {
   background-color: #f7f7f7;
   box-sizing: border-box;
+  flex: 1;
 }
 
 div.tab_product_container .tab-pane .picture_piece {
