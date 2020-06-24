@@ -179,11 +179,11 @@ div.mask {
 }
 
 div.footer {
-    width: px2rem(375);
+    width: 100%;
     height: px2rem(214);
     background: url('../images/foot-bg.png');
     background-color: #272723;
-    background-size: auto px2rem(375.5);
+    background-size: cover;
     padding: px2rem(25.5) px2rem(19.5) px2rem(22.5) px2rem(26.5);
     display: flex;
     flex-direction: column;
@@ -202,8 +202,6 @@ div.footer {
         font-weight: 600;
         color: rgba(255, 255, 255, .7);
     }
-
-    .addr {}
 
     .info-block {
         margin-top: px2rem(39);

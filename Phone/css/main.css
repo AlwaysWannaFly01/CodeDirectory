@@ -221,11 +221,11 @@ div.mask {
 }
 
 div.footer {
-  width: 10rem;
+  width: 100%;
   height: 5.70667rem;
   background: url("../images/foot-bg.png");
   background-color: #272723;
-  background-size: auto 10.01333rem;
+  background-size: cover;
   padding: 0.68rem 0.52rem 0.6rem 0.70667rem;
   display: flex;
   flex-direction: column;
