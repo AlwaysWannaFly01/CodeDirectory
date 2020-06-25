@@ -19,7 +19,7 @@ $(function () {
     // $('body').addClass('height100 bg')
     // NProgress.start();
     // setTimeout(function () {
-    NProgress.done();
+    // NProgress.done();
     // if ($('html').hasClass('height100')) {
     // 	$('html').removeClass('height100')
     // 	$('body').removeClass('height100 bg')
@@ -95,7 +95,7 @@ $(function () {
                     $("#menu li").each(function (index, domEle) {
                         $(domEle).children('a').removeClass('red white').children('span').text('')
                     })
-                    $($('#menu li')[3]).children('a').addClass('red').children('span').text('品牌介绍')
+                    $($('#menu li')[3]).children('a').addClass('red').children('span').text('加盟流程')
 
                     arrowFade('.arrow1', function () {
                         arrowFade('.arrow2', function () {
@@ -123,7 +123,7 @@ $(function () {
                     $("#menu li").each(function (index, domEle) {
                         $(domEle).children('a').removeClass('red white').children('span').text('')
                     })
-                    $($('#menu li')[4]).children('a').addClass('red').children('span').text('加盟流程')
+                    $($('#menu li')[4]).children('a').addClass('red').children('span').text('门店展示')
                 }
 
                 if (index == 6) {

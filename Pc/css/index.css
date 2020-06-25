@@ -242,16 +242,41 @@ img.loading_transparent {
   top: 50%;
   transform: translate(-60%, -50%);
   border-radius: 50%;
+  background: gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  animation-timing-function: ease-in-out;
+  animation-name: breathe;
+  animation-duration: 2700ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   background: -webkit-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-name: breathe;
   -webkit-animation-duration: 2700ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
+  background: -moz-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-name: breathe;
+  -moz-animation-duration: 2700ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  background: -ms-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -ms-animation-timing-function: ease-in-out;
+  -ms-animation-name: breathe;
+  -ms-animation-duration: 2700ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: alternate;
+  background: -o-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-name: breathe;
+  -o-animation-duration: 2700ms;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
 }
 
 #dowebok .section.part3 .box .brand .logo img {
-  height: 100%;
+  height: 323px;
+  width: 323px;
 }
 
 #dowebok .section.part4 .process_container {
@@ -574,7 +599,51 @@ img.loading_transparent {
   background: transparent;
 }
 
+@keyframes breath {
+  0% {
+    opacity: .5;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 10px 36px 46px 10px rgba(200, 45, 33, 0.16);
+  }
+}
+
 @-webkit-keyframes breathe {
+  0% {
+    opacity: .5;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 10px 36px 46px 10px rgba(200, 45, 33, 0.16);
+  }
+}
+
+@-ms-keyframes breathe {
+  0% {
+    opacity: .5;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 10px 36px 46px 10px rgba(200, 45, 33, 0.16);
+  }
+}
+
+@-moz-keyframes breathe {
+  0% {
+    opacity: .5;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 10px 36px 46px 10px rgba(200, 45, 33, 0.16);
+  }
+}
+
+@-o-keyframes breathe {
   0% {
     opacity: .5;
     box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
