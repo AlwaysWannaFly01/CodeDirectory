@@ -4,14 +4,21 @@ $highlight-color: #F90;
 @function px2rem($px) {
     @return ($px / $fontSize)+rem;
 }
-
+body {
+    display: none;
+}
+.page-container{
+    display: none;
+}
 img.loading_bg {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 100%;
     z-index: 999;
+    display: none;
 }
 
 img.loading_transparent {
@@ -22,6 +29,7 @@ img.loading_transparent {
     height: px2rem(95.5);
     transform: translate(-50%, -50%);
     z-index: 1000;
+    display: none;
 }
 
 .banner-container {

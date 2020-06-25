@@ -4,20 +4,18 @@ NProgress.configure({
 });
 
 $(document).ready(function () {
-    console.log($('body').width())
-    console.log($('body').height())
+    console.log($('body').height());
+    console.log($('body').width());
+    NProgress.start();
     $('body').show();
-    $('.loading_bg').css({ 'height': $('body').height() })
-    // NProgress.start();
-
-    // setTimeout(function () {
-
+    $('.loading_bg').css({ 'height': $('body').height(), 'display': 'block' })
+    $('.loading_transparent').css({ 'display': 'block' })
+    setTimeout(function () {
         NProgress.done();
         $('.loading_bg').hide()
         $('.loading_transparent').hide()
-        $('.fade').removeClass('out');
-
-
+        $('.fade_').removeClass('out_');
+        $('.page-container').css({ 'display': 'block' })
         /* swiper配置 */
         var productSwiper = new Swiper('.product-swiper-container', {
             effect: 'coverflow',
@@ -74,6 +72,5 @@ $(document).ready(function () {
             centeredSlidesBounds: false,
             spaceBetween: 10,
         })
-    // }, 2400)
-
+    }, 1800)
 })
