@@ -121,7 +121,41 @@ img.loading_transparent {
 .brand-introduce .logo {
   text-align: center;
   position: relative;
+  margin: 0 auto;
   z-index: 1;
+  width: 4.30667rem;
+  height: 4.30667rem;
+  border-radius: 50%;
+  background: gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  animation-timing-function: linear;
+  animation-name: breathe;
+  animation-duration: 2400ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: breathe;
+  -webkit-animation-duration: 2400ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  background: -moz-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: breathe;
+  -moz-animation-duration: 2400ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  background: -ms-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -ms-animation-timing-function: linear;
+  -ms-animation-name: breathe;
+  -ms-animation-duration: 2400ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: alternate;
+  background: -o-gradient(linear, left top, left bottom, from(#C82D21), to(#C82D21));
+  -o-animation-timing-function: linear;
+  -o-animation-name: breathe;
+  -o-animation-duration: 2400ms;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
 }
 
 .brand-introduce .logo img {
@@ -407,4 +441,59 @@ img.loading_transparent {
 .foot-container .item.qr span {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0.02667rem 0.05333rem rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0.26667rem 0.96rem 1.22667rem 0.26667rem rgba(200, 45, 33, 0.2);
+  }
+}
+
+@-webkit-keyframes breathe {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0.02667rem 0.05333rem rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0.26667rem 0.96rem 1.22667rem 0.26667rem rgba(200, 45, 33, 0.2);
+  }
+}
+
+@-ms-keyframes breathe {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0.02667rem 0.05333rem rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0.26667rem 0.96rem 1.22667rem 0.26667rem rgba(200, 45, 33, 0.2);
+  }
+}
+
+@-moz-keyframes breathe {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0.02667rem 0.05333rem rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0.26667rem 0.96rem 1.22667rem 0.26667rem rgba(200, 45, 33, 0.2);
+  }
+}
+
+@-o-keyframes breathe {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0.02667rem 0.05333rem rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0.26667rem 0.96rem 1.22667rem 0.26667rem rgba(200, 45, 33, 0.2);
+  }
 }

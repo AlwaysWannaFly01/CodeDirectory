@@ -1,12 +1,12 @@
 .main-block {
-  padding: 1rem 0.76rem;
+  padding: 1.15385rem 0.38462rem;
   position: relative;
   overflow: hidden;
 }
 
 .main-block .item.job ul {
-  height: 1.33333rem;
-  margin-top: 0.66667rem;
+  height: 1.53846rem;
+  margin-top: 0.76923rem;
 }
 
 .main-block .item.job ul li {
@@ -14,12 +14,13 @@
 }
 
 .main-block .item h2 {
+  margin-left: 0.30769rem;
   font-size: 14px;
   font-family: PingFang SC;
   font-weight: 500;
   color: #333333;
-  border-left: 0.08rem solid #C82D21;
-  padding-left: 0.18667rem;
+  border-left: 0.09231rem solid #C82D21;
+  padding-left: 0.21538rem;
 }
 
 .main-block .item ul {
@@ -34,40 +35,40 @@
 }
 
 .main-block .item ul li img.job1 {
-  width: 0.4rem;
-  height: 0.8rem;
+  width: 0.46154rem;
+  height: 0.92308rem;
 }
 
 .main-block .item ul li img.job2 {
-  width: 0.61333rem;
-  height: 0.61333rem;
-  margin-top: 0.08rem;
+  width: 0.70769rem;
+  height: 0.70769rem;
+  margin-top: 0.09231rem;
 }
 
 .main-block .item ul li img.job3 {
-  width: 0.58667rem;
-  margin-top: 0.10667rem;
+  width: 0.67692rem;
+  margin-top: 0.12308rem;
 }
 
 .main-block .item ul li img.job4 {
-  width: 0.68rem;
-  margin-top: 0.05333rem;
+  width: 0.78462rem;
+  margin-top: 0.06154rem;
 }
 
 .main-block .item ul li span {
-  font-size: 11px;
+  font-size: 10px;
   font-family: PingFang SC;
   color: #656565;
 }
 
 .main-block .item.welfare {
-  margin-top: 1.22667rem;
+  margin-top: 1.41538rem;
 }
 
 .main-block .item.welfare ul {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.53333rem;
+  margin-top: 0.61538rem;
 }
 
 .main-block .item.welfare ul li {
@@ -76,11 +77,11 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 2.82667rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.73333rem;
-  border-right: 0.02667rem solid #e5e5e5;
-  border-bottom: 0.02667rem solid #e5e5e5;
+  height: 3.26154rem;
+  padding-top: 0.92308rem;
+  padding-bottom: 0.84615rem;
+  border-right: 0.03077rem solid #e5e5e5;
+  border-bottom: 0.03077rem solid #e5e5e5;
 }
 
 .main-block .item.welfare ul li:nth-child(4n) {
@@ -92,19 +93,19 @@
 }
 
 .main-block .item.welfare ul li img {
-  width: 0.61333rem;
-  height: 0.72rem;
+  width: 0.70769rem;
+  height: 0.83077rem;
 }
 
 .main-block .item.welfare ul li img.welfare6 {
-  width: 0.69333rem;
-  height: 0.74667rem;
+  width: 0.8rem;
+  height: 0.86154rem;
 }
 
 .main-block img.bg {
   position: absolute;
   right: 0;
-  top: 4.89333rem;
-  width: 3.82667rem;
+  top: 5.64615rem;
+  width: 4.41538rem;
   opacity: 0.6;
 }

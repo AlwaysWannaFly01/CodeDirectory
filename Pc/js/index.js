@@ -189,19 +189,19 @@ $(function () {
         loop: true,
         /* 自动播放 */
         autoplay: {
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false /* 如果设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay */,
         },
         fadeEffect: true, //true。开启淡出。过渡时，原slide透明度从1->0（淡出），过渡中的slide透明度从0->1（淡入），其他slide透明度0。当你的slide中图片大小不同时可以用到。
         coverflowEffect: {
             rotate: 20, //slide做3d旋转时Y轴的旋转角度
             stretch: -10, //每个slide之间的拉伸值，越大slide靠得越紧。5.3.6 后可使用%百分比
-            depth: 120, //slide的位置深度。值越大z轴距离越远，看起来越小。
+            depth: 160, //slide的位置深度。值越大z轴距离越远，看起来越小。
             modifier: 2, //depth和rotate和stretch的倍率，相当于depth*modifier、rotate*modifier、stretch*modifier，值越大这三个参数的效果越明显。
             slideShadows: false, //是否开启slide阴影
         },
         slideActiveClass: 'product-slide-active',
-        spaceBetween: 15,
+        spaceBetween: 20,
     })
 
     var storeSwiper = new Swiper('.store-swiper-container', {
@@ -214,7 +214,7 @@ $(function () {
         centeredSlides: true,
         centeredSlidesBounds: false,
         spaceBetween: 15,
-        loop: true
+        loop: false
     })
 
     // }, 2400);
