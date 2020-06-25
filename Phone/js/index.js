@@ -4,8 +4,8 @@ NProgress.configure({
 });
 
 $(document).ready(function () {
-    console.log($('body').height());
-    console.log($('body').width());
+    // console.log($('body').height());
+    // console.log($('body').width());
     NProgress.start();
     $('body').show();
     $('.loading_bg').css({ 'height': $('body').height(), 'display': 'block' })

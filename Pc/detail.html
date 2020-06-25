@@ -29,7 +29,6 @@
 
 </body>
 <script>
-
     //------页面数据start------//
 
     var list = {
@@ -950,7 +949,6 @@
 
     //------数据填充start------//
 
-
     //nav填充
     var nav_tabs = '';
 
@@ -1102,7 +1100,6 @@
         init();
         //清除锚点
         window.location.hash = '';
-
     });
 
     //初始化
@@ -1110,6 +1107,10 @@
         $('.food_item').removeClass('active');
         $('.table_item').removeClass('show active');
     }
+
+    $('.nav-tabs').on('click', 'a', function(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    })
 
 </script>
 

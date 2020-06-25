@@ -8,24 +8,21 @@
     <title>产品详情</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./css/swiper/swiper.css">
-    <!-- <link rel="stylesheet" href="./css/nprogress/style.css"> -->
-    <!-- <link rel="stylesheet" href="./css/nprogress/nprogress.css"> -->
+    <link rel="stylesheet" href="./css/nprogress/style.css">
+    <link rel="stylesheet" href="./css/nprogress/nprogress.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/detail.css">
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap.js"></script>
     <script src="./lib/swiper.js"></script>
-    <!-- <script src="./lib/nprogress.js"></script> -->
+    <script src="./lib/nprogress.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/detail.js"></script>
 </head>
 
-<body>
-    <!-- <div class="aaa">
-        加载中...
-    </div>
+<body style='display: none'>
     <img src="./images/loading-bg-2.png" class="loading_bg">
-	<img src="./images/logo-transparent.png" class="loading_transparent"> -->
+    <img src="./images/logo-transparent.png" class="loading_transparent">
     <div class="menu-container menuAnchor">
         <div class="logo_block">
             <img src="./images/logo.png" class="logo">
@@ -51,7 +48,7 @@
         <img src="./images/p-toggle-bg.png" class="bg">
     </div>
     <div class="mask"></div>
-    <div class="topNav">
+    <div class="topNav fade_ out_">
         <div class="swiper-wrapper">
             <div class="swiper-slide active">
                 <a class="nav-item nav-link" data-toggle="tab" href="#nav-salad" aria-selected="true">沙拉</a>
@@ -79,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div id="mainSection">
+    <div id="mainSection" class="fade_ out_">
         <div class="tab-content tab_product_container" id="productSection"></div>
         <div class="footer">
             <div class="addr">
@@ -105,29 +102,49 @@
         </div>
     </div>
 
+
 </body>
 <script>
-    // NProgress.configure({
-    //     showSpinner: false,
-    // });
+    NProgress.configure({
+        showSpinner: false,
+    });
 
     $(document).ready(function () {
-        // $('body').show();
-        // $('.loading_bg').css({ 'height': $('body').height() })
-        // NProgress.start();
-        // let timer = setTimeout(function () {
-            // $('.loading_bg').hide()
-            // $('.loading_transparent').hide()
-            // NProgress.done();
-            // clearTimeout(timer)
-        // },600)
+        NProgress.start();
+        $('body').show();
+        $('.loading_bg').css({
+            'height': $('body').height(),
+            'display': 'block'
+        })
+        $('.loading_transparent').css({
+            'display': 'block'
+        })
+        setTimeout(function () {
+            NProgress.done();
+            $('.loading_bg').hide()
+            $('.loading_transparent').hide()
+            $('.fade_').removeClass('out_');
+            // $('.page-container').css({
+            //     'display': 'block'
+            // })
+        }, 1400)
 
         let screenHeight = $('body').height()
         let menuHeight = $('.menu-container').height()
         let topNavHeight = $('.topNav').height()
         let height = (screenHeight - menuHeight - topNavHeight) + 'px'
-        $('#mainSection').css({ 'width': '100%', 'height': height, 'overflow': 'auto', 'position': 'fixed', 'top': (menuHeight + topNavHeight) + 'px', 'display': 'flex', 'flexDirection': 'column' })
-        $('#productSection').css({ 'flex': 1 })
+        $('#mainSection').css({
+            'width': '100%',
+            'height': height,
+            'overflow': 'auto',
+            'position': 'fixed',
+            'top': (menuHeight + topNavHeight) + 'px',
+            'display': 'flex',
+            'flexDirection': 'column'
+        })
+        $('#productSection').css({
+            'flex': 1
+        })
         var list = {
             salad: {
                 id: 'nav-salad',
@@ -1427,7 +1444,6 @@
             $(this).addClass('active')
         })
     })
-
 </script>
 
 </html>

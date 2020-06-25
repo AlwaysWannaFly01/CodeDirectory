@@ -4,9 +4,6 @@ $highlight-color: #F90;
 @function px2rem($px) {
     @return ($px / $fontSize)+rem;
 }
-body {
-    display: none;
-}
 .page-container{
     display: none;
 }

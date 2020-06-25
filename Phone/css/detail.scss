@@ -4,24 +4,32 @@ $fontSize:37.5;
     @return ($px / $fontSize)+rem;
 }
 
-// img.loading_bg {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     z-index: 999;
-// }
+.page-container {
+    display: none;
+}
 
-// img.loading_transparent {
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     width: px2rem(160.5);
-//     height: px2rem(95.5);
-//     transform: translate(-50%, -50%);
-//     z-index: 1000;
-// }
+img.loading_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+img.loading_transparent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: px2rem(160.5);
+    height: px2rem(95.5);
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
 .aaa {
     display: none;
 }
@@ -48,7 +56,7 @@ $fontSize:37.5;
             // margin-right: px2rem(33.5);
 
             a {
-                transition: all .3s ease;
+                transition: all .1s ease;
                 display: block;
                 font-size: 14px;
                 font-family: PingFang SC;
