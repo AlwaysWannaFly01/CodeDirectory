@@ -10,7 +10,6 @@ function arrowFade(param, cb, time = 900) {
 
 $(function () {
     $('body').show();
-    // $('body').addClass('height100 bg')
     NProgress.start();
     setTimeout(function () {
         NProgress.done();

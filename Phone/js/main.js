@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(function () {
-    $('#header').load('./header.html', function () {
-    });
-    $('#footer').load('./footer.html');
+    // $('#header').load('./header.html', function () {
+    // });
+    // $('#footer').load('./footer.html');
 
     $('.menuBtn').click(function () {
         $('.mask').show()
