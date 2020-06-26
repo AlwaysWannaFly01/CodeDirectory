@@ -43,7 +43,6 @@ $(function () {
             },
             afterLoad: function (anchorLink, index) {
                 if (index == 1) {
-                    console.log('滚动到第1屏')
                     $("#menu li").each(function (index, domEle) {
                         $(domEle).children('a').removeClass('red white').children('span').text('')
                     })
@@ -56,20 +55,13 @@ $(function () {
                     index == 5 ||
                     index == 6
                 ) {
-                    // console.log('滚动到第' + index + '屏')
                     $('.menuAnchor').css('background', '#C82D21')
-
                     if (index == 2) {
                         $("#menu li").each(function (index, domEle) {
                             $(domEle).children('a').removeClass('red white').children('span').text('')
                         })
                         $($('#menu li')[1]).children('a').addClass('red').children('span').text('产品介绍')
-                        // swiper.autoplay = {
-                        //     delay: 2000,
-                        //     disableOnInteraction: false /* 如果设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay */,
-                        // }
                         // swiper.autoplay.start();
-
                     }
                     if (index == 3) {
                         $("#menu li").each(function (index, domEle) {
@@ -77,9 +69,7 @@ $(function () {
                         })
                         $($('#menu li')[2]).children('a').addClass('red').children('span').text('品牌介绍')
                     }
-                    //滚动到第4屏   
                     if (index == 4) {
-                        console.log('滚动到第4屏');
                         $("#menu li").each(function (index, domEle) {
                             $(domEle).children('a').removeClass('red white').children('span').text('')
                         })
@@ -115,7 +105,6 @@ $(function () {
                     }
 
                     if (index == 6) {
-                        console.log('滚动到第6屏');
                         $("#menu li").each(function (index, domEle) {
                             $(domEle).children('a').removeClass('red white').children('span').text('')
                         })
@@ -124,10 +113,9 @@ $(function () {
                 }
             },
             onLeave: function (index, direction) {
-                console.log(index, direction)
+                // console.log(index, direction)
                 $('.menuList').hide()
                 if (index == '1') {
-                    console.log('离开第一屏');
                     $("#menu li").each(function (index, domEle) {
                         if (index === 0) {
                             $(domEle).children().removeClass('white')
@@ -143,7 +131,6 @@ $(function () {
                 ) {
                     // console.log('离开第' + index + '屏')
                     if (direction == '1') {
-                        // console.log('进入第1屏')
                         $('.menuAnchor').animate(
                             { opacity: '1' },
                             500,
