@@ -1,6 +1,6 @@
 .header_container {
   background: url("../images/4banner.png") center no-repeat;
-  background-size: auto 340px;
+  background-size: 100% 340px;
 }
 
 .notice_container {
