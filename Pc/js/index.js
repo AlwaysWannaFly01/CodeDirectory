@@ -2,15 +2,12 @@ NProgress.configure({
     showSpinner: false, // 不显示转动的小圆圈
     parent: 'body'
 });
-function arrowFade(param, cb, time = 900) {
-    $('' + param).fadeIn(time, function () {
-        cb()
-    })
-}
 
 $(function () {
-    $('body').show();
     NProgress.start();
+    $('body').show();
+    $('.loading_bg').css({ 'height': $('body').height(), 'display': 'block' })
+    $('.loading_transparent').css({ 'display': 'block' })
     setTimeout(function () {
         NProgress.done();
         $('.loading_bg').hide()
@@ -36,7 +33,7 @@ $(function () {
             afterRender: function () {
                 $("#menu li").each(function (index, domEle) {
                     if (index === 0) {
-                        $(domEle).children().addClass('white').children('span').text('轮播图')
+                        $(domEle).children().addClass('white').children('span').text('轮播图');
                     }
                 })
 
@@ -75,18 +72,16 @@ $(function () {
                         })
                         $($('#menu li')[3]).children('a').addClass('red').children('span').text('加盟流程')
 
-                        arrowFade('.arrow1', function () {
-                            arrowFade('.arrow2', function () {
-                                arrowFade('.arrow3', function () {
-                                    arrowFade('.arrow4', function () {
-                                        arrowFade('.arrow5', function () {
-                                            arrowFade('.arrow6', function () {
-                                                arrowFade('.arrow7', function () {
-                                                    arrowFade('.arrow8', function () {
-                                                        arrowFade('.arrow9', function () {
-                                                            arrowFade('.arrow10', function () {
-
-                                                            })
+                        $('.arrow1').fadeIn(900, function () {
+                            $('.arrow2').fadeIn(900, function () {
+                                $('.arrow3').fadeIn(900, function () {
+                                    $('.arrow4').fadeIn(900, function () {
+                                        $('.arrow5').fadeIn(900, function () {
+                                            $('.arrow6').fadeIn(900, function () {
+                                                $('.arrow7').fadeIn(900, function () {
+                                                    $('.arrow8').fadeIn(900, function () {
+                                                        $('.arrow9').fadeIn(900, function () {
+                                                            $('.arrow10').fadeIn(900)
                                                         })
                                                     })
                                                 })
@@ -161,10 +156,10 @@ $(function () {
             grabCursor: true,//设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
             centeredSlides: true,
             slidesPerView: 'auto',
-            loop: true,
+            loop: false,
             /* 自动播放 */
             autoplay: {
-                delay: 3000,
+                delay: 2700,
                 disableOnInteraction: false /* 如果设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay */,
             },
             fadeEffect: true, //true。开启淡出。过渡时，原slide透明度从1->0（淡出），过渡中的slide透明度从0->1（淡入），其他slide透明度0。当你的slide中图片大小不同时可以用到。

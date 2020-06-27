@@ -67,10 +67,10 @@ a:active {
   color: #fff;
 }
 
-/* .bg {
-    background: url(./loading-bg.jpg) no-repeat center;
-    background-size: cover;
-} */
+body {
+  display: none;
+}
+
 img.loading_bg {
   position: fixed;
   top: 0;
@@ -78,6 +78,7 @@ img.loading_bg {
   width: 100%;
   height: 100%;
   z-index: 999;
+  display: none;
 }
 
 img.loading_transparent {
@@ -88,6 +89,7 @@ img.loading_transparent {
   height: 161px;
   transform: translate(-50%, -50%);
   z-index: 1000;
+  display: none;
 }
 
 .menu-container {
@@ -141,8 +143,6 @@ img.loading_transparent {
 }
 
 #dowebok .section.part2 .products_container .swiper-slide {
-  background-position: center;
-  background-size: cover;
   width: 365px;
   height: 490px;
   padding-top: 15px;

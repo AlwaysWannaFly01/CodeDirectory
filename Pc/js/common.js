@@ -6,11 +6,12 @@ $(function () {
 
         $('.menuList .oper img').click(function () {
             $('.menuList').slideUp(300)
-        })
+        });
     });
+
     $('#footer').load('./footer.html', function () {
-        let url = window.location.pathname
-        let result = url.indexOf('detail.html')
+        var url = window.location.pathname;
+        var result = url.indexOf('detail.html');
         if (result == -1) {
             $('.foot-procuct').on('mouseenter', 'li a', function () {
                 $(this).css({'cursor':'pointer'})
@@ -19,7 +20,7 @@ $(function () {
                 $(this).css({'cursor':'default'})
             })
             $('.foot-procuct').on('click', 'li a', function () {
-                let type = $(this).data('type')
+                var type = $(this).data('type')
                 window.location.href = 'detail.html#' + type
             })
 
