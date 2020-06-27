@@ -502,14 +502,10 @@ img.loading_transparent {
 }
 
 #dowebok .section.part6 .main .apply-container form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 62.5%;
+  text-align: left;
 }
 
 #dowebok .section.part6 .main .apply-container form .form-group {
-  flex: 1;
   margin-bottom: 15px;
 }
 
@@ -528,10 +524,6 @@ img.loading_transparent {
 
 #dowebok .section.part6 .main .apply-container form .form-group .form-control:focus {
   box-shadow: 0 0 0 0;
-}
-
-#dowebok .section.part6 .main .apply-container form .form-textarea {
-  flex: 2;
 }
 
 #dowebok .section.part6 .main .apply-container form button.submit {

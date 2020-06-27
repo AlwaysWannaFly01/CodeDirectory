@@ -496,13 +496,12 @@ img.loading_transparent {
                     }
 
                     form {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        height: 62.5%;
-
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: space-between;
+                        text-align: left;
                         .form-group {
-                            flex: 1;
+                            // flex: 1;
                             margin-bottom: 15px;
 
                             .form-control {
@@ -524,7 +523,7 @@ img.loading_transparent {
                         }
 
                         .form-textarea {
-                            flex: 2;
+                            // flex: 2;
                         }
 
                         button.submit {
