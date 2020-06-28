@@ -28,4 +28,6 @@ $(function () {
             window.location.href = 'javascript:void(0)'
         }
     });
+
+    $("img.lazy").lazyload({effect: "fadeIn"});
 });
