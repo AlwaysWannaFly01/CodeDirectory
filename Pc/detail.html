@@ -37,8 +37,6 @@
             'id': 'nav-salad',
             'href': '#nav-salad',
             'name': '沙拉',
-            'nav_active' : 'active',
-            'product_active' : 'show active',
             'data': {
                 0 : {
                     'id': 'pills-01',
@@ -264,8 +262,6 @@
             'id': 'nav-grain',
             'href': '#nav-grain',
             'name': '谷物饭',
-            'nav_active' : '',
-            'product_active' : '',
             'data': {
                 0 : {
                     'id': 'pills-04-01',
@@ -532,7 +528,6 @@
             'id': 'nav-pannini',
             'href': '#nav-pannini',
             'name': '帕尼尼',
-            'product_active' : '',
             'data': {
                 0 : {
                     'id': 'pills-03-01',
@@ -609,8 +604,6 @@
             'id': 'nav-sandwich',
             'href': '#nav-sandwich',
             'name': '三明治',
-            'nav_active' : '',
-            'product_active' : '',
             'data': {
                 0 : {
                     'id': 'pills-02-01',
@@ -685,8 +678,6 @@
             'id': 'nav-snack',
             'href': '#nav-snack',
             'name': '小吃',
-            'nav_active' : '',
-            'product_active' : '',
             'data': {
                 0 : {
                     'id': 'pills-06-01',
@@ -794,8 +785,6 @@
             'id': 'nav-drink',
             'href': '#nav-drink',
             'name': '饮品',
-            'nav_active' : '',
-            'product_active' : '',
             'data': {
                 0 : {
                     'id': 'pills-07-01',
@@ -899,8 +888,6 @@
             'id': 'nav-sauce',
             'href': '#nav-sauce',
             'name': '酱汁',
-            'nav_active' : '',
-            'product_active' : '',
             'data': {
                 0 : {
                     'id': 'pills-08-01',
@@ -949,49 +936,51 @@
 
     //------数据填充start------//
 
-    //nav填充
-    var nav_tabs = '';
+    //生成填充html数据
+    function fill(e = null) {
 
-    $.each( list, function( k, v ){
+        //清空容器
+        $('.tab_product_container').html();
+        $('.nav-tabs').html();
 
         //锚点
         var hash = window.location.hash;
+        //优先使用点击li，再使用锚点，默认salad
+        var key = e ? e.name : hash ? hash.substring( 1 ) : 'salad';
 
-        if( hash ){
-            //清除选中
-            v.nav_active = '';
-            v.product_active = '';
+        //nav填充
+        var nav_tabs = '';
 
-            if( hash.substring( 1 ) == k ){
-                v.nav_active = 'active';
-                v.product_active = 'show active';
-            }
-        }
+        $.each( list, function( k, v ){
+
+            v.nav_active = key == k ? 'active' :'';
+            v.product_active = key == k ? 'show active' :'';
+
+            nav_tabs += '<a name="'+ k +'" class="nav-item nav-link li_item '+ v.nav_active +'" data-toggle="tab" href="'+ v.href +'" aria-selected="true">'+ v.name +'</a>';
+        });
+
+        $('.nav-tabs').html( nav_tabs );
+
+        //数据长度
+        var len = Object.keys( list[key].data ).length;
 
         //tab填充
         var tab_content = '';
-
-        nav_tabs += '<a name="'+ k +'" class="nav-item nav-link li_item '+ v.nav_active +'" data-toggle="tab" href="'+ v.href +'" aria-selected="true">'+ v.name +'</a>';
-
-        tab_content += '<div class="tab-pane fade '+ v.product_active +'" id="'+ v.id +'">';
-        // tab_content += '<h3>'+ v.name +'</h3>';
+        tab_content += '<div class="tab-pane fade show active" id="'+ key +'">';
 
         var ul_pills = '';
         var table_pills = '';
 
-        //数据长度
-        var len = Object.keys( v.data ).length;
-
-        $.each( v.data, function ( i, j ){
+        $.each( list[key].data, function ( i, j ){
 
             //图片列表
             var pill_li = '<li class="nav-item">' +
-                                '<a class="nav-link food_item" data-toggle="pill" href="'+ j.href +'" aria-selected="false">' +
-                                    '<div class="piece_item">' +
-                                        '<div class="border_item"><img src="'+ j.img +'"></div><span>'+ j.name +'</span>' +
-                                    '</div>' +
-                                '</a>' +
-                            '</li>';
+                '<a class="nav-link food_item" data-toggle="pill" href="'+ j.href +'" aria-selected="false">' +
+                '<div class="piece_item">' +
+                '<div class="border_item"><img src="'+ j.img +'"></div><span>'+ j.name +'</span>' +
+                '</div>' +
+                '</a>' +
+                '</li>';
 
             //热量列表
             var pill_div = '';
@@ -1034,11 +1023,10 @@
                 var pill_tab = '<table class="table table-striped"><thead><tr style="background-color: white;">' + table_th + '</tr></thead><tbody>' + table_td + '</tbody></table>';
 
                 pill_div = '<div class="table_item tab-pane fade" id="'+ j.id +'">' +
-                                '<h4>'+ j.name +'</h4>' +
-                                '<section>' + pill_tab + '</section>' +
-                            '</div>';
+                    '<h4>'+ j.name +'</h4>' +
+                    '<section>' + pill_tab + '</section>' +
+                    '</div>';
             }
-
 
             if( i % 4 == 0 ){
 
@@ -1048,13 +1036,11 @@
 
                 //每一排起始
                 ul_pills += '<ul class="nav nav-pills picture_piece a1">' + pill_li;
-
                 table_pills += '<div class="tab-content table_container">' + pill_div;
 
             }else if( i % 4 == 3 ){
 
                 ul_pills += pill_li;
-
                 table_pills += pill_div;
 
                 //每一排结束
@@ -1067,12 +1053,11 @@
             }else{
 
                 ul_pills += pill_li;
-
                 table_pills += pill_div;
             }
 
             if( i % 4 != 3 && i == len - 1 ){
-                //每一排结束
+                //列表结束
                 ul_pills += '</ul>';
                 table_pills += '</div>';
 
@@ -1084,33 +1069,35 @@
 
         tab_content += '</div>';
 
-        $('.tab_product_container').append( tab_content );
+        $('.tab_product_container').html( tab_content );
 
-    });
+    }
 
-    $('.nav-tabs').html( nav_tabs );
+    //默认调用
+    fill();
 
     //------数据填充end------//
 
-    $('.food_item').on('click', function () {
-        init();
+    $(document).on('click','.food_item',function () {
+        //防止重复显示
+        $('.food_item').removeClass('active');
+        $('.table_item').removeClass('show active');
+
+        var tab_id = this.href.split('#')[1];
+
+        $(this).addClass('active');
+        $('#'+tab_id ).addClass('show active');
     });
 
-    $('.li_item').on('click', function () {
-        init();
+    $(document).on('click','.li_item',function () {
+        fill(this);
         //清除锚点
         window.location.hash = '';
     });
 
-    //初始化
-    function init() {
-        $('.food_item').removeClass('active');
-        $('.table_item').removeClass('show active');
-    }
-
     $('.nav-tabs').on('click', 'a', function(){
         document.body.scrollTop = document.documentElement.scrollTop = 0;
-    })
+    });
 
 </script>
 
