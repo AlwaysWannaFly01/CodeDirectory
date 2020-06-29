@@ -29,5 +29,10 @@ $(function () {
         }
     });
 
-    $("img.lazy").lazyload({effect: "fadeIn"});
+    //图片懒加载
+    if( $("img.lazy").length ){
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    }
+
+
 });
