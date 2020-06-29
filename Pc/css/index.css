@@ -387,9 +387,9 @@ img.loading_transparent {
 }
 
 #dowebok .section.part6 {
-  background: url(../images/foot-bg2x.png) 100%;
+  background: url(../images/foot-bg.png) 100%;
+  background-size: cover;
   background-color: #272824;
-  background-position: bottom;
 }
 
 #dowebok .section.part6 .main {

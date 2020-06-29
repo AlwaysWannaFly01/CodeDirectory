@@ -105,11 +105,13 @@ $(function () {
                         })
                         $($('#menu li')[5]).children('a').addClass('red').children('span').text('申请加盟')
                     }
+                    
                 }
             },
             onLeave: function (index, direction) {
-                // console.log(index, direction)
+                console.log(index, direction)
                 $('.menuList').hide()
+                $('.menu-block').show()
                 if (index == '1') {
                     $("#menu li").each(function (index, domEle) {
                         if (index === 0) {

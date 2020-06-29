@@ -1,11 +1,15 @@
 $(function () {
     $('#header').load('./header.html', function () {
         $('.menuBtn').click(function () {
+            $('.menu-block').hide()
             $('.menuList').slideDown(500)
         });
 
         $('.menuList .oper img').click(function () {
-            $('.menuList').slideUp(300)
+            $('.menuList').slideUp(300, function () {
+                $('.menu-block').show()
+            })
+
         });
     });
 
@@ -14,10 +18,10 @@ $(function () {
         var result = url.indexOf('detail.html');
         if (result == -1) {
             $('.foot-procuct').on('mouseenter', 'li a', function () {
-                $(this).css({'cursor':'pointer'})
+                $(this).css({ 'cursor': 'pointer' })
             })
             $('.foot-procuct').on('mouseleave', 'li a', function () {
-                $(this).css({'cursor':'default'})
+                $(this).css({ 'cursor': 'default' })
             })
             $('.foot-procuct').on('click', 'li a', function () {
                 var type = $(this).data('type')
@@ -30,9 +34,7 @@ $(function () {
     });
 
     //图片懒加载
-    if( $("img.lazy").length ){
-        $("img.lazy").lazyload({effect: "fadeIn"});
+    if ($("img.lazy").length > 0) {
+        $("img.lazy").lazyload({ effect: "fadeIn", threshold: 200 });
     }
-
-
 });

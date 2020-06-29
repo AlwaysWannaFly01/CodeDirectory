@@ -113,14 +113,14 @@ a:active {
 }
 
 .menuList {
-  width: 100%;
+  width: 300px;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   box-sizing: border-box;
   z-index: 100;
   padding: 0 30px;
-  background-color: #CBCBCB;
+  background-color: rgba(203, 203, 203, 0.5);
   display: none;
 }
 
@@ -139,7 +139,7 @@ a:active {
 .menuList ul {
   display: flex;
   flex-direction: column;
-  padding-left: 80%;
+  padding-left: 70px;
   width: 100%;
   height: 440px;
   margin-bottom: 80px;
