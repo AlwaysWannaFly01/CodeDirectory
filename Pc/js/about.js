@@ -9,5 +9,6 @@ $(document).ready(function () {
         centeredSlides: true,
 		centeredSlidesBounds: false,
 		spaceBetween: 22,
+        lazy: true
     })
 })
