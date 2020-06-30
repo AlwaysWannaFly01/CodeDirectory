@@ -30,6 +30,7 @@
 
 </body>
 <script>
+	
     $(function () {
         //------页面数据start------//
         var list = {
@@ -938,7 +939,7 @@
         //------数据填充start------//
 
         //生成填充html数据
-        function fill(e = null) {
+        function fill(e) {
 
             //清空容器
             $('.tab_product_container').html();
@@ -1072,7 +1073,7 @@
 
             $('.tab_product_container').html(tab_content);
 
-        }
+        };
 
         //默认调用
         fill();
@@ -1099,7 +1100,7 @@
         $('.nav-tabs').on('click', 'a', function () {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         });
-    })
+    });
 
 
 </script>

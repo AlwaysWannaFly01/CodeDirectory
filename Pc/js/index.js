@@ -109,7 +109,7 @@ $(function () {
                 }
             },
             onLeave: function (index, direction) {
-                console.log(index, direction)
+                // console.log(index, direction)
                 $('.menuList').hide()
                 $('.menu-block').show()
                 if (index == '1') {
