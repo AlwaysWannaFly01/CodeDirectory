@@ -492,10 +492,6 @@ img.loading_transparent {
                             }
                         }
 
-                        .form-textarea {
-                            // flex: 2;
-                        }
-
                         button.submit {
                             height: 45px;
                             width: 132px;
@@ -625,4 +621,23 @@ img.loading_transparent {
         opacity: 1;
         box-shadow: 10px 36px 46px 10px rgba(200, 45, 33, 0.28)
     }
+}
+/* 首页临时修改 */
+div#footer.footer.part6 {
+	max-width: 1600px;
+	padding-bottom: 15px;
+	background: transparent;
+	.contact_container{
+		ul{
+			text-align: left;
+		}
+	}
+	.company_container{
+		text-align: left;
+	}
+	.code{
+		h4{
+			text-align: left;
+		}
+	}
 }

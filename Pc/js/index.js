@@ -1,28 +1,21 @@
 NProgress.configure({
     showSpinner: false, // 不显示转动的小圆圈
-    parent: 'body'
-});
+    parent: 'body',
+})
 
 $(function () {
-    NProgress.start();
-    $('body').show();
-    $('.loading_bg').css({ 'height': $('body').height(), 'display': 'block' })
-    $('.loading_transparent').css({ 'display': 'block' })
+    NProgress.start()
+    $('body').show()
+    $('.loading_bg').css({ height: $('body').height(), display: 'block' })
+    $('.loading_transparent').css({ display: 'block' })
     setTimeout(function () {
-        NProgress.done();
+        NProgress.done()
         $('.loading_bg').hide()
         $('.loading_transparent').hide()
-        $('.fade').removeClass('out');
+        $('.fade').removeClass('out')
 
         $('#dowebok').fullpage({
-            sectionsColor: [
-                '',
-                '#fff',
-                '',
-                '#fff',
-                '#f7f7f7',
-                ''
-            ],
+            sectionsColor: ['', '#fff', '', '#fff', '#f7f7f7', ''],
             loopBottom: false,
             anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
             menu: '#menu',
@@ -31,19 +24,30 @@ $(function () {
             // continuousVertical: true,
             paddingTop: '70px',
             afterRender: function () {
-                $("#menu li").each(function (index, domEle) {
+                $('#menu li').each(function (index, domEle) {
                     if (index === 0) {
-                        $(domEle).children().addClass('white').children('span').text('轮播图');
+                        $(domEle)
+                            .children()
+                            .addClass('white')
+                            .children('span')
+                            .text('轮播图')
                     }
                 })
-
             },
             afterLoad: function (anchorLink, index) {
                 if (index == 1) {
-                    $("#menu li").each(function (index, domEle) {
-                        $(domEle).children('a').removeClass('red white').children('span').text('')
+                    $('#menu li').each(function (index, domEle) {
+                        $(domEle)
+                            .children('a')
+                            .removeClass('red white')
+                            .children('span')
+                            .text('')
                     })
-                    $($('#menu li')[0]).children('a').addClass('white').children('span').text('轮播图')
+                    $($('#menu li')[0])
+                        .children('a')
+                        .addClass('white')
+                        .children('span')
+                        .text('轮播图')
                 }
                 if (
                     index == 2 ||
@@ -54,38 +58,80 @@ $(function () {
                 ) {
                     $('.menuAnchor').css('background', '#C82D21')
                     if (index == 2) {
-                        $("#menu li").each(function (index, domEle) {
-                            $(domEle).children('a').removeClass('red white').children('span').text('')
+                        $('#menu li').each(function (index, domEle) {
+                            $(domEle)
+                                .children('a')
+                                .removeClass('red white')
+                                .children('span')
+                                .text('')
                         })
-                        $($('#menu li')[1]).children('a').addClass('red').children('span').text('产品介绍')
+                        $($('#menu li')[1])
+                            .children('a')
+                            .addClass('red')
+                            .children('span')
+                            .text('产品介绍')
                         // swiper.autoplay.start();
                     }
                     if (index == 3) {
-                        $("#menu li").each(function (index, domEle) {
-                            $(domEle).children('a').removeClass('red white').children('span').text('')
+                        $('#menu li').each(function (index, domEle) {
+                            $(domEle)
+                                .children('a')
+                                .removeClass('red white')
+                                .children('span')
+                                .text('')
                         })
-                        $($('#menu li')[2]).children('a').addClass('red').children('span').text('品牌介绍')
+                        $($('#menu li')[2])
+                            .children('a')
+                            .addClass('red')
+                            .children('span')
+                            .text('品牌介绍')
                     }
                     if (index == 4) {
-                        $("#menu li").each(function (index, domEle) {
-                            $(domEle).children('a').removeClass('red white').children('span').text('')
+                        $('#menu li').each(function (index, domEle) {
+                            $(domEle)
+                                .children('a')
+                                .removeClass('red white')
+                                .children('span')
+                                .text('')
                         })
-                        $($('#menu li')[3]).children('a').addClass('red').children('span').text('加盟流程')
+                        $($('#menu li')[3])
+                            .children('a')
+                            .addClass('red')
+                            .children('span')
+                            .text('加盟流程')
 
                         $('.arrow1').fadeIn(900, function () {
                             $('.arrow2').fadeIn(900, function () {
                                 $('.arrow3').fadeIn(900, function () {
                                     $('.arrow4').fadeIn(900, function () {
                                         $('.arrow5').fadeIn(900, function () {
-                                            $('.arrow6').fadeIn(900, function () {
-                                                $('.arrow7').fadeIn(900, function () {
-                                                    $('.arrow8').fadeIn(900, function () {
-                                                        $('.arrow9').fadeIn(900, function () {
-                                                            $('.arrow10').fadeIn(900)
-                                                        })
-                                                    })
-                                                })
-                                            })
+                                            $('.arrow6').fadeIn(
+                                                900,
+                                                function () {
+                                                    $('.arrow7').fadeIn(
+                                                        900,
+                                                        function () {
+                                                            $('.arrow8').fadeIn(
+                                                                900,
+                                                                function () {
+                                                                    $(
+                                                                        '.arrow9'
+                                                                    ).fadeIn(
+                                                                        900,
+                                                                        function () {
+                                                                            $(
+                                                                                '.arrow10'
+                                                                            ).fadeIn(
+                                                                                900
+                                                                            )
+                                                                        }
+                                                                    )
+                                                                }
+                                                            )
+                                                        }
+                                                    )
+                                                }
+                                            )
                                         })
                                     })
                                 })
@@ -93,19 +139,35 @@ $(function () {
                         })
                     }
                     if (index == 5) {
-                        $("#menu li").each(function (index, domEle) {
-                            $(domEle).children('a').removeClass('red white').children('span').text('')
+                        $('#menu li').each(function (index, domEle) {
+                            $(domEle)
+                                .children('a')
+                                .removeClass('red white')
+                                .children('span')
+                                .text('')
                         })
-                        $($('#menu li')[4]).children('a').addClass('red').children('span').text('门店展示')
+                        $($('#menu li')[4])
+                            .children('a')
+                            .addClass('red')
+                            .children('span')
+                            .text('门店展示')
+                        storeSwiper.autoplay.start()
                     }
 
                     if (index == 6) {
-                        $("#menu li").each(function (index, domEle) {
-                            $(domEle).children('a').removeClass('red white').children('span').text('')
+                        $('#menu li').each(function (index, domEle) {
+                            $(domEle)
+                                .children('a')
+                                .removeClass('red white')
+                                .children('span')
+                                .text('')
                         })
-                        $($('#menu li')[5]).children('a').addClass('red').children('span').text('申请加盟')
+                        $($('#menu li')[5])
+                            .children('a')
+                            .addClass('red')
+                            .children('span')
+                            .text('申请加盟')
                     }
-                    
                 }
             },
             onLeave: function (index, direction) {
@@ -113,7 +175,7 @@ $(function () {
                 $('.menuList').hide()
                 $('.menu-block').show()
                 if (index == '1') {
-                    $("#menu li").each(function (index, domEle) {
+                    $('#menu li').each(function (index, domEle) {
                         if (index === 0) {
                             $(domEle).children().removeClass('white')
                         }
@@ -139,7 +201,6 @@ $(function () {
                         )
                     }
                 }
-
             },
         })
         var bannerSwiper = new Swiper('.banner-swiper-container', {
@@ -155,7 +216,7 @@ $(function () {
 
         var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow', // slide的切换效果，默认为"slide","fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）
-            grabCursor: true,//设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
+            grabCursor: true, //设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
             centeredSlides: true,
             slidesPerView: 'auto',
             loop: false,
@@ -186,8 +247,9 @@ $(function () {
             centeredSlides: true,
             centeredSlidesBounds: false,
             spaceBetween: 15,
-            loop: false
+            loop: false,
         })
-
-    }, 2000);
+        //默认不开启
+        storeSwiper.autoplay.stop()
+    }, 2000)
 })

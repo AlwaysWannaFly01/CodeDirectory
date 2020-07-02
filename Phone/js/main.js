@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let fontSize = window.innerWidth / 10;
     fontSize = fontSize > 50 ? 50 : fontSize;
     html.style.fontSize = fontSize + "px";
-    console.log(fontSize)
+    // console.log(fontSize)
 });
 
 $(function () {

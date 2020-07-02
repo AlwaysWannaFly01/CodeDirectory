@@ -6,7 +6,7 @@
 .main_container {
   margin: 0 auto;
   padding-top: 95px;
-  padding-bottom: 180px;
+  padding-bottom: 120px;
   box-sizing: border-box;
   width: 1180px;
 }
@@ -89,7 +89,6 @@
 
 .main_container .position {
   float: left;
-  padding-left: 97px;
 }
 
 .main_container .position .element {
