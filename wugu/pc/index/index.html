@@ -6,10 +6,11 @@
     <meta name="keywords" content="轻食加盟,健身餐加盟,健康饮食加盟,减脂餐加盟,减肥餐加盟店">
     <meta name="description"
           content="睿健卡路里隶属于热浪餐饮旗下的连锁餐饮品牌,主要提供减肥餐加盟、轻食加盟、健身餐加盟、轻食馆加盟等，帮助客户了解减肥餐加盟流程，健身餐加盟费用等轻食加盟相关信息，为客户提供低投资专业的健康轻食加盟店，打造轻食简餐品牌。">
-    <link rel="stylesheet" type="text/css" href="css/css.css">
-    <script src="libs/jquery1.42.min.js"></script>
-    <script src="libs/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="js/mgxg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <script src="../libs/jquery1.42.min.js"></script>
+    <script src="../libs/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/index.js"></script>
     <script data-fixed="true">
         !function () {
             function params(u, p) {
@@ -20,7 +21,7 @@
 
             if (/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search,
                 "from") != "mobile") {
-                location.href = '../phone/index.html';
+                location.href = '../../phone/index.html';
             }
         }();
     </script>
@@ -28,110 +29,17 @@
 
 <body>
 <!--顶部导航——开始-->
-<div class="mg nav">
-    <div class="mg12">
-        <div class="logo">
-            <a href="index.htm">
-                <img src="images/logo.jpg" alt="轻食沙拉店加盟">
-                <h1>轻食加盟,轻食沙拉店加盟,睿健卡路里</h1>
-            </a>
-        </div>
-    </div>
-    <div class="mg navt">
-        <div class="mg12">
-            <img src="images/top2.jpg" width="370" height="40" alt="轻食沙拉店加盟" style="float:right">
-            <img src="images/top1.jpg" width="370" height="40" alt="轻食沙拉店加盟">
-        </div>
-    </div>
-    <div class="mg navd">
-        <div class="mg12">
-            <ul id="nav" class="nyw12 clearfix">
-                <li class="mgl on">
-                    <h3>
-                        <a href="index.htm">
-                            首页
-                            <p>RUIJIAN</p>
-                        </a>
-                    </h3>
-                    <ul class="mglbox" style="display: none;">
-                    </ul>
-                </li>
-                <li class="mgl">
-                    <h3>
-                        <a href="product/index.html">
-                            睿健产品
-                            <p>PRODUCT</p>
-                        </a>
-                    </h3>
-                    <ul class="mglbox" style="display: none;">
-                        <li><a href="/zjss/" title="增肌塑身系">增肌塑身系</a></li>
-                        <li><a href="/whjz/" title="网红减脂系">网红减脂系</a></li>
-                        <li><a href="/wyfx/" title="文艺意面系">文艺意面系</a></li>
-                        <li><a href="/bqmx/" title="复兴波奇系">复兴波奇系</a></li>
-                        <li><a href="/mwxc/" title="美味小食站">美味小食站</a></li>
-                    </ul>
-                </li>
-
-                <li class="mgl l240">
-                    <h3>
-                        <a href="/team/">
-                            门店展示
-                            <p>STORE</p>
-                        </a>
-                    </h3>
-                    <ul class="mglbox" style="display: none;"></ul>
-                </li>
-                <li class="mgl">
-                    <h3>
-                        <a href="/news/">
-                            新闻动态
-                            <p>REPORT</p>
-                        </a>
-                    </h3>
-                    <ul class="mglbox" style="display: none;">
-                        <li><a href="/newsg/" title="公司动态">公司动态</a></li>
-                        <li><a href="/newsh/" title="行业资讯">行业资讯</a></li>
-                    </ul>
-                </li>
-                <li class="mgl">
-                    <h3>
-                        <a href="/about/">
-                            品牌故事
-                            <p>BRANDSTORY</p>
-                        </a>
-                    </h3>
-                    <ul class="mglbox" style="display: none;"></ul>
-                </li>
-                <li class="mgl">
-                    <h3>
-                        <a>
-                            加盟中心
-                            <p>JOIN US</p>
-                        </a>
-                    </h3>
-                    <ul class="mglbox" style="display: none;">
-                        <li><a href="/join/105.html" title="合作基础">合作基础</a></li>
-                        <li><a href="/join/107.html" title="品牌特色">品牌特色</a></li>
-                        <li><a href="/join/108.html" title="总部支持">总部支持</a></li>
-                        <li><a href="/join/109.html" title="合作流程">合作流程</a></li>
-                        <li><a href="/join/111.html" title="加盟Q&amp;A">加盟Q&amp;A</a></li>
-
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<div id="header" class="mg nav"></div>
 
 <!--广告首页大幻灯——开始-->
 <div class="mg banner">
     <div class="bd">
         <ul style="position: relative; width: 1526px; height: 500px;">
             <li style="position: absolute; width: 1526px; left: 0px; top: 0px; display: none;">
-                <a href='#' target="_self"><img src='images/allimg/20200513/1-200513110920923.jpg' alt=''></a>
+                <a href='#' target="_self"><img src='../images/allimg/20200513/1-200513110920923.jpg' alt=''></a>
             </li>
             <li style="position: absolute; width: 1526px; left: 0px; top: 0px; display: list-item;">
-                <a href='#' target="_self"><img src='images/allimg/20200512/1-200512152553124.jpg' alt=''></a>
+                <a href='#' target="_self"><img src='../images/allimg/20200512/1-200512152553124.jpg' alt=''></a>
             </li>
         </ul>
     </div>
@@ -165,31 +73,31 @@
                 </dt>
                 <dd>
                     <a href="/join/105.html" title="合作基础">
-                        <img src="images/allimg/20201207/3-20120GU42c48.jpg" width="50" height="50" alt="合作基础">
+                        <img src="../images/allimg/20201207/3-20120GU42c48.jpg" width="50" height="50" alt="合作基础">
                         <p>合作基础</p>
                     </a>
                 </dd>
                 <dd>
                     <a href="/join/107.html" title="品牌特色">
-                        <img src="images/allimg/20201207/3-20120GZ33R16.jpg" width="50" height="50" alt="品牌特色">
+                        <img src="../images/allimg/20201207/3-20120GZ33R16.jpg" width="50" height="50" alt="品牌特色">
                         <p>品牌特色</p>
                     </a>
                 </dd>
                 <dd>
                     <a href="/join/108.html" title="总部支持">
-                        <img src="images/allimg/20201207/3-20120GT405419.jpg" width="50" height="50" alt="总部支持">
+                        <img src="../images/allimg/20201207/3-20120GT405419.jpg" width="50" height="50" alt="总部支持">
                         <p>总部支持</p>
                     </a>
                 </dd>
                 <dd>
                     <a href="/join/109.html" title="合作流程">
-                        <img src="images/allimg/20201207/3-20120GZ053W8.jpg" width="50" height="50" alt="合作流程">
+                        <img src="../images/allimg/20201207/3-20120GZ053W8.jpg" width="50" height="50" alt="合作流程">
                         <p>合作流程</p>
                     </a>
                 </dd>
                 <dd>
                     <a href="/join/111.html" title="加盟Q&amp;A">
-                        <img src="images/allimg/20201207/3-20120GZ1042J.jpg" width="50" height="50"
+                        <img src="../images/allimg/20201207/3-20120GZ1042J.jpg" width="50" height="50"
                              alt="加盟Q&amp;A">
                         <p>加盟Q&amp;A</p>
                     </a>
@@ -209,26 +117,26 @@
 
                     <div class="box50">
                         <a title="加盟商合影">
-                            <img src="images/allimg/20201009/1-201009224322G1.jpg" alt="加盟商合影" width="300px"
+                            <img src="../images/allimg/20201009/1-201009224322G1.jpg" alt="加盟商合影" width="300px"
                                  height="300px">
                         </a>
                         <a title="加盟商合影1">
-                            <img src="images/allimg/20201009/1-201009224351C9.jpg" alt="加盟商合影1" width="300px"
+                            <img src="../images/allimg/20201009/1-201009224351C9.jpg" alt="加盟商合影1" width="300px"
                                  height="300px">
                         </a>
                         <a title="加盟商合影3">
-                            <img src="images/allimg/20201009/1-201009224420107.jpg" alt="加盟商合影3" width="300px"
+                            <img src="../images/allimg/20201009/1-201009224420107.jpg" alt="加盟商合影3" width="300px"
                                  height="300px">
                         </a>
                         <a title="加盟商合影3">
-                            <img src="images/allimg/20201009/1-20100922443H22.jpg" alt="加盟商合影3" width="300px"
+                            <img src="../images/allimg/20201009/1-20100922443H22.jpg" alt="加盟商合影3" width="300px"
                                  height="300px">
                         </a>
                     </div>
 
                     <div class="box50">
                         <a title="订单">
-                            <img src="images/allimg/20201009/1-201009194233108.jpg" alt="订单" width="600px;"
+                            <img src="../images/allimg/20201009/1-201009194233108.jpg" alt="订单" width="600px;"
                                  height="600px;">
                         </a>
                     </div>
@@ -264,7 +172,7 @@
                             <dl>
                                 <!--推荐-->
                                 <dt>
-                                    <img src='images/allimg/20201205/3-2012051421454W.jpg' alt="北京特色轻食月利润究竟有多少呢?"
+                                    <img src='../images/allimg/20201205/3-2012051421454W.jpg' alt="北京特色轻食月利润究竟有多少呢?"
                                          width="140" height="100">
                                     <p>
                                         <a href='/news/377.html' title="北京特色轻食月利润究竟有多少呢?">
@@ -351,7 +259,7 @@
                             <dl>
                                 <!--推荐-->
                                 <dt>
-                                    <img src='images/allimg/20201205/3-201205115I2159.jpg' alt="加盟商专访| 门店月月9999+爆"
+                                    <img src='../images/allimg/20201205/3-201205115I2159.jpg' alt="加盟商专访| 门店月月9999+爆"
                                          width="140" height="100">
                                     <p>
                                         <a href='/news/376.html' title="加盟商专访| 门店月月9999+爆">
@@ -659,92 +567,24 @@
     </div>
 </div>-->
 
-<!--网站公用底部——开始-->
-<div class="mg foot">
-    <div class="mg footin">
-        <div class="mg12">
-            <div class="m380">
-                <img src="images/logo.png" width="210" height="50" alt="睿健卡路里" style="margin-top:25px;">
-                <p>
-                    睿健卡路里<br>电话：400-6688-034<br>
-                    地址: 浙江省杭州市滨江区滨江路IX-WORK大厦C座501<br>
-                    网站备案：<a href="http://www.beian.miit.gov.cn/" rel="nofollow" target="_blank"
-                            style="color:#666;">浙ICP备19019996号-5</a>
-                    <br>睿健卡路里_轻食餐饮加盟_轻食加盟项目_轻食馆加盟创业_轻食沙拉加盟费<br>
-                </p>
-            </div>
-            <div class="m820">
-                <ul>
-                    <li>
-                        <p>品牌溯源</p>
-                        <a href="/about/">品牌说明</a>
-                        <a href="/about/">品牌特色</a>
-                        <a href="/about/">睿健故事</a>
-                    </li>
-                    <li>
-                        <p>产品介绍</p>
-                        <a href="/zjss/">增肌塑身</a>
-                        <a href="/whjz/">网红减脂</a>
-                        <a href="/mwxc/">美味小吃</a>
-                    </li>
-                    <li>
-                        <p>加盟中心</p>
-                        <a href="/join/16.html">合作基础</a>
-                        <a href="/join/107.html" rel="nofollow">品牌特色</a>
-                        <a href="/join/108.html" rel="nofollow">总部支持</a>
-                    </li>
-                    <li>
-                        <p>走进品牌</p>
-                        <a href="/team/">门店展示</a>
-                        <a href="/news/">最新动态</a>
-                        <a href="/contact/" rel="nofollow">联系我们</a>
-                    </li>
-                    <!--<li class="gz">
-                        <p>关注我们</p><br>
-                        <img src="images/weixin1.jpg" width="75" height="75" alt="微信公众号">
-                        <img src="images/weixin2.jpg" width="75" height="75" alt="微信公众号">
-                    </li>-->
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<!--网站公用底部-->
+<div id="footer" class="mg foot"></div>
 
 <!--返回顶部-->
-<div class="mg">
-    <div class="mg12 fixs" style="display: none;">
-        <div class="girl">
-            <img src="images/kf1.png" alt="睿健卡路里" width="100" usemap="#Map">
-            <a class="totop" title="返回顶部"><img src="images/top.png" width="40" height="40" alt="返回顶部"></a>
-        </div>
-        <div class="tom">
-            <div class="mg12">
-                <span>x</span>
-                <a href="/message/#Submit" target="_blank" rel="nofollow">
-                    <img src="images/tomessage.png" width="1200" height="80" alt="联系我们">
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------返回顶部---------->
+<div id="toTop" class="mg"></div>
 
-<!----------Js调用--------->
-<script type="text/javascript" src="js/SuperSlideConfig.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
 
-<!----------Js调用---------->
-
-<!--网站公用底部——结束-->
 <!-------友情链接 s------>
-<div class="mg link">
-    <div class="mg12">
-        友情链接：
-        <a href='index.htm' target="_blank">轻食加盟</a>
-        <a href='index-1.htm' target="_blank">耐震电接点压力表</a>
-        <a href='index-2.htm' target="_blank">杭州代理记账</a>
-        <a href='index-3.htm' target="_blank">布袋除尘器</a>
-    </div>
-</div>
+<!--<div class="mg link">-->
+<!--    <div class="mg12">-->
+<!--        友情链接：-->
+<!--        <a href='index.htm' target="_blank">轻食加盟</a>-->
+<!--        <a href='index-1.htm' target="_blank">耐震电接点压力表</a>-->
+<!--        <a href='index-2.htm' target="_blank">杭州代理记账</a>-->
+<!--        <a href='index-3.htm' target="_blank">布袋除尘器</a>-->
+<!--    </div>-->
+<!--</div>-->
 </body>
 
 </html>

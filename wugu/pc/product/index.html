@@ -10,133 +10,12 @@
     <link rel="stylesheet" type="text/css" href="../css/css.css">
     <script src="..\libs\jquery1.42.min.js"></script>
     <script src="..\libs\jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../js/mgxg.js"></script>
-    <script data-fixed="true">
-        !function () {
-            function params(u, p) {
-                var m = new RegExp("(?:&|/?)" + p + "=([^&$]+)").exec(u);
-                return m ? m[1] : '';
-            }
-
-            if (/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile") {
-
-            }
-        }();
-    </script>
-
+    <script src="..\js\common.js"></script>
 
 </head>
 <body>
 
-<div class="mg nav">
-    <div class="mg12">
-        <div class="logo">
-            <a href="http://www.rjkll.cn/"><img src="..\images\logo.jpg" alt="轻食沙拉店加盟">
-                <h1 style="DISPLAY: none;">轻食加盟,轻食沙拉店加盟,睿健卡路里</h1></a>
-        </div>
-    </div>
-    <div class="mg navt">
-        <div class="mg12">
-            <img src="..\images\top2.jpg" width="370" height="40" alt="轻食沙拉店加盟" style="float:right"><img
-                src="..\images\top1.jpg" width="370" height="40" alt="轻食沙拉店加盟">
-        </div>
-    </div>
-    <div class="mg navd">
-        <div class="mg12">
-
-            <ul id="nav" class="nyw12 clearfix">
-                <li class="mgl on">
-                    <h3><a href="/">首页
-                        <p>
-                            Ruijian
-                        </p>
-                    </a></h3>
-                    <ul class="mglbox" style="display: none;">
-                    </ul>
-                </li>
-                <li class="mgl">
-                    <h3><a href="index.html">睿健产品
-                        <p>
-                            Product
-                        </p>
-                    </a></h3>
-                    <ul class="mglbox" style="display: none;">
-
-                        <li><a href="/zjss/" title="增肌塑身系">增肌塑身系</a></li>
-                        <li><a href="/whjz/" title="网红减脂系">网红减脂系</a></li>
-                        <li><a href="/wyfx/" title="文艺意面系">文艺意面系</a></li>
-                        <li><a href="/bqmx/" title="复兴波奇系">复兴波奇系</a></li>
-                        <li><a href="/mwxc/" title="美味小食站">美味小食站</a></li>
-
-
-                    </ul>
-                </li>
-                <li class="mgl l240">
-                    <h3><a href="/team/">门店展示
-                        <p>
-                            Store
-                        </p>
-                    </a></h3>
-                    <ul class="mglbox" style="display: none;"></ul>
-                </li>
-                <li class="mgl">
-                    <h3><a href="/news/">新闻动态
-                        <p>
-                            Report
-                        </p>
-                    </a></h3>
-                    <ul class="mglbox" style="display: none;">
-                        <li><a href="/newsg/" title="公司动态" target="_blank">公司动态</a></li>
-                        <li><a href="/newsh/" title="行业资讯" target="_blank">行业资讯</a></li>
-                    </ul>
-                </li>
-                <li class="mgl">
-                    <h3><a href="/about/">品牌故事
-                        <p>
-                            BrandStory
-                        </p>
-                    </a></h3>
-                    <ul class="mglbox" style="display: none;"></ul>
-                </li>
-                <li class="mgl">
-                    <h3><a>加盟中心
-                        <p>
-                            Join us
-                        </p>
-                    </a></h3>
-                    <ul class="mglbox" style="display: none;">
-                        <li><a href="/join/105.html" title="合作基础">合作基础</a></li>
-                        <li><a href="/join/107.html" title="品牌特色">品牌特色</a></li>
-                        <li><a href="/join/108.html" title="总部支持">总部支持</a></li>
-                        <li><a href="/join/109.html" title="合作流程">合作流程</a></li>
-                        <li><a href="/join/111.html" title="加盟Q&amp;A">加盟Q&amp;A</a></li>
-
-                    </ul>
-                </li>
-                <!--
-                  <li class="mgl">
-                  <h3><a href="/message/" >申请加盟
-                  <p>
-                      Jiameng
-                  </p>
-                  </a></h3>
-                  <ul class="mglbox" style="display: none;">
-                  </ul>
-                  </li>
-                  <li class="mgl">
-                  <h3><a href="/contact/" >联系我们
-                  <p>
-                      Contact
-                  </p>
-                  </a></h3>
-                  <ul class="mglbox" style="display: none;">
-                  </ul>
-                  </li>
-                -->
-            </ul>
-        </div>
-    </div>
-</div>
+<div id="header" class="mg nav"></div>
 <!--广告首页大幻灯——开始-->
 <div class="mg banner">
     <div class="bd">
@@ -271,77 +150,9 @@
 
 <!-------------------------------------------------->
 
+<div id="footer" class="mg foot"></div>
+<div id="toTop" class="mg"></div>
 
-<!--网站公用底部——开始-->
-<div class="mg foot">
-    <div class="mg footin">
-        <div class="mg12">
-            <div class="m380">
-                <img src="..\images\logo.png" width="210" height="50" alt="睿健卡路里" style="margin-top:25px;">
-                <p>
-                    睿健卡路里<br>电话：400-6688-034<br>
-                    地址: 浙江省杭州市滨江区滨江路IX-WORK大厦C座501<br>
-                    网站备案：<a href="http://www.beian.miit.gov.cn/" rel="nofollow" target="_blank" style="color:#666;">浙ICP备19019996号-5</a>
-                    <br>睿健卡路里_轻食餐饮加盟_轻食加盟项目_轻食馆加盟创业_轻食沙拉加盟费<br>
-                </p>
-            </div>
-            <div class="m820">
-                <ul>
-                    <li>
-                        <p>品牌溯源</p>
-                        <a href="/about/">品牌说明</a>
-                        <a href="/about/">品牌特色</a>
-                        <a href="/about/">睿健故事</a>
-                    </li>
-                    <li>
-                        <p>产品介绍</p>
-                        <a href="/zjss/">增肌塑身</a>
-                        <a href="/whjz/">网红减脂</a>
-                        <a href="/mwxc/">美味小吃</a>
-                    </li>
-                    <li>
-                        <p>加盟中心</p>
-                        <a href="/join/16.html">合作基础</a>
-                        <a href="/join/107.html" rel="nofollow">品牌特色</a>
-                        <a href="/join/108.html" rel="nofollow">总部支持</a>
-                    </li>
-                    <li>
-                        <p>走进品牌</p>
-                        <a href="/team/">门店展示</a>
-                        <a href="/news/">最新动态</a>
-                        <a href="/contact/" rel="nofollow">联系我们</a>
-                    </li>
-                    <!--
-                    <li class="gz">
-                        <p>关注我们</p><br>
-                        <img src="/skin/images/weixin1.jpg" width="75" height="75" alt="微信公众号">
-                        <img src="/skin/images/weixin2.jpg" width="75" height="75" alt="微信公众号">
-                    </li>
-                    -->
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!--返回顶部-->
-<div class="mg">
-    <div class="mg12 fixs" style="display: none;">
-        <div class="girl">
-            <img src="..\images\kf1.png" alt="睿健卡路里" width="100" usemap="#Map">
-            <a class="totop" title="返回顶部"><img src="..\images\top.png" width="40" height="40" alt="返回顶部"></a>
-        </div>
-        <div class="tom">
-            <div class="mg12">
-                <span>x</span>
-                <a href="/message/#Submit" target="_blank" rel="nofollow"><img src="..\images\tomessage.png"
-                                                                               width="1200" height="80" alt="联系我们"></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------返回顶部---------->
-
-<script src="..\js\SuperSlideConfig.js"></script>
 
 </body>
 </html>
