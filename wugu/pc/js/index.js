@@ -2,7 +2,7 @@ $(function () {
     /*banner切换效果*/
     // $(".banner").slide({
     //     titCell: ".hd ul",
-    //     mainCell: ".bd ul",
+    //     mainCell: "._container ul",
     //     effect: "fold",
     //     autoPlay: true,
     //     autoPage: true,
@@ -10,22 +10,22 @@ $(function () {
     //     trigger: "click"
     // });
 
-    // $(".mgcpbox").slide({effect: "fold", autoPlay: true});
+    // $("._example-box").slide({effect: "fold", autoPlay: true});
 
-    $(".indexnew").slide({effect: "top", autoPlay: true, delayTime: 1500});
+    $("._news").slide({effect: "top", autoPlay: true, delayTime: 1500});
 
     $(".ztgun").slide({
         titCell: ".hd ul",
-        mainCell: ".bd ul",
+        mainCell: "._container ul",
         autoPage: true,
         effect: "top",/*autoPlay:true,*/
         vis: 2,
         trigger: "click"
     });
-    $(".stroes").slide({effect: "left", titCell: ".hd li", trigger: "click", mainCell: ".bd"});
+    $(".stroes").slide({effect: "left", titCell: ".hd li", trigger: "click", mainCell: "._container"});
     $(".inBox").slide({
         titCell: ".hd ul",
-        mainCell: ".bd ul",
+        mainCell: "._container ul",
         autoPage: true,
         effect: "left",
         autoPlay: true,
