@@ -164,7 +164,7 @@ body {
     left: 10px;
     top: 70px;
     position: absolute;
-    background: #4b4948;
+    background: rgba(75, 71, 71, .9);
     line-height: 26px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -181,7 +181,7 @@ body {
     width: 0;
     height: 0;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid #4b4948;
+    border-bottom: 5px solid rgba(75, 71, 71, .9);
     border-left: 5px solid transparent;
     position: absolute;
     top: -5px;
@@ -198,20 +198,20 @@ body {
     padding: 10px;
     text-align: center;
     color: #fff;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #a1a1a1;
     font-size: 14px
 }
 
 .navd .mglbox a:hover {
-    background: #333
+    background: #0e0600db;
 }
 
 .navd .on h3 a {
     background: 0 0;
-    color: #4b4948
+    color: #000
 }
 
-.l240 {
+.mr240 {
     margin-right: 240px
 }
 
@@ -363,7 +363,8 @@ a.more {
 
 a.more:hover {
     background: #fff;
-    color: #3a2e30
+    color: #3a2e30;
+    border-color:#3a2e30;
 }
 
 .bt strong {
@@ -384,7 +385,7 @@ a.more:hover {
     background: #fff
 }
 
-.index1 .l370 {
+.index1 .mr240 {
     width: 370px;
     height: 250px;
     float: left;
@@ -398,33 +399,46 @@ a.more:hover {
     position: relative
 }
 
-.index1 .l370 dt {
+.index1 .mr240 dt {
     font-size: 20px;
     color: #fff;
     line-height: 50px
 }
 
-.index1 .l370 dt strong {
+.index1 .mr240 dt strong {
     display: inline-table;
     border-bottom: 3px solid #fff;
     color: #fff
 }
+.index1 .w370 {
+    width: 370px;
+    height: 250px;
+    float: left;
+    background: #3a2e30;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
 
-.index1 .l370 dt span {
+.index1 .w370 dt span {
     color: #8a7b7e
 }
 
-.index1 .l370 dd {
+.index1 .w370 dd {
     font-size: 14px;
     color: #bbb;
     line-height: 30px;
     padding-top: 5px
 }
 
-.index1 .l370 a.more {
+.index1 .w370 a.more {
     position: absolute;
     bottom: 20px;
     right: 20px
+}
+
+.index1 .w370 .bt strong{
+    color:#fff;
 }
 
 .index1 .l830 {
@@ -487,7 +501,7 @@ a.more:hover {
     -moz-box-shadow: 10px 10px 5px #999;
     box-shadow: 10px 10px 5px #999;
     position: relative;
-    top: -5px;
+    top: -3px;
     border: 1px solid #f4f4f4;
     background: #fff;
     outline: 0
@@ -1192,12 +1206,12 @@ a.more:hover {
     margin: 20px auto
 }
 
-.newlist .n300 {
+.newlist .w300 {
     width: 300px;
     float: left
 }
 
-.newlist .n300 .n3 {
+.newlist .w300 .n3 {
     margin-bottom: 10px;
     overflow: hidden
 }
@@ -1269,13 +1283,13 @@ a.more:hover {
     text-decoration: underline
 }
 
-.newlist .n880 {
+.newlist .w800 {
     width: 880px;
     float: left;
     margin-left: 20px
 }
 
-.newlist .n880 .n8 {
+.newlist .w800 .n8 {
     float: left;
     margin-bottom: 10px;
     width: 880px
@@ -2025,7 +2039,7 @@ html #hm_t_undefined .hm-t-go-top {
     line-height: 32px
 }
 
-.new4801 {
+.w480 {
     position: absolute;
     width: 480px;
     height: 355px;
@@ -2083,7 +2097,7 @@ html #hm_t_undefined .hm-t-go-top {
 
 .contact1 .title1 .span011 {
     font-size: 26px;
-    color: #e9b873;
+    color: #f28f00b3;
     font-weight: bold;
 }
 
@@ -2099,46 +2113,44 @@ html #hm_t_undefined .hm-t-go-top {
     justify-content: space-between;
 }
 
-.contact1 .content1 .left1 {
+.contact1 .content1 .block {
     width: 600px;
     height: 330px;
     background-color: #f7f7f7;
     border-radius: 8px;
-    /* padding: 20px;*/
 }
 
-.contact1 .content1 .left1 form {
+.contact1 .content1 .block form {
     width: 99%;
     height: 355px;
-    /* border: 1px solid #ccc; */
-    /*  padding: 20px 35px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .contact1 form input {
+    box-sizing: border-box;
     outline: none;
-    padding-left: 2px;
+    padding: 0 10px;
     border: 1px solid #ccc;
-    background-color: #e6e6e6;
-    color: #999999;
+    background-color: #fff;
+    color: #000;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 5px;
     width: 100%;
-    height: 40px;
+    height: 50px;
 }
 
 .contact1 button {
     width: 100%;
-    height: 40px;
-    background-color: #c9964c;
+    height: 50px;
+    background-color: #f28f00;
     color: #fff;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
     font-size: 18px;
     border: 0;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .contact1 .content1 .right1 {
@@ -2198,7 +2210,7 @@ html #hm_t_undefined .hm-t-go-top {
         justify-content: flex-start;
     }
 
-    .contact1 .content1 .left1 {
+    .contact1 .content1 .block {
         width: 100%;
         height: 390px;
     }
