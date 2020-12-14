@@ -12,7 +12,7 @@ $(function () {
 
     // $("._example-box").slide({effect: "fold", autoPlay: true});
 
-    $("._news").slide({effect: "top", autoPlay: true, delayTime: 1500});
+    $(".indexnew").slide({effect: "top", autoPlay: true, delayTime: 1500});
 
     $(".ztgun").slide({
         titCell: ".hd ul",

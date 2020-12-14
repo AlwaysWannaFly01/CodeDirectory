@@ -577,7 +577,7 @@ a.more:hover {
     float: left
 }
 
-._news {
+.indexnew {
     height: 475px;
     position: relative
 }
@@ -586,16 +586,16 @@ a.more:hover {
     position: relative
 }
 
-._news .m20 {
+.indexnew .m20 {
     margin-top: 20px
 }
 
-._news .top {
+.indexnew .newbt {
     background: rgba(62, 61, 60, 1);
     height: 65px
 }
 
-._news .top .w1200 {
+.indexnew .newbt .w1200 {
     height: 65px;
     padding: 18px 520px 17px 20px;
     -moz-box-sizing: border-box;
@@ -607,7 +607,7 @@ a.more:hover {
     position: relative
 }
 
-._news .top .w1200 .hd {
+.indexnew .newbt .w1200 .hd {
     width: 134px;
     height: 28px;
     position: absolute;
@@ -618,7 +618,7 @@ a.more:hover {
     overflow: hidden
 }
 
-._news .top .w1200 .hd li {
+.indexnew .newbt .w1200 .hd li {
     display: block;
     width: 50%;
     float: left;
@@ -629,16 +629,16 @@ a.more:hover {
     cursor: pointer
 }
 
-._news .top .w1200 .hd li.on {
+.indexnew .newbt .w1200 .hd li.on {
     background: #fff;
     color: #3e3d3c
 }
 
-._news .top a.more {
+.indexnew .newbt a.more {
     float: right
 }
 
-._news .top .bt strong {
+.indexnew .newbt .bt strong {
     color: #fff
 }
 
