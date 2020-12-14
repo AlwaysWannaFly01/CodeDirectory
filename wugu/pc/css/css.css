@@ -2214,3 +2214,31 @@ html #hm_t_undefined .hm-t-go-top {
         padding-left: 20px;
     }
 }
+
+._banner ul {
+    position: relative;
+    width: 1526px;
+    height: 500px;
+}
+
+/*._banner ul li {*/
+/*    position: absolute;*/
+/*    width: 1526px;*/
+/*    left: 0px;*/
+/*    top: 0px;*/
+/*}*/
+
+._product ._product-list img {
+    width: 285px;
+    height: 285px;
+    display: block;
+}
+
+._product ._product-list dl dd ul li {
+    height: 330px;
+}
+
+._show a img {
+    width: 100px;
+    height: 100px;
+}
