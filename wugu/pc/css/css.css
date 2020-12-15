@@ -2272,6 +2272,21 @@ html #hm_t_undefined .hm-t-go-top {
     height: 330px;
 }
 
+._product ._product-list dl dd ul li a > div {
+    position: relative;
+}
+
+._product ._product-list dl dd ul li a > div section {
+    position: absolute;
+    width: 285px;
+    height: 285px;
+    top: 285px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s;
+    background-color: #7f7f7f;
+}
+
 ._show a img {
     width: 100px;
     height: 100px;

@@ -45,6 +45,28 @@ $(function () {
             trigger: "click"
         });
 
+
+        $('._product-list dl dd  ul li a > div img').click(function () {
+            // $(this).siblings("section").animate({
+            //     'top': 0,
+            //     'zIndex': 1,
+            //     'backgroundColor': 'red'
+            // })
+
+            $(this).siblings("section").addClass('animated fadeInUp');
+        }).mouseleave(function () {
+            // $(this).siblings('section').animate({
+            //     'top': '285px',
+            //     'zIndex': -1,
+            //     'backgroundColor': 'transparent',
+            //     'transition':'all 0s'
+            // })
+            // $(this).siblings("section").removeClass('animated bounce');
+        });
+
+        $('#animate').click(function () {
+            $(this).addClass('animated bounceIn');
+        })
         // function switchbox(a) {
 //     a == 1
 //         ? $('.slide.slide3 .arrowcontainer').show()
