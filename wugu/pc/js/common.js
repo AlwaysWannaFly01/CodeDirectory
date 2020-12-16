@@ -45,28 +45,32 @@ $(function () {
             trigger: "click"
         });
 
-
-        $('._product-list dl dd  ul li a > div img').click(function () {
-            // $(this).siblings("section").animate({
-            //     'top': 0,
-            //     'zIndex': 1,
-            //     'backgroundColor': 'red'
-            // })
-
-            $(this).siblings("section").addClass('animated fadeInUp');
-        }).mouseleave(function () {
-            // $(this).siblings('section').animate({
-            //     'top': '285px',
-            //     'zIndex': -1,
-            //     'backgroundColor': 'transparent',
-            //     'transition':'all 0s'
-            // })
-            // $(this).siblings("section").removeClass('animated bounce');
-        });
-
-        $('#animate').click(function () {
-            $(this).addClass('animated bounceIn');
+        var ismouseenter = false;
+        $('._product-list dl dd  ul li a > div img').on('click', function () {
+            if (ismouseenter == true) { //已经移入直接返回
+                return;
+            } else {
+                $(this).siblings("section").stop(true, true).css({
+                    'top': '0px'
+                })
+                ismouseenter = true
+            }
         })
+
+        // $('._product-list dl dd  ul li a > div section').on('mouseleave', function () {
+        //     $(this).stop(true, true).css({
+        //         'top': '285px'
+        //     })
+        //     ismouseenter = false;
+        // })
+        //
+        // $('._product-list dl dd  ul li').on('mouseleave', function () {
+        //     $('._product-list dl dd  ul li a > div section').stop(true, true).css({
+        //         'top': '285px'
+        //     })
+        //     ismouseenter = false;
+        // })
+
         // function switchbox(a) {
 //     a == 1
 //         ? $('.slide.slide3 .arrowcontainer').show()
@@ -100,4 +104,5 @@ $(function () {
             return false
         })
     });
-});
+})
+;

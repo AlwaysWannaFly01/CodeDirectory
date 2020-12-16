@@ -2274,6 +2274,7 @@ html #hm_t_undefined .hm-t-go-top {
 
 ._product ._product-list dl dd ul li a > div {
     position: relative;
+    overflow: hidden;
 }
 
 ._product ._product-list dl dd ul li a > div section {
@@ -2282,9 +2283,45 @@ html #hm_t_undefined .hm-t-go-top {
     height: 285px;
     top: 285px;
     left: 0;
-    z-index: -1;
-    transition: all 0.6s;
-    background-color: #7f7f7f;
+    background-color: salmon;
+    transition: all 0.7s;
+    transition-timing-function: ease;
+    -moz-transition-timing-function: ease; /* Firefox 4 */
+    -webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+    -o-transition-timing-function: ease; /* Opera */
+}
+
+.pure-table td,th {
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+.pure-table td,.pure-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    margin: 0;
+    overflow: visible;
+}
+
+.pure-table thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+.pure-table thead tr{
+    vertical-align: middle;
+}
+.pure-table td {
+    background-color: transparent;
+    padding: 5px;
 }
 
 ._show a img {
