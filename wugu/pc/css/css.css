@@ -1313,7 +1313,7 @@ a.more:hover {
 .newlist .w800 .n8 {
     float: left;
     margin-bottom: 10px;
-    width: 880px
+    width: 880px;
 }
 
 .listn li {
@@ -2255,13 +2255,6 @@ html #hm_t_undefined .hm-t-go-top {
     height: 500px;
 }
 
-/*._banner ul li {*/
-/*    position: absolute;*/
-/*    width: 1526px;*/
-/*    left: 0px;*/
-/*    top: 0px;*/
-/*}*/
-
 ._product ._product-list img {
     width: 285px;
     height: 285px;
@@ -2283,7 +2276,7 @@ html #hm_t_undefined .hm-t-go-top {
     height: 285px;
     top: 285px;
     left: 0;
-    background-color: salmon;
+    background-color: #fff;
     transition: all 0.7s;
     transition-timing-function: ease;
     -moz-transition-timing-function: ease; /* Firefox 4 */
@@ -2291,9 +2284,9 @@ html #hm_t_undefined .hm-t-go-top {
     -o-transition-timing-function: ease; /* Opera */
 }
 
-.pure-table td,th {
+.pure-table td, th {
     padding: 0;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -2303,7 +2296,8 @@ html #hm_t_undefined .hm-t-go-top {
     empty-cells: show;
     border: 1px solid #cbcbcb;
 }
-.pure-table td,.pure-table th {
+
+.pure-table td, .pure-table th {
     border-left: 1px solid #cbcbcb;
     border-width: 0 0 0 1px;
     margin: 0;
@@ -2316,12 +2310,48 @@ html #hm_t_undefined .hm-t-go-top {
     text-align: left;
     vertical-align: bottom;
 }
-.pure-table thead tr{
+
+.pure-table thead tr {
     vertical-align: middle;
+}
+
+.pure-table thead tr th {
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.pure-table thead tr th:nth-child(1) {
+    width: 60px;
+}
+
+.pure-table thead tr th:nth-child(2) {
+    width: 35px;
+}
+
+.pure-table thead tr th:nth-child(3) {
+    width: 46px;
+}
+
+.pure-table thead tr th:nth-child(4) {
+    width: 58px;
+}
+
+.pure-table thead tr th:nth-child(5) {
+    width: 41px;
+}
+
+.pure-table thead tr th:nth-child(6) {
+    width: 45px;
+}
+.pure-table tbody tr:nth-child(1){
+    color: #C82D21;
+}
+.pure-table tbody tr:nth-child(2n){
+    background-color: rgba(0, 0, 0, 0.02);
 }
 .pure-table td {
     background-color: transparent;
-    padding: 5px;
+    padding: 5px 3px 4px;
 }
 
 ._show a img {

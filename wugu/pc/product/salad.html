@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="../css/css.css">
     <script src="..\libs\jquery1.42.min.js"></script>
     <script src="..\libs\jquery.SuperSlide.2.1.1.js"></script>
+    <script src="..\js\data.js"></script>
+    <script src="..\libs\template-web.js"></script>
     <script src="..\js\common.js"></script>
 </head>
 <body>
@@ -58,129 +60,7 @@
             <div class="n8 cpn _product-list">
                 <dl>
                     <dd>
-                        <ul>
-                            <li>
-                                <a>
-                                    <div>
-                                        <img src="../images/salad/01.jpg" alt="秘制黑椒牛肉增肌餐">
-                                        <section>
-                                            <table class="pure-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>食材详细</th>
-                                                        <th>克数</th>
-                                                        <th>热量(大卡)</th>
-                                                    </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td>310</td>
-                                                    <td>195.10</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Toyota</td>
-                                                    <td>Camry</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Hyundai</td>
-                                                    <td>Elantra</td>
-                                                </tr>
-                                                </tbody>
-
-                                                <thead>
-                                                <tr>
-                                                    <th>碳水化合物(克)</th>
-                                                    <th>脂肪(克)</th>
-                                                    <th>蛋白质(克)</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>Honda</td>
-                                                    <td>Accord</td>
-                                                    <td>2009</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Toyota</td>
-                                                    <td>Camry</td>
-                                                    <td>2012</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Hyundai</td>
-                                                    <td>Elantra</td>
-                                                    <td>2010</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </section>
-                                    </div>
-                                    <p class="title">秘制黑椒牛肉增肌餐</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div>
-                                        <img src="../images/salad/02.jpg" alt="香煎鸡胸藜麦健身餐">
-                                        <section>
-                                            555
-                                        </section>
-                                    </div>
-                                    <p class="title">香煎鸡胸藜麦健身餐</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div>
-                                        <img src="../images/salad/03.jpg" alt="藤椒鸡腿肉健身餐">
-                                        <section>
-                                            12323
-                                        </section>
-                                    </div>
-                                    <p class="title">藤椒鸡腿肉健身餐</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div>
-                                        <img src="../images/salad/04.jpg" alt="香辣孜然鸡肉丁健身餐">
-                                        <section>
-                                            12323
-                                        </section>
-                                    </div>
-                                    <p class="title">香辣孜然鸡肉丁健身餐</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div>
-                                        <img src="../images/salad/05.jpg" alt="香煎龙利鱼健康餐">
-                                        <section>
-                                            12323
-                                        </section>
-                                    </div>
-                                    <p class="title">香煎龙利鱼健康餐</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div>
-                                        <img src="../images/salad/06.jpg" alt="日式照烧鸡腿肉健康餐">
-                                        <section>
-                                            12323
-                                        </section>
-                                    </div>
-                                    <p class="title">日式照烧鸡腿肉健康餐</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <ul id="content" class="clearfix"></ul>
                     </dd>
                 </dl>
             </div>
@@ -200,7 +80,60 @@
 
 <div id="footer" class="main foot"></div>
 <div id="toTop" class="main"></div>
+<script id="temp" type="text/html">
+    {{each list value i}}
+    <li>
+        <a>
+            <div>
+                <img src="{{value['img']}}" alt="{{value['name']}}">
+                <section>
+                    <table class="pure-table">
+                        <thead>
+                        <tr>
+                            <th>食材</th>
+                            <th>克数</th>
+                            <th>热量<br/>(大卡)</th>
+                            <th>碳水化<br/>合物(克)</th>
+                            <th>脂肪<br/>(克)</th>
+                            <th>蛋白质<br/>(克)</th>
+                        </tr>
+                        </thead>
 
+                        <tbody>
+                        {{each value['data'] item index}}
+                        <tr>
+                            <td>{{item[0]}}</td>
+                            <td>{{item[1]}}</td>
+                            <td>{{item[8]}}</td>
+                            <td>{{item[9]}}</td>
+                            <td>{{item[10]}}</td>
+                            <td>{{item[11]}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <p class="title">{{value['name']}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script>
+    var goodsList = _list['salad'].data;
+    var newArray = [];
+    var newObj = {}
+    Object.keys(goodsList).forEach(function (key) {
+        // console.log(key, goodsList[key]);
+        if (key < 6) {
+            newArray.push(goodsList[key])
+        }
+    });
+    // console.log(newArray)
+    newObj['list'] = newArray
+    var html = template('temp', newObj);
+    document.getElementById('content').innerHTML = html;
+</script>
 
 </body>
 </html>

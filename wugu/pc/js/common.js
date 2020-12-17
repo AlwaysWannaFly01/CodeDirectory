@@ -46,7 +46,7 @@ $(function () {
         });
 
         var ismouseenter = false;
-        $('._product-list dl dd  ul li a > div img').on('click', function () {
+        $('._product-list dl dd  ul li a > div img').on('mouseenter', function () {
             if (ismouseenter == true) { //已经移入直接返回
                 return;
             } else {
@@ -57,19 +57,22 @@ $(function () {
             }
         })
 
-        // $('._product-list dl dd  ul li a > div section').on('mouseleave', function () {
-        //     $(this).stop(true, true).css({
-        //         'top': '285px'
-        //     })
-        //     ismouseenter = false;
-        // })
-        //
-        // $('._product-list dl dd  ul li').on('mouseleave', function () {
-        //     $('._product-list dl dd  ul li a > div section').stop(true, true).css({
-        //         'top': '285px'
-        //     })
-        //     ismouseenter = false;
-        // })
+        $('._product-list dl dd  ul li a > div section').on('mouseleave', function () {
+            $(this).stop(true, true).css({
+                'top': '285px'
+            })
+            ismouseenter = false;
+        })
+
+        $('._product-list dl dd  ul li').on('mouseleave', function () {
+            $('._product-list dl dd  ul li a > div section').stop(true, true).css({
+                'top': '285px'
+            })
+            ismouseenter = false;
+        })
+
+
+
 
         // function switchbox(a) {
 //     a == 1
