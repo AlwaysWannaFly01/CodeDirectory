@@ -859,7 +859,7 @@ var _list = {
         'id': 'pills-08-01',
         'href': '#pills-08-01',
         'name': '凯撒酱',
-        'img': './images/sauce/01.jpg',
+        'img': '../images/sauce/01.jpg',
         'data': []
       },
 
@@ -867,7 +867,7 @@ var _list = {
         'id': 'pills-08-02',
         'href': '#pills-08-02',
         'name': '千岛酱',
-        'img': './images/sauce/02.jpg',
+        'img': '../images/sauce/02.jpg',
         'data': []
       },
 
@@ -875,7 +875,7 @@ var _list = {
         'id': 'pills-08-03',
         'href': '#pills-08-03',
         'name': '泰式海鲜酱',
-        'img': './images/sauce/03.jpg',
+        'img': '../images/sauce/03.jpg',
         'data': []
       },
 
@@ -883,7 +883,7 @@ var _list = {
         'id': 'pills-08-04',
         'href': '#pills-08-04',
         'name': '油醋汁',
-        'img': './images/sauce/04.jpg',
+        'img': '../images/sauce/04.jpg',
         'data': []
       },
 
@@ -891,7 +891,7 @@ var _list = {
         'id': 'pills-08-05',
         'href': '#pills-08-05',
         'name': '芝麻酱',
-        'img': './images/sauce/05.jpg',
+        'img': '../images/sauce/05.jpg',
         'data': []
       },
     }
