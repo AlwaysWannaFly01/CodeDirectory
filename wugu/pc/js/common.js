@@ -6,7 +6,7 @@ $(function () {
             // console.log('top:=>', top)
             if ($(window).scrollTop() > top) {
                 $('.nav').addClass('hdmin')
-                $('.logo img').attr('src', '../images/logomin.jpg')
+                $('.logo img').attr('src', '../images/logo2.jpg')
 
                 if ($(window).scrollTop() > 100) {
                     /* 这里用.show()也可以 只是效果太丑 */

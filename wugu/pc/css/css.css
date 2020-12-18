@@ -1162,7 +1162,7 @@ a.more:hover {
 .fixs .tom {
     position: fixed;
     bottom: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgb(76, 76, 76);
     z-index: 9999;
     width: 100%;
     left: 0;
