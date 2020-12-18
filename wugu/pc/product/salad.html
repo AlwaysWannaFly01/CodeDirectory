@@ -80,6 +80,7 @@
 
 <div id="footer" class="main foot"></div>
 <div id="toTop" class="main"></div>
+
 <script id="temp" type="text/html">
     {{each list value i}}
     <li>
@@ -124,12 +125,10 @@
     var newArray = [];
     var newObj = {}
     Object.keys(goodsList).forEach(function (key) {
-        // console.log(key, goodsList[key]);
         if (key < 6) {
             newArray.push(goodsList[key])
         }
     });
-    // console.log(newArray)
     newObj['list'] = newArray
     var html = template('temp', newObj);
     document.getElementById('content').innerHTML = html;
