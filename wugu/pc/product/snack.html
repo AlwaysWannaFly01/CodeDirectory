@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="../css/css.css">
     <script src="..\libs\jquery1.42.min.js"></script>
     <script src="..\libs\jquery.SuperSlide.2.1.1.js"></script>
+    <script src="..\js\data.js"></script>
+    <script src="..\libs\template-web.js"></script>
     <script src="..\js\common.js"></script>
 
 </head>
@@ -56,49 +58,12 @@
             <div class="n8 bt inl">
                 <strong>無谷轻食</strong><span>WG</span>
                 <span class="m_r"> <a href='../index/index.html' class=''>首页</a> &gt; <a href='index.html'>無谷产品</a> &gt;
-                    <a href='snack.html'>小吃</a></span>
+                    <a href='snack.html'>小食</a></span>
             </div>
             <div class="n8 cpn _product-list">
                 <dl>
                     <dd>
-                        <ul>
-                            <li>
-                                <a>
-                                    <div><img src="../images/snack/01.jpg" alt="德式烟熏土豆泥"></div>
-                                    <p class="title">德式烟熏土豆泥</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/snack/02.jpg" alt="燕麦果干酸奶杯"></div>
-                                    <p class="title">燕麦果干酸奶杯</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/snack/03.jpg" alt="紫薯燕麦健康粥"></div>
-                                    <p class="title">紫薯燕麦健康粥</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/snack/04.jpg" alt="红豆薏米健康粥"></div>
-                                    <p class="title">红豆薏米健康粥</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/snack/05.jpg" alt="椰香魔芋健康粥"></div>
-                                    <p class="title">椰香魔芋健康粥</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/snack/06.jpg" alt="迷你酸奶杯"></div>
-                                    <p class="title">迷你酸奶杯</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <ul id="content" class="clearfix"></ul>
                     </dd>
                 </dl>
             </div>
@@ -119,6 +84,58 @@
 <div id="footer" class="main foot"></div>
 <div id="toTop" class="main"></div>
 
+<script id="temp" type="text/html">
+    {{each list value i}}
+    <li>
+        <a>
+            <div>
+                <img src="{{value['img']}}" alt="{{value['name']}}">
+                <section>
+                    <table class="pure-table">
+                        <thead>
+                        <tr>
+                            <th>食材</th>
+                            <th>克数</th>
+                            <th>热量<br/>(大卡)</th>
+                            <th>碳水化<br/>合物(克)</th>
+                            <th>脂肪<br/>(克)</th>
+                            <th>蛋白质<br/>(克)</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        {{each value['data'] item index}}
+                        <tr>
+                            <td>{{item[0]}}</td>
+                            <td>{{item[1]}}</td>
+                            <td>{{item[8]}}</td>
+                            <td>{{item[9]}}</td>
+                            <td>{{item[10]}}</td>
+                            <td>{{item[11]}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <p class="title">{{value['name']}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script>
+    var goodsList = _list['snack'].data;
+    var newArray = [];
+    var newObj = {}
+    Object.keys(goodsList).forEach(function (key) {
+        if (key < 6) {
+            newArray.push(goodsList[key])
+        }
+    });
+    newObj['list'] = newArray
+    var html = template('temp', newObj);
+    document.getElementById('content').innerHTML = html;
+</script>
 
 </body>
 </html>
