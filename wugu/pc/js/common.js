@@ -92,10 +92,6 @@ $(function () {
 
     });
 
-    $('#mainLeft').load('../mainLeft.html', function () {
-
-    });
-
     $('#footer').load('../footer.html', function () {
 
     });
