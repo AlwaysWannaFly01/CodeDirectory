@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="../css/css.css">
     <script src="..\libs\jquery1.42.min.js"></script>
     <script src="..\libs\jquery.SuperSlide.2.1.1.js"></script>
+    <script src="..\js\data.js"></script>
+    <script src="..\libs\template-web.js"></script>
     <script src="..\js\common.js"></script>
 
 </head>
@@ -61,32 +63,7 @@
             <div class="n8 cpn _product-list">
                 <dl>
                     <dd>
-                        <ul>
-                            <li>
-                                <a>
-                                    <div><img src="../images/sandwich/01.jpg" alt="厚切嫩牛三明治"></div>
-                                    <p class="title">厚切嫩牛三明治</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/sandwich/02.jpg" alt="奥尔良腿排三明治"></div>
-                                    <p class="title">奥尔良腿排三明治</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/sandwich/03.jpg" alt="藤椒鸡腿肉三明治"></div>
-                                    <p class="title">藤椒鸡腿肉三明治</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <div><img src="../images/sandwich/04.jpg" alt="鸡蛋火腿培根三明治"></div>
-                                    <p class="title">鸡蛋火腿培根三明治</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <ul id="content" class="clearfix"></ul>
                     </dd>
                 </dl>
             </div>
@@ -106,6 +83,58 @@
 <div id="footer" class="main foot"></div>
 <div id="toTop" class="main"></div>
 
+<script id="temp" type="text/html">
+    {{each list value i}}
+    <li>
+        <a>
+            <div>
+                <img src="{{value['img']}}" alt="{{value['name']}}">
+                <section>
+                    <table class="pure-table">
+                        <thead>
+                        <tr>
+                            <th>食材</th>
+                            <th>克数</th>
+                            <th>热量<br/>(大卡)</th>
+                            <th>碳水化<br/>合物(克)</th>
+                            <th>脂肪<br/>(克)</th>
+                            <th>蛋白质<br/>(克)</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        {{each value['data'] item index}}
+                        <tr>
+                            <td>{{item[0]}}</td>
+                            <td>{{item[1]}}</td>
+                            <td>{{item[8]}}</td>
+                            <td>{{item[9]}}</td>
+                            <td>{{item[10]}}</td>
+                            <td>{{item[11]}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <p class="title">{{value['name']}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script>
+    var goodsList = _list['sandwich'].data;
+    var newArray = [];
+    var newObj = {}
+    Object.keys(goodsList).forEach(function (key) {
+        if (key < 6) {
+            newArray.push(goodsList[key])
+        }
+    });
+    newObj['list'] = newArray
+    var html = template('temp', newObj);
+    document.getElementById('content').innerHTML = html;
+</script>
 
 </body>
 </html>
