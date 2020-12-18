@@ -12,8 +12,8 @@ $(function () {
                     /* 这里用.show()也可以 只是效果太丑 */
                     $('.fixs').fadeIn(1000)
                     /*隐藏底部留言*/
-                    $('.tom span').click(function () {
-                        $('.tom').css('display', 'none')
+                    $('.bottomLogo span').click(function () {
+                        $('.bottomLogo').css('display', 'none')
                     })
                 } else {
                     $('.fixs').fadeOut(300)

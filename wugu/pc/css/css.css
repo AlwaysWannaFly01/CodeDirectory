@@ -449,6 +449,11 @@ a.more:hover {
     float: left
 }
 
+._introduce .w830._dl dl dd a img {
+    width: 50px;
+    height: 50px;
+}
+
 ._introduce .w830 dt {
     display: block;
     width: 830px;
@@ -569,6 +574,11 @@ a.more:hover {
 ._example-box ._piece {
     position: relative;
     width: 1200px;
+    height: 600px;
+}
+
+._example-box ._piece .box50 a img {
+    width: 600px;
     height: 600px;
 }
 
@@ -1129,7 +1139,7 @@ a.more:hover {
     z-index: 999
 }
 
-.fixs .girl {
+.fixs .toTopButton {
     width: 100px;
     height: 260px;
     position: absolute;
@@ -1138,28 +1148,35 @@ a.more:hover {
     z-index: 999
 }
 
-.fixs .girl a {
+.fixs .toTopButton img {
+    width: 100px;
+}
+
+.fixs .toTopButton a {
     display: inline-table;
     width: 40px;
     height: 40px;
     position: absolute;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    overflow: hidden
+    overflow: hidden;
 }
 
-.fixs .girl a.kf {
+.fixs .toTopButton a img {
+    width: 40px;
+    height: 40px;
+}
+
+.fixs .toTopButton a.kf {
     top: 155px;
     left: 11px
 }
 
-.fixs .girl a.totop {
+.fixs .toTopButton a.totop {
     top: 130px;
     left: 11px
 }
 
-.fixs .tom {
+.fixs .bottomLogo {
     position: fixed;
     bottom: 0;
     background: rgb(76, 76, 76);
@@ -1169,11 +1186,11 @@ a.more:hover {
     text-align: center
 }
 
-.fixs .tom .w1200 {
+.fixs .bottomLogo .w1200 {
     position: relative
 }
 
-.fixs .tom .w1200 span {
+.fixs .bottomLogo .w1200 span {
     display: block;
     width: 24px;
     height: 24px;
@@ -1227,6 +1244,11 @@ a.more:hover {
     overflow: hidden
 }
 
+._telImg img {
+    width: 300px;
+    height: 165px;
+}
+
 ._block {
     position: relative;
 }
@@ -1268,6 +1290,11 @@ a.more:hover {
     left: 150px;
     top: 1px;
     background: #f4f4f4
+}
+
+._block._mainLeft a img {
+    width: 100px;
+    height: 100px;
 }
 
 .newpp {
@@ -2343,12 +2370,15 @@ html #hm_t_undefined .hm-t-go-top {
 .pure-table thead tr th:nth-child(6) {
     width: 45px;
 }
-.pure-table tbody tr:nth-child(1){
+
+.pure-table tbody tr:nth-child(1) {
     color: #C82D21;
 }
-.pure-table tbody tr:nth-child(2n){
+
+.pure-table tbody tr:nth-child(2n) {
     background-color: rgba(0, 0, 0, 0.02);
 }
+
 .pure-table td {
     background-color: transparent;
     padding: 5px 3px 4px;
