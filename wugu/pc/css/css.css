@@ -1149,7 +1149,7 @@ a.more:hover {
 }
 
 .fixs .toTopButton img {
-    width: 100px;
+    width: 110px;
 }
 
 .fixs .toTopButton a {
@@ -1159,11 +1159,15 @@ a.more:hover {
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
+    top: 130px;
+    left: 11px;
+    margin-left: 22px;
 }
 
 .fixs .toTopButton a img {
     width: 40px;
     height: 40px;
+    vertical-align: middle;
 }
 
 .fixs .toTopButton a.kf {
@@ -1171,15 +1175,10 @@ a.more:hover {
     left: 11px
 }
 
-.fixs .toTopButton a.totop {
-    top: 130px;
-    left: 11px
-}
-
 .fixs .bottomLogo {
     position: fixed;
     bottom: 0;
-    background: rgb(76, 76, 76);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     width: 100%;
     left: 0;
