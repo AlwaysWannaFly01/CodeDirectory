@@ -1034,33 +1034,33 @@ a.more:hover {
     background: #181818
 }
 
-.footin {
+._footerBlock {
     height: 199px;
     margin-top: 20px;
     border-top: 1px solid #333
 }
 
-.footin .m380 {
+._footerBlock ._w380 {
     width: 350px;
     height: 199px;
     float: left;
     padding-left: 30px
 }
 
-.footin .m380 p {
+._footerBlock ._w380 p {
     font-size: 12px;
     line-height: 20px;
     color: #666;
     padding-left: 5px
 }
 
-.footin .m820 {
+._footerBlock .m820 {
     width: 820px;
     height: 199px;
     float: left
 }
 
-.footin .m820 li {
+._footerBlock .m820 li {
     display: block;
     width: 140px;
     height: 150px;
@@ -1068,7 +1068,7 @@ a.more:hover {
     margin-top: 30px
 }
 
-.footin .m820 li p {
+._footerBlock .m820 li p {
     display: block;
     width: 62px;
     height: 40px;
@@ -1082,7 +1082,7 @@ a.more:hover {
     margin-right: 65px
 }
 
-.footin .m820 li a {
+._footerBlock .m820 li a {
     display: block;
     width: 75px;
     height: 24px;
@@ -1092,19 +1092,19 @@ a.more:hover {
     line-height: 24px
 }
 
-.footin .m820 li a:hover {
+._footerBlock .m820 li a:hover {
     color: #fff
 }
 
-.footin .m820 li:hover p {
+._footerBlock .m820 li:hover p {
     color: #fff
 }
 
-.footin .m820 li.gz {
+._footerBlock .m820 li.gz {
     width: 200px
 }
 
-.footin .m820 li.gz img {
+._footerBlock .m820 li.gz img {
     margin: 5px 10px 5px 0
 }
 
@@ -1604,20 +1604,20 @@ a.more:hover {
     float: left
 }
 
-.c_message > div.c_map {
+.c_message > div._joinAddr {
     width: 430px;
     padding: 5px 80px 20px;
     float: left
 }
 
-.c_map p {
+._joinAddr p {
     font-size: 13px;
     line-height: 24px;
     color: #666;
     /*	text-indent: 2em */
 }
 
-.c_map h3 {
+._joinAddr h3 {
     font-size: 15px;
     line-height: 24px;
     color: #333;
@@ -1629,31 +1629,25 @@ a.more:hover {
     border-top: 1px solid #f4f4f4
 }
 
-.c_message > div.mes2 {
+.c_message > div._joinForm {
     padding-right: 80px;
     width: 510px
 }
 
-.mes2 center {
-    line-height: 80px;
-    font-size: 15px;
-    color: #333
-}
-
-.mes2 form {
+._joinForm form {
     display: block;
     width: 510px;
     margin: 0 auto
 }
 
-.mes2 .m1 {
+._joinForm .m1 {
     width: 510px;
     height: 32px;
     float: left;
     margin-bottom: 20px
 }
 
-.mes2 .m1 label {
+._joinForm .m1 label {
     display: block;
     width: 60px;
     height: 32px;
@@ -1663,7 +1657,7 @@ a.more:hover {
     color: #333
 }
 
-.mes2 .m1 input {
+._joinForm .m1 input {
     display: block;
     width: 448px;
     height: 32px;
@@ -1676,14 +1670,14 @@ a.more:hover {
     background: #f4f4f4
 }
 
-.mes2 .m2 {
+._joinForm .m2 {
     width: 540px;
     height: 100px;
     float: left;
     margin-bottom: 20px
 }
 
-.mes2 .m2 label {
+._joinForm .m2 label {
     display: block;
     width: 60px;
     height: 32px;
@@ -1693,7 +1687,7 @@ a.more:hover {
     color: #333
 }
 
-.mes2 .m2 textarea {
+._joinForm .m2 textarea {
     display: block;
     width: 428px;
     height: 80px;
@@ -2386,4 +2380,47 @@ html #hm_t_undefined .hm-t-go-top {
 ._show a img {
     width: 100px;
     height: 100px;
+}
+
+._joinContainer {
+    width: 100%;
+    float: left;
+    min-width: 1200px;
+}
+
+._joinW1200 {
+    width: 1200px;
+    margin: 0 auto 10px;
+}
+
+._joinW1200.inl span.empty {
+    float: right;
+    font-size: 13px;
+    padding-left: 50px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+._joinW1200.inl span.empty a {
+    color: #666;
+}
+
+._joinW1200._piece img {
+    width: 100px;
+    height: 70px;
+}
+
+._joinW1200 ._joinForm p._tip {
+    line-height: 80px;
+    font-size: 15px;
+    color: #333;
+}
+
+._footerBlock ._w380 img {
+    margin-top: 20px;
+    width: 230px;
+    margin-left: -27px;
+}
+._mainBanner{
+    background-color: #fff;
 }
