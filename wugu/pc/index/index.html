@@ -58,7 +58,9 @@
         <div class="w370">
             <dl>
                 <dt class="bt"><strong>关于無谷</strong><span>ABOUT UG</span></dt>
-                <dd>无谷轻食餐饮（武汉）有限公司成立于2017年，成立以来凭借产品的独特风味饱受消费者所青睐，现已成为华中区域最大的轻食加盟品牌，在整个轻食领域中担任着行业标杆领跑者的重要角色。更多无谷轻食加盟费用，项目详情等可留言咨询。</dd>
+                <dd>
+                    无谷轻食餐饮（武汉）有限公司成立于2017年，成立以来凭借产品的独特风味饱受消费者所青睐，现已成为华中区域最大的轻食加盟品牌，在整个轻食领域中担任着行业标杆领跑者的重要角色。更多无谷轻食加盟费用，项目详情等可留言咨询。
+                </dd>
                 <a class="more" href="/about/" title="关于無谷">more ></a>
             </dl>
         </div>
@@ -133,7 +135,7 @@
     <div class="main indexnew">
         <div class="main newbt">
             <div class="w1200 bt">
-                <a class="more" href="/news/">more&nbsp;></a>
+                <a class="more" href="../news/index.html">more&nbsp;></a>
                 <strong>新闻资讯</strong><span>Franchise center</span>
                 <div class="hd">
                     <ul>
@@ -146,7 +148,8 @@
         <div class="main">
             <div class="w1200 m20">
                 <div class="tempWrap" style="overflow:hidden; position:relative; height:355px">
-                    <div class="new700 _container bd" style="top: -355px; position: relative; padding: 0px; margin: 0px;">
+                    <div class="new700 _container bd"
+                         style="top: -355px; position: relative; padding: 0px; margin: 0px;">
                         <!----行业---->
                         <div style="height: 355px;">
                             <dl>
@@ -314,171 +317,19 @@
                 <div class="contact-detail1">
                     <div class="content1">
                         <div class="block">
-                            <form method="POST" enctype="multipart/form-data"
-                                  action="/index.php?m=home&c=Lists&a=gbook_submit&lang=cn"
-                                  onsubmit="return submit0e39ee38a5ae87e8ca6e0790ab8a7349(this);">
-
+                            <form method="POST" id="Form">
                                 <div class="title1">
                                     <span class="span011">招商加盟</span> <span class="span021">/</span> MERCHANTS JOIN
                                 </div>
-                                <input id="attr_1" type="text" name="attr_1" class="name" placeholder="请输入您的姓名：">
-                                <input id="attr_2" type="tel" name="attr_2" class="phone" placeholder="请输入您的电话号码：">
-                                <input id="attr_3" type="text" name="attr_3" class="region" placeholder="意向加盟区域：">
-                                <button type="submit">提交</button>
-                                <input type="hidden" name="gourl" id="gourl_0e39ee38a5ae87e8ca6e0790ab8a7349"
-                                       value="http://www.rjkll.cn"><input type="hidden" name="typeid" value="30"><input
-                                    type="hidden" name="__token__0e39ee38a5ae87e8ca6e0790ab8a7349"
-                                    id="0e39ee38a5ae87e8ca6e0790ab8a7349" value="">
-                                <script type="text/javascript">
-                                    function submit0e39ee38a5ae87e8ca6e0790ab8a7349(elements) {
-                                        if (document.getElementById('gourl_0e39ee38a5ae87e8ca6e0790ab8a7349')) {
-                                            document.getElementById('gourl_0e39ee38a5ae87e8ca6e0790ab8a7349').value = window.location.href;
-                                        }
-                                        var x = elements;
-                                        for (var i = 0; i < x.length; i++) {
-
-                                            if (x[i].name == 'attr_1' && x[i].value.length == 0) {
-                                                alert('姓名不能为空！');
-                                                return false;
-                                            }
-
-                                            if (x[i].name == 'attr_2' && x[i].value.length == 0) {
-                                                alert('手机号码不能为空！');
-                                                return false;
-                                            }
-
-                                            if (x[i].name == 'attr_2' && !(/^1\d{10}$/.test(x[i].value))) {
-                                                alert('手机号码格式不正确！');
-                                                return false;
-                                            }
-
-                                        }
-
-                                        elements.submit();
-                                    }
-
-                                    function ey_fleshVerify(id) {
-                                        var src = "/index.php?m=api&c=Ajax&a=vertify&type=guestbook&lang=cn";
-                                        src += "&r=" + Math.floor(Math.random() * 100);
-                                        document.getElementById(id).src = src;
-                                    }
-
-                                    function f3f457be9ed43b5d86b10ebcbc780e8c2() {
-                                        //步骤一:创建异步对象
-                                        var ajax = new XMLHttpRequest();
-                                        //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url,可以带参数,动态的传递参数starName到服务端
-                                        ajax.open("post", "/index.php?m=api&c=Ajax&a=get_token&name=__token__0e39ee38a5ae87e8ca6e0790ab8a7349",
-                                            true);
-                                        // 给头部添加ajax信息
-                                        ajax.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-                                        // 如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据：
-                                        ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                        //步骤三:发送请求+数据
-                                        ajax.send('_ajax=1');
-                                        //步骤四:注册事件 onreadystatechange 状态改变就会调用
-                                        ajax.onreadystatechange = function () {
-                                            //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
-                                            if (ajax.readyState == 4 && ajax.status == 200) {
-                                                document.getElementById("0e39ee38a5ae87e8ca6e0790ab8a7349").value = ajax.responseText;
-                                            }
-                                        }
-                                    }
-
-                                    f3f457be9ed43b5d86b10ebcbc780e8c2();
-
-                                    function getNext1598839807(id, name, level) {
-                                        var input = document.getElementById('attr_' + name);
-                                        var first = document.getElementById('first_id_' + name);
-                                        var second = document.getElementById('second_id_' + name);
-                                        var third = document.getElementById('third_id_' + name);
-                                        var findex = '',
-                                            fvalue = '',
-                                            sindex = '',
-                                            svalue = '',
-                                            tindex = '',
-                                            tvalue = '',
-                                            value = '';
-
-                                        if (level == 1) {
-                                            if (second) {
-                                                second.style.display = 'none';
-                                                second.innerHTML = '';
-                                            }
-                                            if (third) {
-                                                third.style.display = 'none';
-                                                third.innerHTML = '';
-                                            }
-                                            findex = first.selectedIndex;
-                                            fvalue = first.options[findex].value;
-                                            input.value = fvalue;
-                                            value = fvalue;
-                                        } else if (level == 2) {
-                                            if (third) {
-                                                third.style.display = 'none';
-                                                third.innerHTML = '';
-                                            }
-                                            findex = first.selectedIndex;
-                                            fvalue = first.options[findex].value;
-                                            sindex = second.selectedIndex;
-                                            svalue = second.options[sindex].value;
-                                            if (svalue) {
-                                                input.value = fvalue + ',' + svalue;
-                                                value = svalue;
-                                            } else {
-                                                input.value = fvalue;
-                                            }
-                                        } else if (level == 3) {
-                                            findex = first.selectedIndex;
-                                            fvalue = first.options[findex].value;
-                                            sindex = second.selectedIndex;
-                                            svalue = second.options[sindex].value;
-                                            tindex = third.selectedIndex;
-                                            tvalue = third.options[tindex].value;
-                                            if (tvalue) {
-                                                input.value = fvalue + ',' + svalue + ',' + tvalue;
-                                                value = tvalue;
-                                            } else {
-                                                input.value = fvalue + ',' + svalue;
-                                            }
-                                        }
-                                        if (value) {
-                                            if (document.getElementById(id)) {
-                                                document.getElementById(id).options.add(new Option('请选择', ''));
-                                                var ajax = new XMLHttpRequest();
-                                                //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url,可以带参数,动态的传递参数starName到服务端
-                                                ajax.open("post", "/index.php?m=api&c=Ajax&a=get_region&pid=" + value, true);
-                                                // 给头部添加ajax信息
-                                                ajax.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-                                                // 如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据：
-                                                ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                                //步骤三:发送请求+数据
-                                                ajax.send('_ajax=1');
-                                                //步骤四:注册事件 onreadystatechange 状态改变就会调用
-                                                ajax.onreadystatechange = function () {
-                                                    //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
-                                                    if (ajax.readyState == 4 && ajax.status == 200) {
-                                                        var data = JSON.parse(ajax.responseText).data;
-                                                        if (data) {
-                                                            data.forEach(function (item) {
-                                                                document.getElementById(id).options.add(new Option(item.name, item
-                                                                    .id));
-                                                                document.getElementById(id).style.display = "block";
-
-                                                            });
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                </script> <!-- 不可缺少的隐藏令牌验证 -->
+                                <input type="text" class="name" id="fName" placeholder="请输入您的姓名：">
+                                <input type="tel" class="phone" id="fTel" placeholder="请输入您的电话号码：">
+                                <input type="text" class="region" id="fCity" placeholder="意向加盟区域：">
+                                <button type="submit" id="fSubmit">提交</button>
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <!--广告图——结束-->
         </div>
     </div>
 </div>
@@ -489,16 +340,6 @@
 
 <script type="text/javascript" src="../js/index.js"></script>
 
-<!-------友情链接 s------>
-<!--<div class="main link">-->
-<!--    <div class="w1200">-->
-<!--        友情链接：-->
-<!--        <a href='index.htm' target="_blank">轻食加盟</a>-->
-<!--        <a href='index-1.htm' target="_blank">耐震电接点压力表</a>-->
-<!--        <a href='index-2.htm' target="_blank">杭州代理记账</a>-->
-<!--        <a href='index-3.htm' target="_blank">布袋除尘器</a>-->
-<!--    </div>-->
-<!--</div>-->
 </body>
 
 </html>

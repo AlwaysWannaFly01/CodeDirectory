@@ -78,7 +78,7 @@
         <div class="_joinAddr">
             <h3>五谷轻食</h3>
             <p>
-                睿健卡路里是隶属于杭州热浪餐饮管理有限责任公司旗下的一个连锁餐饮品牌。品牌中文名来源于英文能量单位Calorie,人们每日摄入的热量多少从根本上决定着你的身体是否健康，用专业配比的食材来合理的控制每日卡路里的摄入量，有精确的热量控制下保证食物的美味与食客的饱腹感，正是睿健卡路里开创健康餐这种饮食方式的初衷。
+                无谷轻食餐饮（武汉）有限公司成立于2017年，成立以来凭借产品的独特风味饱受消费者所青睐，现已成为华中区域最大的轻食加盟品牌，在整个轻食领域中担任着行业标杆领跑者的重要角色。更多无谷轻食加盟费用，项目详情等可留言咨询。
             </p>
             <p style="text-align: center;">
                 <img src="../images/430.275.jpg"/>
@@ -89,165 +89,22 @@
             <img src="../images/510.290.jpg">
             <p class="_tip">如果您有任何疑问请留言给我们，我们会在收到留言后<strong>24小时内</strong>联系您。</p>
 
-            <form method="POST"
-                  enctype="multipart/form-data"
-                  action="/index.php?m=home&c=Lists&a=gbook_submit&lang=cn"
-                  onsubmit="return submitcf99f6cd97e1c09886b483be0cfe50b3(this);">
-                <div class="m1">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="item">
                     <label>姓名：</label>
-                    <input type='text' id='attr_1' name='attr_1' placeholder="请输入您的姓名！">
+                    <input type='text' placeholder="请输入您的姓名">
                 </div>
 
-                <div class="m1">
+                <div class="item">
                     <label>电话：</label>
-                    <input id="attr_2" type="text" value="" name="attr_2" placeholder="请输入您的电话！">
+                    <input type="text" value="" placeholder="请输入您的电话号码">
                 </div>
 
-                <div class="m2">
+                <div class="note">
                     <label>留言：</label>
-                    <textarea id="attr_3" cols="40" rows="3" name="attr_3" placeholder="请填写您的留言内容！"></textarea>
+                    <textarea cols="40" rows="3" placeholder="请填写您的留言内容"></textarea>
                 </div>
                 <input id="Submit" name="Submit" class="an" type="submit" value="提交">
-                <input type="hidden" name="gourl" id="gourl_cf99f6cd97e1c09886b483be0cfe50b3"
-                       value="http://www.rjkll.cn"/>
-                <input type="hidden" name="typeid" value="30"/>
-                <input type="hidden" name="__token__cf99f6cd97e1c09886b483be0cfe50b3"
-                       id="cf99f6cd97e1c09886b483be0cfe50b3" value=""/>
-                <script type="text/javascript">
-                    function submitcf99f6cd97e1c09886b483be0cfe50b3(elements) {
-                        if (document.getElementById('gourl_cf99f6cd97e1c09886b483be0cfe50b3')) {
-                            document.getElementById('gourl_cf99f6cd97e1c09886b483be0cfe50b3').value = window.location.href;
-                        }
-                        var x = elements;
-                        for (var i = 0; i < x.length; i++) {
-
-                            if (x[i].name == 'attr_1' && x[i].value.length == 0) {
-                                alert('姓名不能为空！');
-                                return false;
-                            }
-
-                            if (x[i].name == 'attr_2' && x[i].value.length == 0) {
-                                alert('手机号码不能为空！');
-                                return false;
-                            }
-
-                            if (x[i].name == 'attr_2' && !(/^1\d{10}$/.test(x[i].value))) {
-                                alert('手机号码格式不正确！');
-                                return false;
-                            }
-
-                        }
-
-                        elements.submit();
-                    }
-
-                    function ey_fleshVerify(id) {
-                        var src = "/index.php?m=api&c=Ajax&a=vertify&type=guestbook&lang=cn";
-                        src += "&r=" + Math.floor(Math.random() * 100);
-                        document.getElementById(id).src = src;
-                    }
-
-                    function f3f457be9ed43b5d86b10ebcbc780e8c2() {
-                        //步骤一:创建异步对象
-                        var ajax = new XMLHttpRequest();
-                        //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url,可以带参数,动态的传递参数starName到服务端
-                        ajax.open("post", "/index.php?m=api&c=Ajax&a=get_token&name=__token__cf99f6cd97e1c09886b483be0cfe50b3", true);
-                        // 给头部添加ajax信息
-                        ajax.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-                        // 如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据：
-                        ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                        //步骤三:发送请求+数据
-                        ajax.send('_ajax=1');
-                        //步骤四:注册事件 onreadystatechange 状态改变就会调用
-                        ajax.onreadystatechange = function () {
-                            //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
-                            if (ajax.readyState == 4 && ajax.status == 200) {
-                                document.getElementById("cf99f6cd97e1c09886b483be0cfe50b3").value = ajax.responseText;
-                            }
-                        }
-                    }
-
-                    f3f457be9ed43b5d86b10ebcbc780e8c2();
-
-                    function getNext1598839807(id, name, level) {
-                        var input = document.getElementById('attr_' + name);
-                        var first = document.getElementById('first_id_' + name);
-                        var second = document.getElementById('second_id_' + name);
-                        var third = document.getElementById('third_id_' + name);
-                        var findex = '', fvalue = '', sindex = '', svalue = '', tindex = '', tvalue = '', value = '';
-
-                        if (level == 1) {
-                            if (second) {
-                                second.style.display = 'none';
-                                second.innerHTML = '';
-                            }
-                            if (third) {
-                                third.style.display = 'none';
-                                third.innerHTML = '';
-                            }
-                            findex = first.selectedIndex;
-                            fvalue = first.options[findex].value;
-                            input.value = fvalue;
-                            value = fvalue;
-                        } else if (level == 2) {
-                            if (third) {
-                                third.style.display = 'none';
-                                third.innerHTML = '';
-                            }
-                            findex = first.selectedIndex;
-                            fvalue = first.options[findex].value;
-                            sindex = second.selectedIndex;
-                            svalue = second.options[sindex].value;
-                            if (svalue) {
-                                input.value = fvalue + ',' + svalue;
-                                value = svalue;
-                            } else {
-                                input.value = fvalue;
-                            }
-                        } else if (level == 3) {
-                            findex = first.selectedIndex;
-                            fvalue = first.options[findex].value;
-                            sindex = second.selectedIndex;
-                            svalue = second.options[sindex].value;
-                            tindex = third.selectedIndex;
-                            tvalue = third.options[tindex].value;
-                            if (tvalue) {
-                                input.value = fvalue + ',' + svalue + ',' + tvalue;
-                                value = tvalue;
-                            } else {
-                                input.value = fvalue + ',' + svalue;
-                            }
-                        }
-                        if (value) {
-                            if (document.getElementById(id)) {
-                                document.getElementById(id).options.add(new Option('请选择', ''));
-                                var ajax = new XMLHttpRequest();
-                                //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url,可以带参数,动态的传递参数starName到服务端
-                                ajax.open("post", "/index.php?m=api&c=Ajax&a=get_region&pid=" + value, true);
-                                // 给头部添加ajax信息
-                                ajax.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-                                // 如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据：
-                                ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                //步骤三:发送请求+数据
-                                ajax.send('_ajax=1');
-                                //步骤四:注册事件 onreadystatechange 状态改变就会调用
-                                ajax.onreadystatechange = function () {
-                                    //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
-                                    if (ajax.readyState == 4 && ajax.status == 200) {
-                                        var data = JSON.parse(ajax.responseText).data;
-                                        if (data) {
-                                            data.forEach(function (item) {
-                                                document.getElementById(id).options.add(new Option(item.name, item.id));
-                                                document.getElementById(id).style.display = "block";
-
-                                            });
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                </script>
             </form>
         </div>
     </div>

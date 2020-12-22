@@ -1640,14 +1640,14 @@ a.more:hover {
     margin: 0 auto
 }
 
-._joinForm .m1 {
+._joinForm .item {
     width: 510px;
     height: 32px;
     float: left;
     margin-bottom: 20px
 }
 
-._joinForm .m1 label {
+._joinForm .item label {
     display: block;
     width: 60px;
     height: 32px;
@@ -1657,12 +1657,12 @@ a.more:hover {
     color: #333
 }
 
-._joinForm .m1 input {
+._joinForm .item input {
     display: block;
     width: 448px;
     height: 32px;
     float: left;
-    border-radius: 16px;
+    border-radius: 5px;
     border: none;
     outline: 0;
     text-indent: 10px;
@@ -1670,14 +1670,14 @@ a.more:hover {
     background: #f4f4f4
 }
 
-._joinForm .m2 {
+._joinForm .note {
     width: 540px;
     height: 100px;
     float: left;
     margin-bottom: 20px
 }
 
-._joinForm .m2 label {
+._joinForm .note label {
     display: block;
     width: 60px;
     height: 32px;
@@ -1687,17 +1687,18 @@ a.more:hover {
     color: #333
 }
 
-._joinForm .m2 textarea {
+._joinForm .note textarea {
     display: block;
     width: 428px;
     height: 80px;
     float: left;
-    border-radius: 16px;
+    border-radius: 5px;
     border: none;
     outline: 0;
     padding: 10px;
     border: 1px solid #eee;
-    background: #f4f4f4
+    background: #f4f4f4;
+    resize: none;
 }
 
 .c_message > div.mes3 {
@@ -1789,14 +1790,14 @@ a.more:hover {
 
 .an {
     display: block;
-    width: 215px;
-    height: 32px;
+    width: 450px;
+    height: 34px;
     overflow: hidden;
     float: left;
     border: none;
     margin-left: 60px;
     cursor: pointer;
-    background: #46a64c;
+    background: #f28f00;
     border-radius: 16px;
     color: #fff;
     line-height: 32px
@@ -2194,6 +2195,9 @@ html #hm_t_undefined .hm-t-go-top {
     border-radius: 5px;
     cursor: pointer;
 }
+.contact1 button:focus{
+    outline: none;
+}
 
 .contact1 .content1 .right1 {
     width: 512px;
@@ -2423,4 +2427,11 @@ html #hm_t_undefined .hm-t-go-top {
 }
 ._mainBanner{
     background-color: #fff;
+}
+
+._store dl dd ul li{
+    width: 430px;
+}
+._store dl dd ul li img{
+    height: 320px;
 }
