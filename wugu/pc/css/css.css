@@ -925,16 +925,6 @@ a.more:hover {
     cursor: pointer
 }
 
-.stroes .bt .hd .new.on {
-    background: url(../images/bgbut.jpg);
-    border: none
-}
-
-.stroes .bt .hd .old.on {
-    background: #66cf19;
-    border: none
-}
-
 .sbox1 {
     width: 640px;
     overflow: hidden;
