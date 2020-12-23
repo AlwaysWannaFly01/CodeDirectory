@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="../css/css.css">
     <script src="..\libs\jquery1.42.min.js"></script>
     <script src="..\libs\jquery.SuperSlide.2.1.1.js"></script>
+    <script src="..\js\data.js"></script>
+    <script src="..\libs\template-web.js"></script>
     <script src="..\js\common.js"></script>
 
 </head>
@@ -19,34 +21,24 @@
 
 <div class="main _mainBanner banner">
     <div class="_container bd">
-        <ul style="position: relative; width: 1526px; height: 500px;">
-            <li style="position: absolute; width: 1526px; left: 0px; top: 0px; display: none;">
-                <a href='#' target="_self"><img src='..\images\allimg\20200513\1-200513110920923.jpg' alt='無谷轻食'></a>
-
+        <ul>
+            <li>
+                <a href='#' target="_self"><img src='../images/1920.500-1.jpg' alt='无谷轻食'></a>
             </li>
-            <li style="position: absolute; width: 1526px; left: 0px; top: 0px; display: list-item;">
-                <a href='#' target="_self"><img src='..\images\allimg\20200512\1-200512152553124.jpg' alt='無谷轻食'></a>
-            </li>
-            <li style="position: absolute; width: 1526px; left: 0px; top: 0px; display: none;">
-                <a href='#' target="_self"><img src='..\images\allimg\20200513\1-200513104359410.jpg' alt='轻食加盟'></a>
-            </li>
-            <li style="position: absolute; width: 1526px; left: 0px; top: 0px; display: none;">
-                <a href='#' target="_self"><img src='..\images\allimg\20201202\3-20120215211V11.png' alt='轻食加盟'></a>
+            <li>
+                <a href='#' target="_self"><img src='../images/1920.500-2.jpg' alt='无谷轻食'></a>
             </li>
         </ul>
     </div>
     <div class="hd">
         <ul>
-            <li class="">1</li>
-            <li class="on">2</li>
-            <li class="">3</li>
+            <li class="on">1</li>
+            <li class="">2</li>
         </ul>
     </div>
     <a class="prev" href="javascript:void(0)"></a>
     <a class="next" href="javascript:void(0)"></a>
 </div>
-
-
 
 <div class="main newlist">
     <div class="w1200 clearfix">
@@ -75,59 +67,16 @@
             </div>
         </div>
 
-        <div class="w800">
+        <div class="w800 _product">
             <div class="n8 bt inl">
                 <strong>無谷轻食</strong><span>WG</span>
                 <span class="m_r"> <a href='../index/index.html' class=''>首页</a> &gt; <a href='index.html'>無谷产品</a></span>
 
             </div>
-            <div class="n8 cpn">
+            <div class="n8 cpn _product-list">
                 <dl>
                     <dd>
-                        <ul>
-                            <li style="height:330px;">
-                                <a>
-                                    <div><img src="..\images\allimg\20200424\1-20042414395D91.jpg" alt="原切牛排-波奇面"
-                                              width="285" height="285" style="display: block;"></div>
-                                    <p class="title">原切牛排-波奇面</p>
-                                </a>
-                            </li>
-                            <li style="height:330px;">
-                                <a>
-                                    <div><img src="..\images\allimg\20200424\1-200424143UU64.jpg" alt="牛肉丸子-波奇面"
-                                              width="285" height="285" style="display: block;"></div>
-                                    <p class="title">牛肉丸子-波奇面</p>
-                                </a>
-                            </li>
-                            <li style="height:330px;">
-                                <a>
-                                    <div><img src="..\images\allimg\20200424\1-200424144624536.jpg" alt="原切牛排意面-文艺复兴"
-                                              width="285" height="285" style="display: block;"></div>
-                                    <p class="title">原切牛排意面-文艺复兴</p>
-                                </a>
-                            </li>
-                            <li style="height:330px;">
-                                <a>
-                                    <div><img src="..\images\allimg\20200424\1-20042413112YO.jpg" alt="岩烤鸡胸-增肌塑身"
-                                              width="285" height="285" style="display: block;"></div>
-                                    <p class="title">岩烤鸡胸-增肌塑身</p>
-                                </a>
-                            </li>
-                            <li style="height:330px;">
-                                <a>
-                                    <div><img src="..\images\allimg\20200424\1-200424145354544.jpg" alt="暴走紫薯条-美味小食"
-                                              width="285" height="285" style="display: block;"></div>
-                                    <p class="title">暴走紫薯条-美味小食</p>
-                                </a>
-                            </li>
-                            <li style="height:330px;">
-                                <a>
-                                    <div><img src="..\images\allimg\20200424\1-200424145425594.jpg" alt="低卡鸡肉肠-美味小食"
-                                              width="285" height="285" style="display: block;"></div>
-                                    <p class="title">低卡鸡肉肠-美味小食</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <ul id="content" class="clearfix"></ul>
                     </dd>
                 </dl>
             </div>
@@ -136,12 +85,9 @@
                 <li><a>首页</a></li>
                 <li><a>上一页</a></li>
                 <li class="active"><a>1</a></li>
-                <li><a href="list_3_2\index.htm" data-ey_fc35fdc="html" data-tmp="1">2</a></li>
-                <li><a href="list_3_3\index.htm" data-ey_fc35fdc="html" data-tmp="1">3</a></li>
-                <li><a href="list_3_4\index.htm" data-ey_fc35fdc="html" data-tmp="1">4</a></li>
-                <li><a href="list_3_5\index.htm" data-ey_fc35fdc="html" data-tmp="1">5</a></li>
-                <li><a href="list_3_2\index.htm" data-ey_fc35fdc="html" data-tmp="1">下一页</a></li>
-                <li><a href="list_3_9\index.htm" data-ey_fc35fdc="html" data-tmp="1">末页</a></li>
+                <li><a href="index-list-2.html">2</a></li>
+                <li><a href="index-list-2.html">下一页</a></li>
+                <li><a href="index-list-2.html">末页</a></li>
             </div>
 
         </div>
@@ -153,6 +99,58 @@
 <div id="footer" class="main foot"></div>
 <div id="toTop" class="main"></div>
 
+<script id="temp" type="text/html">
+    {{each list value i}}
+    <li>
+        <a>
+            <div>
+                <img src="{{value['img']}}" alt="{{value['name']}}">
+                <section>
+                    <table class="pure-table">
+                        <thead>
+                        <tr>
+                            <th>食材</th>
+                            <th>克数</th>
+                            <th>热量<br/>(大卡)</th>
+                            <th>碳水化<br/>合物(克)</th>
+                            <th>脂肪<br/>(克)</th>
+                            <th>蛋白质<br/>(克)</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        {{each value['data'] item index}}
+                        <tr>
+                            <td>{{item[0]}}</td>
+                            <td>{{item[1]}}</td>
+                            <td>{{item[8]}}</td>
+                            <td>{{item[9]}}</td>
+                            <td>{{item[10]}}</td>
+                            <td>{{item[11]}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <p class="title">{{value['name']}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script>
+    var goodsList = _list['mainGoods'].data;
+    var newArray = [];
+    var newObj = {}
+    Object.keys(goodsList).forEach(function (key) {
+        if (key < 6) {
+            newArray.push(goodsList[key])
+        }
+    });
+    newObj['list'] = newArray
+    var html = template('temp', newObj);
+    document.getElementById('content').innerHTML = html;
+</script>
 
 </body>
 </html>
