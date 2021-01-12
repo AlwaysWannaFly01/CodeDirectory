@@ -2185,7 +2185,8 @@ html #hm_t_undefined .hm-t-go-top {
     border-radius: 5px;
     cursor: pointer;
 }
-.contact1 button:focus{
+
+.contact1 button:focus {
     outline: none;
 }
 
@@ -2415,13 +2416,20 @@ html #hm_t_undefined .hm-t-go-top {
     width: 230px;
     margin-left: -27px;
 }
-._mainBanner{
+
+._mainBanner {
     background-color: #fff;
 }
 
-._store dl dd ul li{
+._store dl dd ul li {
     width: 430px;
 }
-._store dl dd ul li img{
+
+._store dl dd ul li img {
     height: 320px;
+}
+
+._articleStyle dd p span {
+    font-size: 16px;
+    font-family: '微软雅黑, sans-serif';
 }
