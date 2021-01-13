@@ -2429,6 +2429,16 @@ html #hm_t_undefined .hm-t-go-top {
     height: 320px;
 }
 
+._articleStyle dd p._center {
+    text-align: center;
+}
+
+._articleStyle .c72d21 {
+    color: #c72d21;
+}
+._articleStyle ._3F6942 {
+    color: #3F6942;
+}
 ._articleStyle dd p span {
     font-size: 16px;
     font-family: '微软雅黑, sans-serif';
