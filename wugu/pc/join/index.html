@@ -89,20 +89,20 @@
             <img src="../images/510.290.jpg">
             <p class="_tip">如果您有任何疑问请留言给我们，我们会在收到留言后<strong>24小时内</strong>联系您。</p>
 
-            <form method="POST" enctype="multipart/form-data">
+            <form method="POST" enctype="multipart/form-data" id="message">
                 <div class="item">
                     <label>姓名：</label>
-                    <input type='text' placeholder="请输入您的姓名">
+                    <input type='text' placeholder="请输入您的姓名" id="m-name">
                 </div>
 
                 <div class="item">
                     <label>电话：</label>
-                    <input type="text" value="" placeholder="请输入您的电话号码">
+                    <input type="text" value="" placeholder="请输入您的电话号码" id="m-tel">
                 </div>
 
                 <div class="note">
                     <label>留言：</label>
-                    <textarea cols="40" rows="3" placeholder="请填写您的留言内容"></textarea>
+                    <textarea cols="40" rows="3" placeholder="请填写您的留言内容" id="m-message"></textarea>
                 </div>
                 <input id="Submit" name="Submit" class="an" type="submit" value="提交">
             </form>
