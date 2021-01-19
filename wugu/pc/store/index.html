@@ -11,7 +11,20 @@
     <script src="..\libs\jquery1.42.min.js"></script>
     <script src="..\libs\jquery.SuperSlide.2.1.1.js"></script>
     <script src="..\js\common.js"></script>
+    <script>
+        !function () {
+            function params(u, p) {
+                var m = new RegExp("(?:&|/?)" + p + "=([^&$]+)").exec(u);
+                // alert('m:', JSON.stringify(m))
+                return m ? m[1] : '';
+            }
 
+            if (/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search,
+                "from") != "mobile") {
+                location.href = 'http://www.wugusala.com/';
+            }
+        }();
+    </script>
 </head>
 <body>
 
