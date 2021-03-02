@@ -2443,7 +2443,68 @@ html #hm_t_undefined .hm-t-go-top {
     font-size: 16px;
     font-family: '微软雅黑, sans-serif';
 }
+h3._support{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    color: #333;
+}
+ul._support{
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+._support li{
+    width: 33%;
+    float:left;
+    padding: 0 20px;
+    height: 90px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-left:1px solid #000;
+    border-top:1px solid #000;
+}
 
+._support li:nth-child(3n){
+    border-right:1px solid #000;
+}
+._support li:nth-last-child(1){
+    border-bottom:1px solid #000;
+}
+._support li:nth-last-child(2){
+    border-bottom:1px solid #000;
+}
+._support li:nth-last-child(3){
+    border-bottom:1px solid #000;
+}
+._support li h4{
+    float:left;
+    width: 10%;
+    text-align: center;
+    background-color: rgb(247, 183, 92);
+    border-radius: 50%;
+    padding-top: 3px;
+}
+._support li strong{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: -5px;
+}
+._support li  div{
+    float:right;
+    width: 87%;
+}
+
+._support li  div h3{
+    margin-bottom: 5px;
+}
+
+._support li  div p{
+    font-size: 14px;
+    color: #666;
+}
 .support_container div.piece {
     width: 205px;
     height: 178px;
