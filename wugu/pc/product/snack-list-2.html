@@ -118,6 +118,7 @@
         <a>
             <div>
                 <img src="{{value['img']}}" alt="{{value['name']}}">
+                {{if i < 8}}
                 <section>
                     <table class="pure-table">
                         <thead>
@@ -145,6 +146,7 @@
                         </tbody>
                     </table>
                 </section>
+                {{/if}}
             </div>
             <p class="title">{{value['name']}}</p>
         </a>
