@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,18 +96,19 @@
             </div>
 
             <div class="n8 all_page" id="pages">
-                <li><a>首页</a></li>
-                <li><a>上一页</a></li>
-                <li class="active"><a>1</a></li>
+                <li><a href="salad.html">首页</a></li>
+                <li><a href="salad-list-2.html">上一页</a></li>
+                <li><a href="salad.html">1</a></li>
                 <li><a href="salad-list-2.html">2</a></li>
-                <li><a href="salad-list-3.html">3</a></li>
-                <li><a href="salad-list-2.html">下一页</a></li>
-                <li><a href="salad-list-3.html">末页</a></li>
+                <li class="active"><a href="salad-list-3.html">3</a></li>
+                <li><a>下一页</a></li>
+                <li><a>末页</a></li>
             </div>
 
         </div>
     </div>
 </div>
+
 
 <div id="footer" class="main foot"></div>
 <div id="toTop" class="main"></div>
@@ -117,33 +119,33 @@
         <a>
             <div>
                 <img src="{{value['img']}}" alt="{{value['name']}}">
-                <section>
-                    <table class="pure-table">
-                        <thead>
-                        <tr>
-                            <th>食材</th>
-                            <th>克数</th>
-                            <th>热量<br/>(大卡)</th>
-                            <th>碳水化<br/>合物(克)</th>
-                            <th>脂肪<br/>(克)</th>
-                            <th>蛋白质<br/>(克)</th>
-                        </tr>
-                        </thead>
+<!--                <section>-->
+<!--                    <table class="pure-table">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th>食材</th>-->
+<!--                            <th>克数</th>-->
+<!--                            <th>热量<br/>(大卡)</th>-->
+<!--                            <th>碳水化<br/>合物(克)</th>-->
+<!--                            <th>脂肪<br/>(克)</th>-->
+<!--                            <th>蛋白质<br/>(克)</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
 
-                        <tbody>
-                        {{each value['data'] item index}}
-                        <tr>
-                            <td>{{item[0]}}</td>
-                            <td>{{item[1]}}</td>
-                            <td>{{item[8]}}</td>
-                            <td>{{item[9]}}</td>
-                            <td>{{item[10]}}</td>
-                            <td>{{item[11]}}</td>
-                        </tr>
-                        {{/each}}
-                        </tbody>
-                    </table>
-                </section>
+<!--                        <tbody>-->
+<!--                        {{each value['data'] item index}}-->
+<!--                        <tr>-->
+<!--                            <td>{{item[0]}}</td>-->
+<!--                            <td>{{item[1]}}</td>-->
+<!--                            <td>{{item[8]}}</td>-->
+<!--                            <td>{{item[9]}}</td>-->
+<!--                            <td>{{item[10]}}</td>-->
+<!--                            <td>{{item[11]}}</td>-->
+<!--                        </tr>-->
+<!--                        {{/each}}-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </section>-->
             </div>
             <p class="title">{{value['name']}}</p>
         </a>
@@ -155,7 +157,7 @@
     var newArray = [];
     var newObj = {}
     Object.keys(goodsList).forEach(function (key) {
-        if (key < 6) {
+        if (key > 11 && key < 16) {
             newArray.push(goodsList[key])
         }
     });
