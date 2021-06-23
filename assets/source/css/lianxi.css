@@ -1,0 +1,77 @@
+.lianxi{
+	padding:50px 0;
+}
+.lianxi-ul{
+	width:100%;
+	padding:30px;
+	padding-top:50px;
+	border:1px solid #e6e6e6;
+	background: #F7F7F7;
+	margin:20px 0;
+	overflow: hidden;
+}
+.lianxi-li{
+	padding:0;margin: 0;
+	text-align: center;
+	border-right:1px solid #e6e6e6;
+	height:183px;
+}
+.lianxi-li:last-child{
+	border:0;
+}
+.lianxi-li img{
+	width:48px;
+}
+.lianxi-li p{
+	font-size:18px;
+	color:#000;
+	padding: 20px 0;
+}
+.lianxi-li a{
+	font-size: 14px;
+	color:#666;
+	line-height: 30px;
+}
+.amap-logo,.amap-copyright{
+	display: none!important;
+}
+/*手机*/
+@media (max-width: 767px) {
+	.lianxi-ul{
+		padding:20px;
+	}
+	.lianxi-li{
+		border:0;
+		text-align: left;
+		height:auto;
+		height:70px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		position: relative;
+	}
+	.lianxi-li img{
+		width:30px;
+		display: block;
+		height:30px;
+		vertical-align: middle;
+	}
+	.lianxi-li p{
+		display: none;
+	}
+	.lianxi-li a{
+		margin-left:14px;
+	}
+	.lianxi-li .lianxi-phone{
+		margin-left:43px;
+	}
+	.lianxi-img{
+		position: absolute;
+		top:0;bottom:0;left:0;
+		margin: auto;
+	}
+	.lianxi{
+		padding:20px;
+	}
+	
+}

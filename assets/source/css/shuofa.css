@@ -1,0 +1,425 @@
+body,html{
+	background: #f8f8f8;
+}
+.shuofa-banner{}
+.shuofa-banner-tuijian{
+	width:30%;
+	height:100%;
+	position: absolute;
+	right:20px;top:0;
+	background: #1c1026;
+	padding:0 20px;
+}
+.shuofa-banner-tuijian-top{
+	border-bottom:1px solid #33273b;
+	color:#fff;
+	font-size: 20px;
+	text-align: left;
+	line-height: 60px;
+	padding:30px 10px 0 10px;
+}
+.shuofa-banner-tuijian-top img{
+	width:20px;
+	vertical-align: middle;
+	margin-right:5px;
+}
+.shuofa-banner-tuijian-bot{
+	width:100%;
+	height:72%;
+	margin:20px 0;
+	overflow: hidden;
+}
+.shuofa-banner-tuijian-bot li{text-align: left;
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	padding:0 30px;
+	color:#fff;
+}
+.shuofa-banner-tuijian-bot li a{
+	color:#fff;
+	font-size: 13px;
+}
+.shuofa-shipin{
+	margin-top:40px;
+}
+.shuofa-shipin-ul{
+	width:100%;
+	margin-top:20px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom:40px;
+}
+.shuofa-shipin-ul li{
+	width:19%;
+	margin-right:1.2%;
+}
+.shuofa-shipin-ul li:nth-child(5n){
+	margin-right:0;
+}
+.shuofa-shipin-ul li a{
+	display: block;
+	color:#333;
+	font-size: 14px;
+}
+.shuofa-shipin-ul li a p{
+	display: block;
+	width:100%;
+	position: relative;
+}
+.shuofa-shipin-ul li a p span{
+	background: #d19e45;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 11;
+    border-radius: 4px;
+}
+.shuofa-shipin-ul li a p img{
+	width:100%;
+}
+.shuofa-shipin-ul li a p .shuofa-bofang{
+	position: absolute;
+	width:35px;
+	top:0;left:0;right: 0;bottom:0;
+	margin: auto;
+}
+.shuofa-shipin-ul li a p .bo{
+	position: absolute;
+	width:35px;height: 35px;background: url(../img/2.png) no-repeat;background-size: 100% auto;
+	top:0;left:0;right: 0;bottom:0;
+	margin: auto;
+}
+.shuofa-yinpin{
+	margin-top:40px;
+}
+.shuofa-yinpin-ul-box{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.shuofa-yinpin-ul-left,.shuofa-yinpin-ul-right,.shuofa-yinpin-ul-left-top-left,.shuofa-yinpin-ul-left-top-right{
+	margin: 0;padding:0;
+}
+.shuofa-yinpin-ul-left{
+	width:59.6774%;
+}
+.shuofa-yinpin-ul-right{
+	width:40.3226%;
+}
+.shuofa-yinpin-ul-left-top,.shuofa-yinpin-ul-left-bot{
+	display: flex;
+	flex-wrap: wrap;
+}
+.shuofa-yinpin-ul-left-top-left{
+	width:65.54%;overflow: hidden;
+}
+.shuofa-yinpin-ul-left-top-right{
+	width:34.46%;
+}
+.shuofa-yinpin-ul-left-bot .shuofa-yinpin-ul-left-top-right{
+	width:33.33333%;
+}
+.shuofa-yinpin-ul-right{
+	background: #fff;
+	padding: 0 20px 20px 30px;
+	padding-right: 80px;
+}
+.shuofa-yinpin-ul-left-top{
+	overflow: hidden;
+}
+.shuofa-yinpin-ul-right li{
+	list-style: square;
+	margin-top:20px;
+}
+.shuofa-yinpin-ul-right li a{
+	font-size: 14px;
+	color:#333;
+}
+.shuofa-yinpin-ul-right li a:hover{
+	color:#d19e43;
+}
+.shuofa-yinpin-ul-left-top-left img{
+	width:100%;
+}
+.shuofa-yinpin-ul-left-top-right{
+	padding:0 20px;
+	height:100%;
+}
+.shuofa-yinpin-ul-left-top-right-box{
+	width:100%;
+	height:100%;
+	background: #fff;
+	display: inline-block;
+}
+.shuofa-yinpin-ul-left-top-right-box>a>div>img{
+	width:100%;max-height: 100%;
+	
+}
+.shuofa-yinpin-ul-left-top-right-box>a>div{height: 140px;overflow: hidden;
+	position: relative;
+}
+.shuofa-yinpin-ul-left-top-right-box>a>div .shuofa-biaoqian{
+	position: absolute;
+	background: #d19e43;
+	font-size: 12px;
+	color:#fff;
+	padding:2px 10px;
+	left:0;
+	bottom:10px;
+	
+}
+.shuofa-yinpin-ul-left-top-right-box>a{
+	display: block;
+}
+.shuofa-yinpin-ul-left-top-right-box>a p{
+	
+	padding:16px;
+	height:25%;
+	overflow: hidden;
+	padding-bottom:0;
+}
+.shuofa-yinpin-ul-left-top-right-box>a p span{
+	font-size: 14px;
+	color:#000;
+	display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.shuofa-yinpin-ul-left-top-right-box>a>span{
+	display: inline-block;
+	padding:0 16px;
+	color:#888;
+	font-size: 12px;
+}
+.shuofa-yinpin-ul-left-bot{
+	overflow: hidden;
+	margin-top:20px;
+}
+.shuofa-yinpin-ul-left-bot .shuofa-yinpin-ul-left-top-right{
+	padding-left:0;
+}
+.shuofa-yinpin{
+	margin-bottom:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------手机--------------*/
+@media (max-width: 767px) {
+	.shuofa-banner-tuijian{
+		display: none;
+	}
+	
+	.shuofa-phone-tuijian{
+		width:100%;
+		background: #1c1026;
+		padding:0 10px;
+	}
+	.shuofa-banner-tuijian-top{
+		font-size: 14px;
+		line-height: 40px;
+		padding:0px 10px 0 10px;
+	}
+	.shuofa-banner-tuijian-top img{
+		width:14px;
+		margin-right:5px;
+	}
+	.shuofa-banner-tuijian-bot{
+		width:100%;
+		height:auto;
+		padding:0 0 20px 0;
+	}
+	.shuofa-banner-tuijian-bot li{
+		width:100%;
+		height:30px;
+		line-height: 30px;
+		padding:0 20px;
+	}
+	.shuofa-banner-tuijian-bot li a{
+		font-size: 12px;
+	}
+	.shuofa-shipin{
+		margin-top: 20px;
+	}
+	.shuofa-shipin-ul{
+		margin-top:10px;
+	}
+	.shuofa-shipin-ul li{
+		width:48%;
+		margin-right:3.8%;
+		box-sizing: border-box;
+		margin-bottom:15px;
+	}
+	.shuofa-shipin-ul li:nth-child(2n){margin-right:0;}
+	.shuofa-shipin-ul.video-tuijian-ul li:nth-child(2n){
+		margin-right:0;
+	}
+	.shuofa-shipin-ul.video-tuijian-ul li:nth-child(n+5){display: block;}
+	.shuofa-shipin-ul li:nth-child(n+5){margin-right:auto;display: none;}
+	.shuofa-shipin-ul li a{
+		font-size: 12px;
+	}
+	.shuofa-shipin-ul li a p{
+		padding:0;
+		margin: 0;
+		padding-bottom:5px;
+	}
+	.shuofa-shipin-ul{
+		margin-bottom:0px;
+	}
+	.phone-yp-top{
+		width:100%;
+		margin-top:10px;
+	}
+	.phone-yp-top img{
+		width:100%;
+	}
+	.shuofa-yinpin-ul li{
+		background: #fff;
+		padding-bottom:10px;
+	}
+	.shuofa-yinpin-ul .shuofa{
+		padding:10px;
+		font-size: 14px;
+		color:#333;
+	}
+	.shuofa-yinpin-ul span{
+		padding:10px;
+		font-size: 12px;
+		color:#888;
+	}
+	.shuofa-yinpin-ul .shuofa-biaoqian{
+		position: absolute;
+		background: #d19e43;
+		font-size: 12px;
+		color:#fff;
+		padding:2px 10px;
+		left:0;
+		bottom:10px;
+	}
+	.shuofa-yinpin-ul-right{
+		padding-top:10px;
+	}
+	.shuofa-yinpin-ul-right li a{
+		font-size: 12px;
+	}
+	.shuofa-yinpin-ul-right li{
+		margin-top:12px;
+	}
+
+	.shuofa-yinpin-ul-right{
+		width:100%;
+		padding-right:30px;
+	}
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width: 991px){
+	.shuofa-banner-tuijian{
+		width:33%;
+		right:20px;
+		padding:0 10px;
+	}
+	.shuofa-banner-tuijian-top{
+		font-size: 14px;
+		line-height: 40px;
+		padding:0px 10px 0 10px;
+	}
+	.shuofa-banner-tuijian-top img{
+		width:14px;
+		margin-right:5px;
+	}
+	.shuofa-banner-tuijian-bot{
+		width:100%;
+		height:72%;
+		margin:10px 0;
+	}
+	.shuofa-banner-tuijian-bot li{
+		width:100%;
+		height:30px;
+		line-height: 30px;
+		padding:0 20px;
+	}
+	.shuofa-banner-tuijian-bot li a{
+		font-size: 12px;
+	}
+	.shuofa-yinpin-ul-left-top-right-box p span{
+		font-size: 13px;
+	}
+	.shuofa-yinpin-ul-left-top-right-box>a p{
+		padding:10px;
+		padding-bottom: 0;
+	}
+	.shuofa-yinpin-ul-left-top-right-box>a>span{
+		padding-left:10px;
+	}
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width: 1199px){
+	.shuofa-banner-tuijian{
+		width:32%;
+		right:20px;
+		padding:0 20px;
+	}
+	.shuofa-banner-tuijian-top{
+		font-size: 15px;
+		line-height: 50px;
+		padding:10px 10px 0 10px;
+	}
+	.shuofa-banner-tuijian-top img{
+		width:15px;
+		margin-right:5px;
+	}
+	.shuofa-banner-tuijian-bot{
+		width:100%;
+		height:72%;
+		margin:10px 0;
+	}
+	.shuofa-banner-tuijian-bot li{
+		width:100%;
+		height:30px;
+		line-height: 30px;
+		padding:0 20px;
+	}
+	.shuofa-banner-tuijian-bot li a{
+		font-size: 12px;
+	}
+	.shuofa-yinpin-ul-left-top-right-box p span{
+		font-size: 13px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+	.shuofa-banner-tuijian-top img{
+		width:16px;
+		margin-right:5px;
+	}
+	.shuofa-banner-tuijian-top{
+		font-size: 16px;
+		line-height: 60px;
+		padding:10px 10px 0 10px;
+	}
+	.shuofa-banner-tuijian-bot li a{
+		font-size: 12px;
+	}
+	.shuofa-banner-tuijian-bot li{
+		width:100%;
+		height:40px;
+		line-height: 40px;
+		padding:0 20px;
+	}
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {}

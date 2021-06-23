@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <title>联系我们-酬信律师事务所</title>
+    <meta name="keywords" content="联系我们-酬信律师事务所">
+    <meta name="description" content="联系我们-酬信律师事务所">
+    <link rel="stylesheet" href="../../assets/source/css/common.css">
+    <link rel="stylesheet" href="../../assets/source/css/iconfont.css">
+    <link rel="stylesheet" href="../../assets/source/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/source/css/swiper.css">
+    <link rel="stylesheet" href="../../assets/source/css/team.css">
+    <link rel="stylesheet" href="../../assets/source/css/index.css">
+    <link rel="stylesheet" href="../../assets/source/css/wufalaw.css">
+    <script src="../../assets/source/js/jquery.min.js"></script>
+    <script src="../../assets/source/js/wufalaw.js"></script>
+
+</head>
+<body>
+<div id="header"></div>
+
+<div class="team-banner-box">
+    <img id="team-banner" src="../../assets/source/img/team-banner.jpg" alt="">
+    <div class="team-text-box itemcenter">
+        <div class="team-text">
+            <p>专业律师团队</p>
+            <span>标语标语,标语标语</span>
+        </div>
+    </div>
+</div>
+<div class="wf-address contact-us">
+    <div class="title">
+        <p>联系我们</p>
+        <span></span>
+    </div>
+    <div class="incontactus-infotop">
+        <h1>湖北酬信律师事务所</h1>
+    </div>
+    <div class="incontactus-infocon rel">
+        <div class="c-ewm">
+            <ul class="clearfix">
+                <li>
+                    <h1><img src="" alt=""></h1>
+                    <p>扫一扫<br>关注酬信公众号</p>
+                </li>
+            </ul>
+        </div>
+        <div class="txt">
+
+            <p>通讯地址：湖北省武汉市汉阳区人信大厦1405室</p>
+            <p>咨询电话：010-12443565</p>
+            <p>电子邮箱：.com</p>
+            <p>邮政编码：430000</p>
+        </div>
+        <div class="txt">
+            <div class="tit">乘车路线</div>
+            <p>乘车线路：地铁三号线龙阳村c口人信大厦14楼1405</p>
+            <p>从汉口站：地铁2号线到范湖转3号线到龙阳村下</p>
+            <p>从武昌站：地铁4号线到王家湾转3号线到龙阳村下</p>
+            <p>从武汉站：地铁4号线到王家湾转3号线到龙阳村下</p>
+
+        </div>
+        <div class="txt cmap">
+            <div class="tit">地图导航</div>
+            <div>
+                <div id="map"
+                     style=" height:600px;
+                     -webkit-transition: all 0.5s ease-in-out;
+                     transition: all 0.5s ease-in-out;
+                     border:#dedede 1px solid">
+                </div>
+                <script type="text/javascript"
+                        src="//api.map.baidu.com/api?v=2.0&type=webgl&ak=ZYjjDZBcXhTwxDG5k1yHvgrH6RCnrhpe"></script>
+                <script type="text/javascript">
+                    // 百度地图API功能
+                    var map = new BMapGL.Map('map');
+                    //
+                    var poi = new BMapGL.Point(114.2121028081883, 30.559456975045133);
+                    map.centerAndZoom(poi, 17);
+                    map.enableScrollWheelZoom();
+                    // // 创建点标记
+                    let marker = new BMapGL.Marker(new BMapGL.Point(114.2121028081883, 30.559456975045133));
+                    map.addOverlay(marker);
+
+                    // 创建信息窗口
+                    var opts = {
+                        width: 200,
+                        height: 60,
+                        title: '湖北酬信律师事务所',
+                        offset: {
+                            height: -15,
+                            width: 0
+                        }
+                    };
+                    var infoWindow = new BMapGL.InfoWindow('地址：湖北省武汉市汉阳区人信大厦1405室', opts);
+                    // 点标记添加点击事件
+                    marker.addEventListener('click', function () {
+                        map.openInfoWindow(infoWindow, poi); // 开启信息窗口
+                    });
+
+                    var scaleCtrl = new BMapGL.ScaleControl();  // 添加比例尺控件
+                    map.addControl(scaleCtrl);
+                    var zoomCtrl = new BMapGL.ZoomControl();  // 添加比例尺控件
+                    map.addControl(zoomCtrl);
+
+                    // 创建定位控件
+                    var locationControl = new BMapGL.LocationControl({
+                        // 控件的停靠位置（可选，默认左上角）
+                        anchor: BMAP_ANCHOR_TOP_RIGHT,
+                        // 控件基于停靠位置的偏移量（可选）
+                        offset: new BMapGL.Size(20, 20)
+                    });
+                    // 将控件添加到地图上
+                    map.addControl(locationControl);
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer"></div>
+<script src="../../assets/source/js/bootstrap.js"></script>
+<script src="../../assets/source/js/swiper.js"></script>
+<script src="../../assets/source/js/index.js"></script>
+</body>
+</html>

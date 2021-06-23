@@ -1,0 +1,121 @@
+.wenzhang{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.wenzhang ul{
+	flex:1;
+}
+
+.wenzhang>div{
+	line-height: 60px;
+}
+.wenzhang>div img{
+	width:16px;
+}
+.wenzhang>div a,.wenzhang>div span{
+	font-size: 14px;
+	color:#888;
+}
+.wenzhang-title{
+	width:100%;
+	padding-top:20px;
+	font-weight: bold;
+	color:#000;
+}
+.wenzhang-time{
+	width:100%;
+	font-size: 13px;
+	color:#888;
+	padding:20px 0;
+	border-bottom:1px solid #e6e6e6;
+}
+.wenzhang-con{
+	font-size: 16px;
+	color:#333;
+	line-height: 2em;
+	text-align: justify;
+	padding: 30px 0;
+}
+.wenzhang-con h2{font-size: 24px;line-height: 2em;font-weight: bold;}
+.wenzhang-con p{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.wenzhang-con img{height: auto!important;}
+.wenzhang-page{
+	width:100%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top:80px;
+	border-bottom:1px solid #e6e6e6;
+}
+.wenzhang-page div{
+	width:50%;height: 60px;line-height: 60px;
+	 display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color:#666;
+}
+.wenzhang-xiangguan-title{
+	width:100%;
+	line-height: 50px;
+	border-bottom:1px solid #e6e6e6;
+	font-size: 16px;
+	color:#000;
+	margin-top:10px;
+}
+.wenzhang-xiangguan{
+	width:100%;
+	border-bottom:1px solid #e6e6e6;
+	margin-bottom:50px;
+	padding-bottom:16px;
+}
+.wenzhang-xiangguan-li{
+	width:100%;
+	display: flex;
+	flex-wrap: nowrap;
+	padding-top:16px;
+}
+.wenzhang-xiangguan-li a{
+	 display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color:#666;
+  font-size: 12px;
+  color:#777;
+  flex:1;
+  padding-right:40px;
+}
+.wenzhang-xiangguan-li a img{
+	width:8px;
+	margin-right:2px;
+}
+.wenzhang-xiangguan-li>span{
+	font-size: 12px;
+  	color:#888;
+  	
+}
+/*手机*/
+@media (max-width: 767px) {
+	.wenzhang>div{}
+	.wenzhang-box{
+		padding:0 16px;
+		
+	}
+	.wenzhang-page{display:block;line-height: inherit;margin-top:0px;}
+	.wenzhang-page div{width: 100%;height: 2rem;line-height: 2rem; display: block;}
+	.wenzhang-title{font-size: 1.2rem;line-height: 1.5em;}
+	.wenzhang-con h2{font-size: 1rem;}
+	.wenzhang-xiangguan{
+		margin-bottom: 10px;
+	}
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width: 991px){}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width: 1199px){}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {}

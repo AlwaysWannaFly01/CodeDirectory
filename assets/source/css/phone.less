@@ -1,0 +1,565 @@
+//手机尺寸
+@media (max-width: 767px) {
+    .wf-fengcai {
+        margin: inherit;
+
+        .video {
+            padding: 15px 10px;
+
+            .zuo {
+                width: 100%;
+                padding: initial;
+
+                & > span {
+                    display: block;
+                    float: initial;
+                    margin-bottom: 10px;
+                    position: initial;
+                }
+
+                a {
+                    width: 50%;
+                }
+            }
+
+            .you {
+                position: absolute;
+                right: 10px;
+            }
+        }
+    }
+
+    .feiPhoneScreen {
+        display: none;
+    }
+
+    .wfPhone {
+        min-width: 320px;
+        display: block;
+
+        .wfPhone-close {
+            display: none;
+        }
+    }
+
+    .smallScreen {
+        display: none;
+    }
+
+    .middleScreen {
+        display: none;
+    }
+
+    .bigScreen {
+        display: none;
+    }
+
+    .container-fluid2 {
+        padding: 0;
+    }
+
+    .row2-nei1 {
+        width: 100%;
+    }
+
+    .row2-nei1-bot {
+        padding: 0 16px;
+    }
+
+    .phone-header {
+        width: 100%;
+        height: 50px;
+        background: #8076a3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+    .swiper-container1 {
+        margin-top: 50px;
+    }
+
+    .phone-header {
+        display: flex;
+        padding: 0 18px;
+        min-width: 320px;
+
+        span {
+            color: #fff;
+            font-size: 28px;
+            line-height: 50px;
+        }
+
+        .phone-header-left {
+            span {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .phone-header-cen {
+        flex: 1;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+
+        img {
+            height: 60%;
+            width: auto;
+            vertical-align: middle;
+        }
+    }
+
+    .phone-caidan-box {
+        width: 9rem;
+        height: 0;
+        background: #8076a3;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        z-index: 1001;
+        border-top: 0;
+        padding: 0 6%;
+        overflow: auto;
+        transition: all 0.3s;
+
+        li {
+            width: 100%;
+            border-bottom: 1px solid #b8bcc7;
+            line-height: 45px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                color: #fff;
+                font-size: 14px;
+                display: block;
+                width: 100%;
+            }
+
+            .phone-active {
+                color: #d09d41;
+            }
+
+            .phone-header-xiala {
+                height: 0;
+                overflow: hidden;
+                transition: all 0.3s;
+
+                a {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    padding-left: 10px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+    }
+
+    .phone-caidan-box2 {
+        width: 100%;
+        height: 95vh;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        z-index: 1001;
+        display: none;
+
+        ul {
+            width: 100%;
+            background: #fff;
+            text-align: center;
+            padding: 0 40px 20px 40px;
+
+            li {
+                text-align: left;
+                border-bottom: 1px solid #d2d2d7;
+                line-height: 50px;
+
+                a {
+                    color: #131f45;
+                    font-size: 12px;
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+
+                &:first-child {
+                    color: #131f45;
+                    padding: 10px 0;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .topsanjiao {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+
+            &:before,
+            &:after {
+                position: absolute;
+                content: '';
+                border-top: 10px transparent dashed;
+                border-left: 10px transparent dashed;
+                border-right: 10px transparent dashed;
+                border-bottom: 10px #fff solid;
+            }
+
+            &:before {
+                border-bottom: 10px #fff solid;
+            }
+
+            &:after {
+                top: 1px;
+                border-bottom: 10px #fff solid;
+            }
+        }
+    }
+
+    .phone-weixin-box {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1003;
+        display: none;
+    }
+
+    .phone-weixin {
+        width: 130px;
+        height: 130px;
+        background: #fff;
+        text-align: center;
+        line-height: 130px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        img {
+            width: 114px;
+            height: 114px;
+            vertical-align: middle;
+        }
+    }
+
+    .friends-box {
+        width: 100%;
+        min-width: 320px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .phone-footer-box {
+        width: 100%;
+        background: #333333;
+        overflow: hidden;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding-bottom: 10px;
+
+            li {
+                text-align: center;
+                width: 25%;
+                margin-top: 10px;
+
+                a {
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .phone-footer-bot {
+        width: 100%;
+        background: #272727;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 0;
+        border-top: 1px solid #474747;
+
+        a {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    }
+
+    .wf-fengcai {
+        width: 100%;
+        padding: 0;
+
+        .row {
+            margin-top: 20px;
+            padding: 0 10px;
+
+            & > ul {
+                li {
+                    padding: 0;
+
+                    &:nth-child(2n) {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .wf-info-fluid {
+        padding-bottom: 10px;
+
+        .wf-info-ul.f-2g {
+            padding: 0;
+            padding-top: 10px;
+
+            li {
+                width: 47%;
+                height: 80px;
+                margin-left: inherit;
+                margin: 8px 1.5%;
+
+                &:nth-child(5) {
+                    display: none;
+                }
+
+                &:first-child,
+                &:nth-child(3),
+                &:nth-child(5) {
+                    margin-left: inherit;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .wf-biaoyu {
+        width: 100%;
+        padding: 0 10px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        height: 40px;
+
+        h3 {
+            font-size: 18px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        img {
+            height: 40px;
+        }
+    }
+
+    .wf-cando {
+        padding-top: 12px;
+        width: 100%;
+
+        .wf-mc {
+            width: 100%;
+
+            h3.phone-s {
+                font-size: 16px;
+                margin: 8px 0;
+            }
+
+            p.phone-s {
+                font-size: 12px;
+            }
+        }
+
+        .cont {
+            width: 100%;
+
+            ul {
+                width: 100%;
+                padding: 0 10px;
+
+                li {
+                    &.phone-w {
+                        height: auto;
+                        width: 100%;
+                        margin-bottom: 5px;
+                        border-radius: 3px;
+                        a {
+                            display: flex;
+                            font-size: 16px;
+                            align-items: center;
+                            padding: 0 10px;
+                            width: 100%;
+                            h3{
+                                padding: 0px;
+                                margin: 0;
+                                width: 50px;
+                                img{
+                                }
+                            }
+                            div{
+                                flex: 1;
+                                padding: 10px 0;
+                                h1{
+                                    padding: 0;
+                                    font-size: 16px;
+                                    padding-left: 15px;
+                                    margin: 10px 0;
+                                }
+                                p{
+                                    padding: 0;
+                                    font-size: 14px;
+                                    padding-left:15px;
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .anli-right {
+        padding: 0;
+    }
+
+    .anli-left {
+        margin-bottom: 20px;
+
+        a {
+            height: auto;
+        }
+    }
+
+    .anli-right-bot {
+        li {
+            height: 30px;
+            line-height: 30px;
+
+            a {
+                font-size: 12px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .anli-right-bot {
+        padding: 10px 20px;
+
+        li {
+            a {
+                width: 70%;
+            }
+        }
+    }
+
+    .anli-right-top li a {
+        height: auto;
+
+        p {
+            bottom: 10px;
+            font-size: 12px;
+            line-height: 20px;
+            padding: 0 10px;
+        }
+
+        span {
+            top: 10px;
+            font-size: 13px;
+            padding: 0 10px;
+        }
+    }
+
+    .hegui-list {
+        .hegui-top {
+            img {
+                height: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                padding-top: 12px;
+            }
+        }
+    }
+
+
+    .hegui-bot li a {
+        font-size: 12px;
+    }
+
+    .title-box p {
+        font-size: 20px;
+    }
+
+    .title-box span {
+        font-size: 12px;
+    }
+
+    .phone-footer-nav {
+        width: 100%;
+        min-width: 320px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: nowrap;
+
+        & > div {
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                width: 90%;
+                height: 36px;
+                background: #f5b81d;
+                color: #fff;
+                text-align: center;
+                line-height: 36px;
+                border-radius: 5px;
+            }
+
+            &:last-child a {
+                background: #cb4242;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,266 @@
+.audio-box{
+	background-image: url(../img/audiobj.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding:0;margin: 0;
+}
+.audio{
+	width:100%;
+	background-color: rgba(255,255,255,0.2);
+	padding:90px;
+	height:450px;
+}
+.audio-left,.audio-right{
+	padding: 0;
+	margin: 0;
+	height:100%;
+}
+.audio-left{overflow: hidden;}
+/*.audio-left{
+	display: flex;
+	align-items: center;
+}*/
+.audio-left img{width:100%;height: auto;}
+.audio-right{
+	padding:0 50px;
+	font-size: 14px;
+	color:#e6e4e7;
+	text-align: justify;
+}
+.audio-title{
+	color:#fff;
+	font-weight: bolder;
+	font-size: 18px;
+}
+.audio-j,.audio-c{
+	margin: 20px 0;
+}
+.audio-c{
+	line-height: 24px;
+}
+
+.audio-right audio{
+	margin-top:20px;
+	width:385px;
+	height:50px;
+}
+.audio-zhuanji-title{
+	font-size: 18px;
+	color:#333333;
+	width:100%;
+	border-bottom:1px solid #e6e6e6;
+	padding-top:50px;
+	padding-bottom:10px;
+}
+.audio-zhuanji-title span{
+	font-size: 14px;
+	
+}
+.audio-zhuanji-page{
+	width:100%;
+	background: #273051;
+	display: flex;
+	flex-wrap: wrap;
+	padding:5px;
+}
+.audio-zhuanji-page li{
+	padding:10px 15px;
+}
+.audio-zhuanji-page li a{
+	font-size: 13px;
+	color:#fff;
+}
+.audio-zhuanji-page .audio-zhuanji-active a{
+	color:#bf9146;
+}
+.audio-zhuanji-list{
+	width:100%;
+	overflow: hidden;
+}
+.audio-zhuanji-li{
+	width:100%;
+	height:60px;
+	line-height: 60px;
+	border-bottom:1px solid #e6e6e6;
+	font-size: 13px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.audioWidthBig{
+	width:58%;
+}
+.audioWidthSm{
+	width:14%;
+}
+.audio-zhuanji-left img{
+	width:16px;
+}
+.audio-zhuanji-left,.audio-zhuanji-right{
+	margin: 0;padding: 0;
+	line-height: 60px;
+	overflow: hidden;
+}
+.audio-zhuanji-left{
+	color:#000;
+	cursor: pointer;
+}
+.audio-zhuanji-left span{
+	margin-left:5px;
+}
+.audio-zhuanji-right{
+	color:#999;
+	text-align: right;
+}
+.audio-zhuanji-right img{
+	width:16px;
+}
+.audio-zhuanji-right span{
+	margin-left:2px;
+}
+.audio-zhuanji-active .audio-zhuanji-left span{
+	color:#d09d42;
+	text-decoration: underline;
+}
+.audio-tuijian-img{
+	width:100%;
+	
+}
+.audio-tuijian-img img{
+	width:100%;
+}
+.audio-tuijian-ul{
+	width:100%;
+	margin-top:30px;
+}
+.audio-tuijian-li{
+	width:100%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top:20px;
+}
+.audio-tuijian-left{
+	width:40%;
+	
+}
+.audio-tuijian-left img{
+	width:100%;
+}
+.audio-tuijian-right{
+	padding-left:14px;
+	flex:1;
+}
+.audio-tuijian-right p{
+	font-size: 14px;
+	color:#000;
+}
+.audio-tuijian-right div img{
+	width:14px;
+	margin-right:2px;
+}
+.audio-tuijian-right div span{
+	font-size: 12px;
+	color:#999;
+}
+.audio-waibox .s-anli-con-left{
+	padding-right:60px;
+}
+/*手机*/
+@media (max-width: 767px) {
+	.audio-left{
+		display: none;
+	}
+	.audio-right{
+		padding-left:0;
+		font-size: 12px;
+	}
+	.audio-right p{
+		font-size: 12px;
+	}
+	.audio-right .audio-j,.audio-right .audio-c{
+		margin: 10px 0;
+	}
+	.audio{
+		padding:20px;
+		height:310px;
+		padding-top:60px;
+	}
+	.audio-right .audio-c{
+		height:30px;
+		line-height: 21px;
+	}
+	.audio-right .audio-title{
+		font-size: 14px;
+	}
+	.audio-right audio{
+		width:100%;
+		height:40px;
+		margin-top:5px;
+	}
+	.audio-waibox{
+		padding:0 14px;
+	}
+	.audio-zhuanji-page li{
+		padding:5px;
+	}
+	.audio-zhuanji-title{
+		padding-top:20px;
+		font-size:14px;
+	}
+	.audio-zhuanji-li{
+		font-size: 12px;
+	}
+	.audio-waibox .s-anli-con-right{
+		display: block;
+	}
+	.audio-waibox .s-anli-con{
+		flex-wrap: wrap;
+	}
+	.audio-zhuanji-right{
+		display: none;
+	}
+	.audio-waibox .s-anli-con-left{
+		padding-right:0;
+	}
+	.audio-right{
+		padding-right:0;
+	}
+	.audio-right .audio-c{
+		    display: -webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+	}
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width: 991px){
+	.audio-waibox .s-anli-con-right{
+		display: block;
+	}
+	.audio-waibox .s-anli-con-left{
+		padding-right:20px;
+	}
+	.audio-tuijian-right p{
+		font-size: 12px;
+		margin: 0;
+	}
+	.audio-tuijian-left{
+		width:50%;
+	}
+	.audio-tuijian-right{
+		padding-left:5px;
+	}
+	.audio-right{
+		padding-right:0;
+	}
+	
+		
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width: 1199px){
+	.audio-right{
+		padding-right:0;
+	}
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {}
