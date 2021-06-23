@@ -262,10 +262,16 @@
   right: 50%;
   margin-right: -617px;
 }
+.ix-xuanze .cont .pic1 img {
+  height: 350px;
+}
 .ix-xuanze .cont .pic2 {
   right: 50%;
   margin-right: -617px;
   top: 430px;
+}
+.ix-xuanze .cont .pic2 img {
+  height: 306px;
 }
 .ix-xuanze .cont li {
   padding: 25px 0;
@@ -299,7 +305,7 @@
 }
 .ix-xuanze .cont li .wf-m23 p {
   padding-right: 600px;
-  color: #666;
+  color: transparent;
   line-height: 30px;
   font-size: 14px;
 }
