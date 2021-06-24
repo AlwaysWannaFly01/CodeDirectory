@@ -110,6 +110,9 @@
 .wfPcHead .header .wf-ul1 li .down-list > a:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
+.wfPcHead .header .wf-ul1 li.commonCommit .down-list a:after {
+  border-bottom: 6px solid transparent;
+}
 .wf-info {
   padding-bottom: 16px;
   background-color: #fafafa;
@@ -553,8 +556,7 @@
   position: relative;
 }
 .wf-footer .foot-top .f-contact img {
-  width: 329px;
-  height: 72px;
+  height: 79px;
   left: 0;
   top: 60px;
 }
@@ -639,6 +641,9 @@
   margin: 24px 0;
   overflow: hidden;
   background-color: #fff;
+}
+.wf-lawyer .law-container .personal-desc .desc {
+  line-height: 45px;
 }
 .wf-lawyer .law-container .personal-source {
   width: 100%;
