@@ -1,6 +1,6 @@
 $(function () {
     /*动态添加导航active*/
-    const navList = ['team', 'commonCommit', 'successCase', 'lawyerState', 'lawyerArticle', "lawFirm", "contact"]
+    const navList = ['team', 'commonCommit', 'successCase', 'lawyerState', 'lawyerArticle', "lawFirm", "contact", "serviceContent"]
     const getChildActive = function (param, locationHref) {
         let index = locationHref.indexOf(param)
         if (index !== -1) {
@@ -35,11 +35,10 @@ $(function () {
 
     /*常见犯罪轮播*/
     const swiper = new Swiper('.cc-part-1-swiper', {
-        pagination: {
-            el: '.cc-part-1-swiper .swiper-pagination',
-            clickable: true,
-        },
-        paginationClickable: true,
+        // pagination: {
+        //     el: '.cc-part-1-swiper .swiper-pagination',
+        //     clickable: false,
+        // },
         slidesPerView: 3,
         spaceBetween: 30,
         autoplay: true,

@@ -251,21 +251,8 @@ i.bo {
     font-size: 16px;
 }
 
-.header-right li:hover > a {
-    color: #d09d41;
-}
-
-.header-right li.active a {
-    color: #d09d41;
-}
-
 .swiper-container1, .swiper-container1 .swiper-wrapper1 .swiper-slide1 img {
     width: 100%;
-}
-
-.swiper-container {
-    --swiper-theme-color: #cbb68b;
-    --swiper-pagination-color: #cbb68b; /* 两种都可以 */
 }
 
 .container-fluid2 {
@@ -382,18 +369,10 @@ i.bo {
     font-size: 16px;
     color: #252656;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 8px;
     line-height: 34px;
     height: 34px;
     position: relative;
-}
-
-.row2-nei2 ul li:before {
-    content: '·';
-    display: table;
-    font-size: 40px;
-    position: absolute;
-    left: 0;
 }
 
 .row2-nei2 ul li a {
