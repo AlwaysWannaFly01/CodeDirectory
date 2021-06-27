@@ -89,7 +89,7 @@ body,html{
 }
 .shuofa-shipin-ul li a p .bo{
 	position: absolute;
-	width:35px;height: 35px;background: url(../img/2.png) no-repeat;background-size: 100% auto;
+	width:35px;height: 35px;background: url(../img/add/2.png) no-repeat;background-size: 100% auto;
 	top:0;left:0;right: 0;bottom:0;
 	margin: auto;
 }
